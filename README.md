@@ -33,4 +33,4 @@ reobfuscate.bat
 the data is located within: mcp/reobf/minecraft/com...
 ```
 
-**DATE:05/18/2025**
+![Created](https://img.shields.io/badge/Created-18_May_2025-blue)
