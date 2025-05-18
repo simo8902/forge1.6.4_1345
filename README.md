@@ -5,14 +5,16 @@
 
 > ⚠️ MD5/SHA1 verification checks are **skipped**
 
-**the mod structure should look like this:**
+## 📁 Mod Structure
+```
 helloworld.jar
 ├── mcmod.info
 └── com/
-└── example/
-└── helloworld/
-└── HelloWorldMod.class
-			
+    └── example/
+        └── helloworld/
+            └── HelloWorldMod.class
+```
+		
 **after all is done, compile the .jar**
 ```jar cf helloworld.jar com mcmod.info```
 			
