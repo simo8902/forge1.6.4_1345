@@ -24,6 +24,7 @@ import net.minecraft.util.ResourceLocation;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class SoundPool {
 
    private final Random field_77464_c = new Random();

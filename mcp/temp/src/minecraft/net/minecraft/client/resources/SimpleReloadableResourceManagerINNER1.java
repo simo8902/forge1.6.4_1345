@@ -15,6 +15,7 @@ import net.minecraft.client.resources.SimpleReloadableResourceManager;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class SimpleReloadableResourceManagerINNER1 implements Function {
 
    // $FF: synthetic field

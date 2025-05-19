@@ -22,6 +22,7 @@ import net.minecraft.util.HttpUtil;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class IntegratedServerListenThread extends NetworkListenThread {
 
    private final MemoryConnection field_71760_c;

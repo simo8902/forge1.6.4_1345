@@ -14,6 +14,7 @@ import net.minecraft.client.model.ModelRenderer;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelChest extends ModelBase {
 
    public ModelRenderer field_78234_a = (new ModelRenderer(this, 0, 0)).func_78787_b(64, 64);

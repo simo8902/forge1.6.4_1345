@@ -24,6 +24,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiSlotServer extends GuiSlot {
 
    // $FF: synthetic field

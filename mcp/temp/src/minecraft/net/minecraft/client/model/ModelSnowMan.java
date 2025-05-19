@@ -16,6 +16,7 @@ import net.minecraft.util.MathHelper;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelSnowMan extends ModelBase {
 
    public ModelRenderer field_78196_a;

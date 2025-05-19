@@ -19,6 +19,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiCrafting extends GuiContainer {
 
    private static final ResourceLocation field_110422_t = new ResourceLocation("textures/gui/container/crafting_table.png");

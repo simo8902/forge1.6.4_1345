@@ -15,6 +15,7 @@ import net.minecraft.client.renderer.Tessellator;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiSnooperList extends GuiSlot {
 
    // $FF: synthetic field

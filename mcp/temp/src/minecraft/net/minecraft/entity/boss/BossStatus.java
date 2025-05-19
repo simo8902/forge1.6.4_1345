@@ -13,6 +13,7 @@ import net.minecraft.entity.boss.IBossDisplayData;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public final class BossStatus {
 
    public static float field_82828_a;

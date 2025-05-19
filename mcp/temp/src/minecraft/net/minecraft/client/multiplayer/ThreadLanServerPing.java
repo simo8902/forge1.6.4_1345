@@ -17,6 +17,7 @@ import net.minecraft.client.Minecraft;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ThreadLanServerPing extends Thread {
 
    private final String field_77528_b;

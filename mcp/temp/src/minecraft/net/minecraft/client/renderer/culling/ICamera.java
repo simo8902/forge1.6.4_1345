@@ -13,6 +13,7 @@ import net.minecraft.util.AxisAlignedBB;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public interface ICamera {
 
    boolean func_78546_a(AxisAlignedBB var1);

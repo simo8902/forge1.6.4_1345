@@ -26,6 +26,7 @@ import org.lwjgl.Sys;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiScreenTemporaryResourcePackSelect extends GuiScreen {
 
    protected GuiScreen field_110347_a;

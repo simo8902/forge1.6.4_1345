@@ -25,6 +25,7 @@ import org.lwjgl.input.Keyboard;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiScreenCreateOnlineWorld extends ScreenWithCallback {
 
    private GuiScreen field_96260_a;

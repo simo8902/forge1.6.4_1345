@@ -13,6 +13,7 @@ import net.minecraft.client.renderer.texture.StitchHolder;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class StitcherException extends RuntimeException {
 
    private final StitchHolder field_98149_a;

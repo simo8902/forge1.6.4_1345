@@ -89,6 +89,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderGlobal implements IWorldAccess {
 
    private static final ResourceLocation field_110927_h = new ResourceLocation("textures/environment/moon_phases.png");

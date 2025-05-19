@@ -16,6 +16,7 @@ import net.minecraft.util.ValueObject;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ValueObjectSubscription extends ValueObject {
 
    public long field_98171_a;

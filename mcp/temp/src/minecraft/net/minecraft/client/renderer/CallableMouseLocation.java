@@ -15,6 +15,7 @@ import org.lwjgl.input.Mouse;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class CallableMouseLocation implements Callable {
 
    // $FF: synthetic field

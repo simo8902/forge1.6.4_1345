@@ -15,6 +15,7 @@ import net.minecraft.entity.Entity;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelSlime extends ModelBase {
 
    ModelRenderer field_78200_a;

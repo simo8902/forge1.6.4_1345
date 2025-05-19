@@ -18,6 +18,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TileEntityEnderChestRenderer extends TileEntitySpecialRenderer {
 
    private static final ResourceLocation field_110637_a = new ResourceLocation("textures/entity/chest/ender.png");

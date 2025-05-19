@@ -14,5 +14,6 @@ import net.minecraft.client.renderer.texture.Tickable;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public interface TickableTextureObject extends TextureObject, Tickable {
 }

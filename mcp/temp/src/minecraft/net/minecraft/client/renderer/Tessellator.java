@@ -22,6 +22,7 @@ import org.lwjgl.opengl.GLContext;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class Tessellator {
 
    private static boolean field_78396_b;

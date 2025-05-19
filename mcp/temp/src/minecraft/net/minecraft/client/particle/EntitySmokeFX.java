@@ -15,6 +15,7 @@ import net.minecraft.world.World;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntitySmokeFX extends EntityFX {
 
    float field_70587_a;

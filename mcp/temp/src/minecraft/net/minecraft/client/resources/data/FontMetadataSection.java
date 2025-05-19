@@ -13,6 +13,7 @@ import net.minecraft.client.resources.data.MetadataSection;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class FontMetadataSection implements MetadataSection {
 
    private final float[] field_110467_a;

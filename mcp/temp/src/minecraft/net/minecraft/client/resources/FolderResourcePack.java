@@ -22,6 +22,7 @@ import org.apache.commons.io.filefilter.DirectoryFileFilter;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class FolderResourcePack extends AbstractResourcePack {
 
    public FolderResourcePack(File p_i1291_1_) {

@@ -17,6 +17,7 @@ import net.minecraft.world.World;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TextureCompass extends TextureAtlasSprite {
 
    public double field_94244_i;

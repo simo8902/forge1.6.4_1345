@@ -17,6 +17,7 @@ import net.minecraft.entity.monster.EntityMagmaCube;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelMagmaCube extends ModelBase {
 
    ModelRenderer[] field_78109_a = new ModelRenderer[8];

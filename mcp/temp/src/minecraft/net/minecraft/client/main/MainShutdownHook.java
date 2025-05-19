@@ -13,6 +13,7 @@ import net.minecraft.client.Minecraft;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public final class MainShutdownHook extends Thread {
 
    public void run() {

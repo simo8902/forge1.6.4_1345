@@ -15,6 +15,7 @@ import net.minecraft.util.ValueObject;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class Backup extends ValueObject {
 
    public String field_110727_a;

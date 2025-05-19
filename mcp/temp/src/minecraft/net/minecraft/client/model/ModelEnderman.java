@@ -15,6 +15,7 @@ import net.minecraft.entity.Entity;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelEnderman extends ModelBiped {
 
    public boolean field_78126_a;

@@ -23,6 +23,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderIronGolem extends RenderLiving {
 
    private static final ResourceLocation field_110899_a = new ResourceLocation("textures/entity/iron_golem.png");

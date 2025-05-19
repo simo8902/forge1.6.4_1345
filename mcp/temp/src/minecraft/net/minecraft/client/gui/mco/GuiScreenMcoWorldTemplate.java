@@ -24,6 +24,7 @@ import org.lwjgl.input.Keyboard;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiScreenMcoWorldTemplate extends GuiScreen {
 
    private final ScreenWithCallback field_110401_a;

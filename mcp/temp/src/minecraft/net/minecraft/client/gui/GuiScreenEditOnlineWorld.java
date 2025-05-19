@@ -24,6 +24,7 @@ import org.lwjgl.input.Keyboard;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiScreenEditOnlineWorld extends GuiScreen {
 
    private GuiScreen field_96204_a;

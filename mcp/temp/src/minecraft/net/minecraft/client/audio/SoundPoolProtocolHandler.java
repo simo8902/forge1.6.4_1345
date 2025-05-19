@@ -17,6 +17,7 @@ import net.minecraft.client.audio.SoundPoolURLConnection;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class SoundPoolProtocolHandler extends URLStreamHandler {
 
    // $FF: synthetic field

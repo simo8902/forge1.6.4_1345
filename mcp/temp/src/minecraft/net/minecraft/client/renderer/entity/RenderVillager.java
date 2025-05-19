@@ -20,6 +20,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderVillager extends RenderLiving {
 
    private static final ResourceLocation field_110903_f = new ResourceLocation("textures/entity/villager/villager.png");

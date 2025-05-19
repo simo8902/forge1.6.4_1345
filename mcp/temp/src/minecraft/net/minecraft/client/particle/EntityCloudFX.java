@@ -16,6 +16,7 @@ import net.minecraft.world.World;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntityCloudFX extends EntityFX {
 
    float field_70569_a;

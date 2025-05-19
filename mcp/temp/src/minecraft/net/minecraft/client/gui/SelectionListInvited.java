@@ -15,6 +15,7 @@ import net.minecraft.client.renderer.Tessellator;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class SelectionListInvited extends SelectionListBase {
 
    // $FF: synthetic field

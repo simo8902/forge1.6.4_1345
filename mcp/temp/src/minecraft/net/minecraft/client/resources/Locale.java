@@ -27,6 +27,7 @@ import org.apache.commons.io.IOUtils;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class Locale {
 
    private static final Splitter field_135030_b = Splitter.on('=').limit(2);

@@ -16,6 +16,7 @@ import net.minecraft.util.MathHelper;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelSpider extends ModelBase {
 
    public ModelRenderer field_78209_a;

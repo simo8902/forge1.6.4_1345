@@ -13,6 +13,7 @@ import java.awt.image.BufferedImage;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public interface IImageBuffer {
 
    BufferedImage func_78432_a(BufferedImage var1);

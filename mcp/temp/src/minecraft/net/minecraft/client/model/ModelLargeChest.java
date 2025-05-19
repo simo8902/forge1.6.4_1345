@@ -14,6 +14,7 @@ import net.minecraft.client.model.ModelRenderer;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelLargeChest extends ModelChest {
 
    public ModelLargeChest() {

@@ -26,6 +26,7 @@ import net.minecraft.util.Session;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class Main {
 
    public static void main(String[] p_main_0_) {

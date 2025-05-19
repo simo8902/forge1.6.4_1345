@@ -20,6 +20,7 @@ import net.minecraft.world.storage.WorldInfo;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class SaveHandlerMP implements ISaveHandler {
 
    public WorldInfo func_75757_d() {

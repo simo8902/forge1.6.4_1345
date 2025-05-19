@@ -18,6 +18,7 @@ import net.minecraft.world.ColorizerFoliage;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class FoliageColorReloadListener implements ResourceManagerReloadListener {
 
    private static final ResourceLocation field_130079_a = new ResourceLocation("textures/colormap/foliage.png");

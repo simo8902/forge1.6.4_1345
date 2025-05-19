@@ -17,6 +17,7 @@ import net.minecraft.item.ItemStack;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class CreativeCrafting implements ICrafting {
 
    private final Minecraft field_82250_a;

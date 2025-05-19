@@ -19,6 +19,7 @@ import net.minecraft.server.MinecraftServer;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiScreenBackupSelectionList extends GuiScreenSelectLocation {
 
    // $FF: synthetic field

@@ -15,6 +15,7 @@ import org.lwjgl.opengl.GLContext;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class OpenGlHelper {
 
    public static int field_77478_a;

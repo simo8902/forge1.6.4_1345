@@ -15,6 +15,7 @@ import net.minecraft.client.mco.Request;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RequestPost extends Request {
 
    private byte[] field_96373_c;

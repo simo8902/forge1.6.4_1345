@@ -19,6 +19,7 @@ import net.minecraft.client.resources.data.MetadataSection;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class AnimationMetadataSection implements MetadataSection {
 
    private final List field_110478_a;

@@ -30,6 +30,7 @@ import net.minecraft.util.Session;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class StatFileWriter {
 
    private Map field_77457_a = new HashMap();

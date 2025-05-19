@@ -13,6 +13,7 @@ import net.minecraft.client.resources.data.MetadataSection;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TextureMetadataSection implements MetadataSection {
 
    private final boolean field_110482_a;

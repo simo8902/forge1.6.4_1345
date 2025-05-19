@@ -23,6 +23,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class MapItemRenderer {
 
    private static final ResourceLocation field_111277_a = new ResourceLocation("textures/map/map_icons.png");

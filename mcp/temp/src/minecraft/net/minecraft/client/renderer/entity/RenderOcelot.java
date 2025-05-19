@@ -20,6 +20,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderOcelot extends RenderLiving {
 
    private static final ResourceLocation field_110877_a = new ResourceLocation("textures/entity/cat/black.png");

@@ -18,6 +18,7 @@ import net.minecraft.stats.StatList;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class SorterStatsBlock implements Comparator {
 
    // $FF: synthetic field

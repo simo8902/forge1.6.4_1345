@@ -15,6 +15,7 @@ import net.minecraft.client.Minecraft;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class CallableModded implements Callable {
 
    // $FF: synthetic field

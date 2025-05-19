@@ -15,6 +15,7 @@ import javax.naming.directory.InitialDirContext;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ServerAddress {
 
    private final String field_78866_a;

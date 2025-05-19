@@ -22,6 +22,7 @@ import net.minecraft.client.resources.Language;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiSlotLanguage extends GuiSlot {
 
    private final List field_77251_g;

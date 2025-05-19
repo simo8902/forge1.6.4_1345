@@ -18,6 +18,7 @@ import net.minecraft.client.gui.TaskLongRunning;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiScreenLongRunningTask extends GuiScreen {
 
    private final int field_96213_b = 666;

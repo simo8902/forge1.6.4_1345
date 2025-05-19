@@ -15,6 +15,7 @@ import net.minecraft.client.resources.I18n;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiErrorScreen extends GuiScreen {
 
    private String field_74001_a;

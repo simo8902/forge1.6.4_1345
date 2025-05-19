@@ -31,6 +31,7 @@ import org.lwjgl.input.Keyboard;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiFlatPresets extends GuiScreen {
 
    private static RenderItem field_82305_a = new RenderItem();

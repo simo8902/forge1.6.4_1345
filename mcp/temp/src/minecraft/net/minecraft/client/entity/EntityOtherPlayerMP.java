@@ -21,6 +21,7 @@ import net.minecraft.world.World;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntityOtherPlayerMP extends AbstractClientPlayer {
 
    private boolean field_71186_a;

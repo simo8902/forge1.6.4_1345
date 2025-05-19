@@ -14,6 +14,7 @@ import net.minecraft.client.Minecraft;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class MinecraftINNER13 implements Callable {
 
    // $FF: synthetic field

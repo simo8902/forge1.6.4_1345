@@ -15,6 +15,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiButtonLanguage extends GuiButton {
 
    public GuiButtonLanguage(int p_i1041_1_, int p_i1041_2_, int p_i1041_3_) {

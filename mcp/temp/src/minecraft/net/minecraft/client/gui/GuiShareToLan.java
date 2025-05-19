@@ -17,6 +17,7 @@ import net.minecraft.world.EnumGameType;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiShareToLan extends GuiScreen {
 
    private final GuiScreen field_74092_a;

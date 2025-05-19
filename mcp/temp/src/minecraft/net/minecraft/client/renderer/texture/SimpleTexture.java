@@ -23,6 +23,7 @@ import net.minecraft.util.ResourceLocation;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class SimpleTexture extends AbstractTexture {
 
    private final ResourceLocation field_110568_b;

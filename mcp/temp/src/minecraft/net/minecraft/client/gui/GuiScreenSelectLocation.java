@@ -18,6 +18,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public abstract class GuiScreenSelectLocation {
 
    private final Minecraft field_104092_f;

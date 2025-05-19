@@ -19,6 +19,7 @@ import net.minecraft.util.ResourceLocation;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderBlaze extends RenderLiving {
 
    private static final ResourceLocation field_110837_a = new ResourceLocation("textures/entity/blaze.png");

@@ -27,6 +27,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiStats extends GuiScreen {
 
    private static RenderItem field_74152_c = new RenderItem();

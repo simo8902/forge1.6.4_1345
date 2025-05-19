@@ -23,6 +23,7 @@ import net.minecraft.client.settings.GameSettings;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiSnooper extends GuiScreen {
 
    private final GuiScreen field_74100_a;

@@ -16,6 +16,7 @@ import net.minecraft.world.World;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntityCrit2FX extends EntityFX {
 
    private Entity field_70557_a;

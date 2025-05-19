@@ -22,6 +22,7 @@ import net.minecraft.client.mco.McoServerListUpdateTaskComparator;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class McoServerListUpdateTask extends TimerTask {
 
    private McoClient field_140066_b;

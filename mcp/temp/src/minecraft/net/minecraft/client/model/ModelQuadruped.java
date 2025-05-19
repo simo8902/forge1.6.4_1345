@@ -17,6 +17,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelQuadruped extends ModelBase {
 
    public ModelRenderer field_78150_a = new ModelRenderer(this, 0, 0);

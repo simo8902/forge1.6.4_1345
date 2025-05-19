@@ -14,6 +14,7 @@ import net.minecraft.client.resources.data.MetadataSection;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public interface Resource {
 
    InputStream func_110527_b();

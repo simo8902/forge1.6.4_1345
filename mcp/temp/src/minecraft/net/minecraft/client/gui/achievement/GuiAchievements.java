@@ -30,6 +30,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiAchievements extends GuiScreen {
 
    private static final int field_74122_s = AchievementList.field_76010_a * 24 - 112;

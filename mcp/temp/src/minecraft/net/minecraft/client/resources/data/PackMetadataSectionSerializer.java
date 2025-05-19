@@ -20,6 +20,7 @@ import net.minecraft.client.resources.data.PackMetadataSection;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class PackMetadataSectionSerializer extends BaseMetadataSectionSerializer implements JsonSerializer {
 
    public PackMetadataSection func_110489_a(JsonElement p_110489_1_, Type p_110489_2_, JsonDeserializationContext p_110489_3_) {

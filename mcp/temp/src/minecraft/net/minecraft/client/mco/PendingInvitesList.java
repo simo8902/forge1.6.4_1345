@@ -21,6 +21,7 @@ import net.minecraft.util.ValueObject;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class PendingInvitesList extends ValueObject {
 
    public List field_130096_a = Lists.newArrayList();

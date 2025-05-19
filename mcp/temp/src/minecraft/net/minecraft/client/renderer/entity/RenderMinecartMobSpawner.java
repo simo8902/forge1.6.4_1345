@@ -17,6 +17,7 @@ import net.minecraft.entity.item.EntityMinecart;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderMinecartMobSpawner extends RenderMinecart {
 
    protected void func_98192_a(EntityMinecartMobSpawner p_98192_1_, float p_98192_2_, Block p_98192_3_, int p_98192_4_) {

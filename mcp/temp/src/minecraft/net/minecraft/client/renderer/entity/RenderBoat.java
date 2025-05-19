@@ -20,6 +20,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderBoat extends Render {
 
    private static final ResourceLocation field_110782_f = new ResourceLocation("textures/entity/boat.png");

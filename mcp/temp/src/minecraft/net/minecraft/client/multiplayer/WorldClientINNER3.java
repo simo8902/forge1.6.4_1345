@@ -14,6 +14,7 @@ import net.minecraft.client.multiplayer.WorldClient;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class WorldClientINNER3 implements Callable {
 
    // $FF: synthetic field

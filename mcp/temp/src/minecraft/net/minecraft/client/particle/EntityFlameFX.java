@@ -15,6 +15,7 @@ import net.minecraft.world.World;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntityFlameFX extends EntityFX {
 
    private float field_70562_a;

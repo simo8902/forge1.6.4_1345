@@ -20,6 +20,7 @@ import net.minecraft.client.mco.Backup;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class BackupList {
 
    public List field_111223_a;

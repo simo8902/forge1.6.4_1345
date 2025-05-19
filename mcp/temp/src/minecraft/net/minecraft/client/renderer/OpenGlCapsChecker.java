@@ -13,6 +13,7 @@ import org.lwjgl.opengl.GLContext;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class OpenGlCapsChecker {
 
    public static boolean func_74371_a() {

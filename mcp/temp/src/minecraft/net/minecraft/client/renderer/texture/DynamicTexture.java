@@ -17,6 +17,7 @@ import net.minecraft.client.resources.ResourceManager;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class DynamicTexture extends AbstractTexture {
 
    private final int[] field_110566_b;

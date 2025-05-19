@@ -14,6 +14,7 @@ import net.minecraft.client.Minecraft;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class CallableUpdatingScreenName implements Callable {
 
    // $FF: synthetic field

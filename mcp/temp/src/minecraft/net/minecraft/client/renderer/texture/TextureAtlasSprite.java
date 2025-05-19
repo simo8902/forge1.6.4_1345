@@ -25,6 +25,7 @@ import net.minecraft.util.Icon;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TextureAtlasSprite implements Icon {
 
    private final String field_110984_i;

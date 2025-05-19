@@ -25,6 +25,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiScreenTemporaryResourcePackSelectSelectionList extends GuiSlot {
 
    private final ResourcePackRepository field_110511_b;

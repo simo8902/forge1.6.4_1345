@@ -26,6 +26,7 @@ import org.lwjgl.input.Keyboard;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiScreenResetWorld extends ScreenWithCallback {
 
    private GuiScreen field_96152_a;

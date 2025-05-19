@@ -23,6 +23,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderMooshroom extends RenderLiving {
 
    private static final ResourceLocation field_110880_a = new ResourceLocation("textures/entity/cow/mooshroom.png");

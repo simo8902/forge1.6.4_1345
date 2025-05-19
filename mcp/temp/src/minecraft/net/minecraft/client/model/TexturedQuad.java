@@ -15,6 +15,7 @@ import net.minecraft.util.Vec3;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TexturedQuad {
 
    public PositionTextureVertex[] field_78239_a;

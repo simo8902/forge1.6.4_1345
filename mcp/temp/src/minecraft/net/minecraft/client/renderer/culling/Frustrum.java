@@ -16,6 +16,7 @@ import net.minecraft.util.AxisAlignedBB;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class Frustrum implements ICamera {
 
    private ClippingHelper field_78552_a = ClippingHelperImpl.func_78558_a();

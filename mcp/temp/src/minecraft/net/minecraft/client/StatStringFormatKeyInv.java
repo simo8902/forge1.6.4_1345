@@ -15,6 +15,7 @@ import net.minecraft.stats.IStatStringFormat;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class StatStringFormatKeyInv implements IStatStringFormat {
 
    // $FF: synthetic field

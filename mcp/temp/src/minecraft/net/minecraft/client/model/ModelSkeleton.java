@@ -17,6 +17,7 @@ import net.minecraft.entity.monster.EntitySkeleton;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelSkeleton extends ModelZombie {
 
    public ModelSkeleton() {

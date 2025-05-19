@@ -13,6 +13,7 @@ import net.minecraft.client.gui.GuiScreen;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public abstract class ScreenWithCallback extends GuiScreen {
 
    abstract void func_110354_a(Object var1);

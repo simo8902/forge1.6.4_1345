@@ -18,6 +18,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiChest extends GuiContainer {
 
    private static final ResourceLocation field_110421_t = new ResourceLocation("textures/gui/container/generic_54.png");

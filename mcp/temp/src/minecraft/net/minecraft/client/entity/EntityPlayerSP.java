@@ -60,6 +60,7 @@ import net.minecraft.world.World;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntityPlayerSP extends AbstractClientPlayer {
 
    public MovementInput field_71158_b;

@@ -17,6 +17,7 @@ import net.minecraft.util.ResourceLocation;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public interface ResourceManager {
 
    Set func_135055_a();

@@ -15,6 +15,7 @@ import net.minecraft.world.World;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntitySpellParticleFX extends EntityFX {
 
    private int field_70590_a = 128;

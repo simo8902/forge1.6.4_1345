@@ -34,6 +34,7 @@ import net.minecraft.world.World;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntityClientPlayerMP extends EntityPlayerSP {
 
    public NetClientHandler field_71174_a;

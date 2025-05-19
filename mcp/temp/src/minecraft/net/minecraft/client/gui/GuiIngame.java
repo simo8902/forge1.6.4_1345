@@ -53,6 +53,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiIngame extends Gui {
 
    protected static final ResourceLocation field_110329_b = new ResourceLocation("textures/misc/vignette.png");

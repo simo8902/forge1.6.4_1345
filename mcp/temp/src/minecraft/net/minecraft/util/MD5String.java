@@ -15,6 +15,7 @@ import java.security.NoSuchAlgorithmException;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class MD5String {
 
    private String field_75900_a;

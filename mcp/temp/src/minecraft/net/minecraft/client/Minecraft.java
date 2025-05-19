@@ -152,6 +152,7 @@ import org.lwjgl.util.glu.GLU;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class Minecraft implements IPlayerUsage {
 
    private static final ResourceLocation field_110444_H = new ResourceLocation("textures/gui/title/mojang.png");

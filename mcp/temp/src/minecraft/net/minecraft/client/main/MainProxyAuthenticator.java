@@ -14,6 +14,7 @@ import java.net.PasswordAuthentication;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public final class MainProxyAuthenticator extends Authenticator {
 
    // $FF: synthetic field

@@ -17,6 +17,7 @@ import net.minecraft.network.packet.Packet19EntityAction;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiSleepMP extends GuiChat {
 
    public void func_73866_w_() {

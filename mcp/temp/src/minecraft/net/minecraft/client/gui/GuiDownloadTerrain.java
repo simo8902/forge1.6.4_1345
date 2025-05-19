@@ -16,6 +16,7 @@ import net.minecraft.network.packet.Packet0KeepAlive;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiDownloadTerrain extends GuiScreen {
 
    private NetClientHandler field_74261_a;

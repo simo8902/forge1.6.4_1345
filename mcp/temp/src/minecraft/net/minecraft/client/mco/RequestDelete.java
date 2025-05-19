@@ -14,6 +14,7 @@ import net.minecraft.client.mco.Request;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RequestDelete extends Request {
 
    public RequestDelete(String p_i1140_1_, int p_i1140_2_, int p_i1140_3_) {

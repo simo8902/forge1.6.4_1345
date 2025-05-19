@@ -16,6 +16,7 @@ import net.minecraft.client.resources.I18n;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiYesNo extends GuiScreen {
 
    protected GuiScreen field_73942_a;

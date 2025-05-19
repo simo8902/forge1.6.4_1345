@@ -24,6 +24,7 @@ import net.minecraft.client.resources.data.LanguageMetadataSection;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class LanguageMetadataSectionSerializer extends BaseMetadataSectionSerializer {
 
    public LanguageMetadataSection func_135020_a(JsonElement p_135020_1_, Type p_135020_2_, JsonDeserializationContext p_135020_3_) {

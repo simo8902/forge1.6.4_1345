@@ -25,6 +25,7 @@ import org.lwjgl.util.glu.GLU;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ActiveRenderInfo {
 
    public static float field_74592_a;

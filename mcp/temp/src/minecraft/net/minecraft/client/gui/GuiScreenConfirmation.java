@@ -17,6 +17,7 @@ import net.minecraft.client.resources.I18n;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiScreenConfirmation extends GuiScreen {
 
    private final GuiScreenConfirmationType field_140045_e;

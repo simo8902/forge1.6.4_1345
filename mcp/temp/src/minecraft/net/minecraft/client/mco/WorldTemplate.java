@@ -14,6 +14,7 @@ import net.minecraft.util.ValueObject;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class WorldTemplate extends ValueObject {
 
    public String field_110734_a;

@@ -14,6 +14,7 @@ import net.minecraft.stats.StatsSyncher;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class ThreadStatSyncherSend extends Thread {
 
    // $FF: synthetic field

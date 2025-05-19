@@ -21,6 +21,7 @@ import net.minecraft.nbt.NBTTagList;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ServerList {
 
    private final Minecraft field_78859_a;

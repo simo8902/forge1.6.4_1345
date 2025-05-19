@@ -12,6 +12,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ExceptionMcoHttp extends RuntimeException {
 
    public ExceptionMcoHttp(String p_i1139_1_, Exception p_i1139_2_) {

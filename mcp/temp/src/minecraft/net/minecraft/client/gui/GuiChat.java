@@ -23,6 +23,7 @@ import org.lwjgl.input.Mouse;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiChat extends GuiScreen {
 
    private String field_73898_b = "";

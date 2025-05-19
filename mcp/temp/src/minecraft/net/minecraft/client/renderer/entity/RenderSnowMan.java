@@ -22,6 +22,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderSnowMan extends RenderLiving {
 
    private static final ResourceLocation field_110895_a = new ResourceLocation("textures/entity/snowman.png");

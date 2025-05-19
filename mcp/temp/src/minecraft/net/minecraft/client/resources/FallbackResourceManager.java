@@ -26,6 +26,7 @@ import net.minecraft.util.ResourceLocation;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class FallbackResourceManager implements ResourceManager {
 
    protected final List field_110540_a = new ArrayList();

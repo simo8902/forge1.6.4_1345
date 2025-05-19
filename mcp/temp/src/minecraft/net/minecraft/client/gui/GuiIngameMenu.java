@@ -22,6 +22,7 @@ import net.minecraft.stats.StatList;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiIngameMenu extends GuiScreen {
 
    private int field_74050_a;

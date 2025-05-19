@@ -14,6 +14,7 @@ import paulscode.sound.SoundSystem;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class SoundManagerINNER1 implements Runnable {
 
    // $FF: synthetic field

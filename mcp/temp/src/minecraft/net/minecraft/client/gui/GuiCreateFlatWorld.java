@@ -20,6 +20,7 @@ import net.minecraft.world.gen.FlatGeneratorInfo;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiCreateFlatWorld extends GuiScreen {
 
    private static RenderItem field_82282_a = new RenderItem();

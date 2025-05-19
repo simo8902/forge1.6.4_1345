@@ -15,6 +15,7 @@ import net.minecraft.client.resources.ResourceManagerReloadListener;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public interface ReloadableResourceManager extends ResourceManager {
 
    void func_110541_a(List var1);

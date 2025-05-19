@@ -23,6 +23,7 @@ import net.minecraft.util.Session;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class StatsSyncher {
 
    private volatile boolean field_77432_a;

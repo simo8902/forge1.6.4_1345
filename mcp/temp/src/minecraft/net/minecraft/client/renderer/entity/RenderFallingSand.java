@@ -25,6 +25,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderFallingSand extends Render {
 
    private final RenderBlocks field_77004_a = new RenderBlocks();

@@ -17,6 +17,7 @@ import net.minecraft.client.renderer.IImageBuffer;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ImageBufferDownload implements IImageBuffer {
 
    private int[] field_78438_a;

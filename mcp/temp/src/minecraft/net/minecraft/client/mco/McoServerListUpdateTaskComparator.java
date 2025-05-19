@@ -16,6 +16,7 @@ import net.minecraft.client.mco.McoServerListUpdateTask;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class McoServerListUpdateTaskComparator implements Comparator {
 
    private final String field_140069_b;

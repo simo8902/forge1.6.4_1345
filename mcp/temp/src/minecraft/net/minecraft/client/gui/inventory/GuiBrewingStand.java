@@ -19,6 +19,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiBrewingStand extends GuiContainer {
 
    private static final ResourceLocation field_110420_t = new ResourceLocation("textures/gui/container/brewing_stand.png");

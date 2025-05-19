@@ -47,6 +47,7 @@ import org.lwjgl.util.glu.Project;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiMainMenu extends GuiScreen {
 
    private static final Random field_73976_a = new Random();

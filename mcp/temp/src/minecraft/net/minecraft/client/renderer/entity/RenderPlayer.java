@@ -34,6 +34,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderPlayer extends RendererLivingEntity {
 
    private static final ResourceLocation field_110826_a = new ResourceLocation("textures/entity/steve.png");

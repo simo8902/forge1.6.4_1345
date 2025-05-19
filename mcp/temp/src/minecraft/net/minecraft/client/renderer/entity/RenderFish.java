@@ -21,6 +21,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderFish extends Render {
 
    private static final ResourceLocation field_110792_a = new ResourceLocation("textures/particle/particles.png");

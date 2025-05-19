@@ -14,6 +14,7 @@ import net.minecraft.util.MathHelper;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ScaledResolution {
 
    private int field_78333_a;

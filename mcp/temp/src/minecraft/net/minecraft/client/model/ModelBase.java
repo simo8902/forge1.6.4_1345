@@ -21,6 +21,7 @@ import net.minecraft.entity.EntityLivingBase;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public abstract class ModelBase {
 
    public float field_78095_p;

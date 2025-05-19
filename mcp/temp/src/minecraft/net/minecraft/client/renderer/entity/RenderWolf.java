@@ -20,6 +20,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderWolf extends RenderLiving {
 
    private static final ResourceLocation field_110917_a = new ResourceLocation("textures/entity/wolf/wolf.png");

@@ -18,6 +18,7 @@ import net.minecraft.village.MerchantRecipeList;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class NpcMerchant implements IMerchant {
 
    private InventoryMerchant field_70937_a;

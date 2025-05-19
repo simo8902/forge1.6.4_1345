@@ -18,6 +18,7 @@ import net.minecraft.world.World;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public abstract class TileEntitySpecialRenderer {
 
    protected TileEntityRenderer field_76898_b;

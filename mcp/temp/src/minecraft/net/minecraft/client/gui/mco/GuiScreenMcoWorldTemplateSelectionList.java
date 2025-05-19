@@ -16,6 +16,7 @@ import net.minecraft.client.renderer.Tessellator;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiScreenMcoWorldTemplateSelectionList extends GuiScreenSelectLocation {
 
    // $FF: synthetic field

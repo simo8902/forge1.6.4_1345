@@ -14,6 +14,7 @@ import java.io.FileNotFoundException;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ResourcePackFileNotFoundException extends FileNotFoundException {
 
    public ResourcePackFileNotFoundException(File p_i1294_1_, String p_i1294_2_) {

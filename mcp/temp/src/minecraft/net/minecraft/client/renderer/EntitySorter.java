@@ -15,6 +15,7 @@ import net.minecraft.entity.Entity;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntitySorter implements Comparator {
 
    private double field_78949_a;

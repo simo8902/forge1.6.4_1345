@@ -35,6 +35,7 @@ import net.minecraft.world.storage.ISaveHandler;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class IntegratedServer extends MinecraftServer {
 
    private final Minecraft field_71349_l;

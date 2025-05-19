@@ -17,6 +17,7 @@ import net.minecraft.client.resources.I18n;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiDisconnected extends GuiScreen {
 
    private String field_74248_a;

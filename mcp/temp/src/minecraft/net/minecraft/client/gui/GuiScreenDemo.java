@@ -19,6 +19,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiScreenDemo extends GuiScreen {
 
    private static final ResourceLocation field_110407_a = new ResourceLocation("textures/gui/demo_background.png");

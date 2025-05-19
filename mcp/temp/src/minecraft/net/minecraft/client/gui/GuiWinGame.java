@@ -25,6 +25,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiWinGame extends GuiScreen {
 
    private static final ResourceLocation field_110362_a = new ResourceLocation("textures/gui/title/minecraft.png");

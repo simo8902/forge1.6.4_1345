@@ -20,6 +20,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderSpider extends RenderLiving {
 
    private static final ResourceLocation field_110891_a = new ResourceLocation("textures/entity/spider_eyes.png");

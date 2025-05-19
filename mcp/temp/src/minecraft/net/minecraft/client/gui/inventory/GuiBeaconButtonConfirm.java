@@ -15,6 +15,7 @@ import net.minecraft.client.resources.I18n;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiBeaconButtonConfirm extends GuiBeaconButton {
 
    // $FF: synthetic field

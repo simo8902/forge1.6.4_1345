@@ -15,6 +15,7 @@ import net.minecraft.entity.EntityLivingBase;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderSorter implements Comparator {
 
    private EntityLivingBase field_78945_a;

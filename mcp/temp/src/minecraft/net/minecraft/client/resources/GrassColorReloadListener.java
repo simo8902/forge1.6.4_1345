@@ -18,6 +18,7 @@ import net.minecraft.world.ColorizerGrass;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GrassColorReloadListener implements ResourceManagerReloadListener {
 
    private static final ResourceLocation field_130078_a = new ResourceLocation("textures/colormap/grass.png");

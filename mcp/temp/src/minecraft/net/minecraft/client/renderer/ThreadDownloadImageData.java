@@ -21,6 +21,7 @@ import net.minecraft.util.ResourceLocation;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ThreadDownloadImageData extends AbstractTexture {
 
    private final String field_110562_b;

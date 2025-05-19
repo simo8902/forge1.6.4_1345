@@ -31,6 +31,7 @@ import net.minecraft.util.StringTranslate;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class LanguageManager implements ResourceManagerReloadListener {
 
    private final MetadataSerializer field_135047_b;

@@ -13,6 +13,7 @@ import net.minecraft.nbt.NBTTagCompound;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ServerData {
 
    public String field_78847_a;

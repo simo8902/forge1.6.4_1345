@@ -17,6 +17,7 @@ import net.minecraft.client.resources.I18n;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiMemoryErrorScreen extends GuiScreen {
 
    public void func_73866_w_() {

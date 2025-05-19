@@ -15,6 +15,7 @@ import net.minecraft.client.renderer.EntityRenderer;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class CallableScreenSize implements Callable {
 
    // $FF: synthetic field

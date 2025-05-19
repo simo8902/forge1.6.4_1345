@@ -17,6 +17,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiButton extends Gui {
 
    protected static final ResourceLocation field_110332_a = new ResourceLocation("textures/gui/widgets.png");

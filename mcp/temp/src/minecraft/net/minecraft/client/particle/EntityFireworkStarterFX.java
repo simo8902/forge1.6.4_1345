@@ -22,6 +22,7 @@ import net.minecraft.world.World;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntityFireworkStarterFX extends EntityFX {
 
    private int field_92042_ax;

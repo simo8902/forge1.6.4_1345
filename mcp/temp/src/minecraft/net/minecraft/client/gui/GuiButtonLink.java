@@ -14,6 +14,7 @@ import net.minecraft.client.gui.GuiButton;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiButtonLink extends GuiButton {
 
    public GuiButtonLink(int p_i1044_1_, int p_i1044_2_, int p_i1044_3_, int p_i1044_4_, int p_i1044_5_, String p_i1044_6_) {

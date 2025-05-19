@@ -18,6 +18,7 @@ import net.minecraft.client.resources.data.TextureMetadataSection;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TextureMetadataSectionSerializer extends BaseMetadataSectionSerializer {
 
    public TextureMetadataSection func_110494_a(JsonElement p_110494_1_, Type p_110494_2_, JsonDeserializationContext p_110494_3_) {

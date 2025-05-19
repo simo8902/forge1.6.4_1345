@@ -15,6 +15,7 @@ import net.minecraft.entity.Entity;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelSkeletonHead extends ModelBase {
 
    public ModelRenderer field_82896_a;

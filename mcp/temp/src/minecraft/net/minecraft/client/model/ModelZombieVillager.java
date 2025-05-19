@@ -16,6 +16,7 @@ import net.minecraft.util.MathHelper;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelZombieVillager extends ModelBiped {
 
    public ModelZombieVillager() {

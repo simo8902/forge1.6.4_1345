@@ -22,6 +22,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TileEntityChestRenderer extends TileEntitySpecialRenderer {
 
    private static final ResourceLocation field_110635_a = new ResourceLocation("textures/entity/chest/trapped_double.png");

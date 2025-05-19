@@ -16,6 +16,7 @@ import net.minecraft.util.MathHelper;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelBlaze extends ModelBase {
 
    private ModelRenderer[] field_78106_a = new ModelRenderer[12];

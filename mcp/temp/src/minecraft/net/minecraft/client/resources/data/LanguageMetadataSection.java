@@ -14,6 +14,7 @@ import net.minecraft.client.resources.data.MetadataSection;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class LanguageMetadataSection implements MetadataSection {
 
    private final Collection field_135019_a;

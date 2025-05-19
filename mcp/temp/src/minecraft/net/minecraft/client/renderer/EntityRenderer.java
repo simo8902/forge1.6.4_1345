@@ -59,6 +59,7 @@ import org.lwjgl.util.glu.Project;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntityRenderer {
 
    private static final ResourceLocation field_110924_q = new ResourceLocation("textures/environment/rain.png");

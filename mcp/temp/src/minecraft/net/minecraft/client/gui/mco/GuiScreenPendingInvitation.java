@@ -24,6 +24,7 @@ import org.lwjgl.input.Keyboard;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiScreenPendingInvitation extends GuiScreen {
 
    private final GuiScreen field_130061_a;

@@ -16,6 +16,7 @@ import net.minecraft.client.renderer.Tessellator;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelBox {
 
    private PositionTextureVertex[] field_78253_h;

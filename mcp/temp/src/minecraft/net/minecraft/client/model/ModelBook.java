@@ -16,6 +16,7 @@ import net.minecraft.util.MathHelper;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelBook extends ModelBase {
 
    public ModelRenderer field_78102_a = (new ModelRenderer(this)).func_78784_a(0, 0).func_78789_a(-6.0F, -5.0F, 0.0F, 6, 10, 0);

@@ -20,6 +20,7 @@ import net.minecraft.util.ResourceLocation;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderChicken extends RenderLiving {
 
    private static final ResourceLocation field_110920_a = new ResourceLocation("textures/entity/chicken.png");

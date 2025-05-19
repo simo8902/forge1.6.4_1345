@@ -17,6 +17,7 @@ import net.minecraft.client.mco.McoClient;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class RunnableTitleScreen extends Thread {
 
    // $FF: synthetic field

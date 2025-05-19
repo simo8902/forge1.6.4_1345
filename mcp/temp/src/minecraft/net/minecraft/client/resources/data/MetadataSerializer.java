@@ -21,6 +21,7 @@ import net.minecraft.dispenser.RegistrySimple;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class MetadataSerializer {
 
    private final IRegistry field_110508_a = new RegistrySimple();

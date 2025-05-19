@@ -19,6 +19,7 @@ import org.lwjgl.opengl.GL11;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TileEntityBeaconRenderer extends TileEntitySpecialRenderer {
 
    private static final ResourceLocation field_110629_a = new ResourceLocation("textures/entity/beacon_beam.png");

@@ -20,6 +20,7 @@ import net.minecraft.util.EnumChatFormatting;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class ThreadPollServers extends Thread {
 
    // $FF: synthetic field

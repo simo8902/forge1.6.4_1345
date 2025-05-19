@@ -13,6 +13,7 @@ import net.minecraft.client.resources.ResourceManager;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public interface ResourceManagerReloadListener {
 
    void func_110549_a(ResourceManager var1);

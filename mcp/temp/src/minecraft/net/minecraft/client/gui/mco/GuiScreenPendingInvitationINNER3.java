@@ -16,6 +16,7 @@ import net.minecraft.client.mco.PendingInvite;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiScreenPendingInvitationINNER3 extends Thread {
 
    // $FF: synthetic field

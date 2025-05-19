@@ -13,6 +13,7 @@ import net.minecraft.client.mco.ExceptionMcoService;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ExceptionRetryCall extends ExceptionMcoService {
 
    public final int field_96393_c;

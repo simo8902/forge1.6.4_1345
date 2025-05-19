@@ -16,6 +16,7 @@ import net.minecraft.util.IntHashMap;
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class KeyBinding {
 
    public static List field_74516_a = new ArrayList();
