@@ -448,10 +448,10 @@ public abstract class Entity {
             }
          }
 
-         List var35 = this.field_70170_p.func_72945_a(this, this.field_70121_D.func_72321_a(p_70091_1_, p_70091_3_, p_70091_5_));
+         List var36 = this.field_70170_p.func_72945_a(this, this.field_70121_D.func_72321_a(p_70091_1_, p_70091_3_, p_70091_5_));
 
-         for(int var22 = 0; var22 < var35.size(); ++var22) {
-            p_70091_3_ = ((AxisAlignedBB)var35.get(var22)).func_72323_b(this.field_70121_D, p_70091_3_);
+         for(int var22 = 0; var22 < var36.size(); ++var22) {
+            p_70091_3_ = ((AxisAlignedBB)var36.get(var22)).func_72323_b(this.field_70121_D, p_70091_3_);
          }
 
          this.field_70121_D.func_72317_d(0.0D, p_70091_3_, 0.0D);
@@ -461,11 +461,11 @@ public abstract class Entity {
             p_70091_1_ = 0.0D;
          }
 
-         boolean var36 = this.field_70122_E || var15 != p_70091_3_ && var15 < 0.0D;
+         boolean var35 = this.field_70122_E || var15 != p_70091_3_ && var15 < 0.0D;
 
          int var23;
-         for(var23 = 0; var23 < var35.size(); ++var23) {
-            p_70091_1_ = ((AxisAlignedBB)var35.get(var23)).func_72316_a(this.field_70121_D, p_70091_1_);
+         for(var23 = 0; var23 < var36.size(); ++var23) {
+            p_70091_1_ = ((AxisAlignedBB)var36.get(var23)).func_72316_a(this.field_70121_D, p_70091_1_);
          }
 
          this.field_70121_D.func_72317_d(p_70091_1_, 0.0D, 0.0D);
@@ -475,8 +475,8 @@ public abstract class Entity {
             p_70091_1_ = 0.0D;
          }
 
-         for(var23 = 0; var23 < var35.size(); ++var23) {
-            p_70091_5_ = ((AxisAlignedBB)var35.get(var23)).func_72322_c(this.field_70121_D, p_70091_5_);
+         for(var23 = 0; var23 < var36.size(); ++var23) {
+            p_70091_5_ = ((AxisAlignedBB)var36.get(var23)).func_72322_c(this.field_70121_D, p_70091_5_);
          }
 
          this.field_70121_D.func_72317_d(0.0D, 0.0D, p_70091_5_);
@@ -490,7 +490,7 @@ public abstract class Entity {
          double var27;
          int var30;
          double var37;
-         if(this.field_70138_W > 0.0F && var36 && (var20 || this.field_70139_V < 0.05F) && (var13 != p_70091_1_ || var17 != p_70091_5_)) {
+         if(this.field_70138_W > 0.0F && var35 && (var20 || this.field_70139_V < 0.05F) && (var13 != p_70091_1_ || var17 != p_70091_5_)) {
             var37 = p_70091_1_;
             var25 = p_70091_3_;
             var27 = p_70091_5_;
@@ -499,10 +499,10 @@ public abstract class Entity {
             p_70091_5_ = var17;
             AxisAlignedBB var29 = this.field_70121_D.func_72329_c();
             this.field_70121_D.func_72328_c(var19);
-            var35 = this.field_70170_p.func_72945_a(this, this.field_70121_D.func_72321_a(var13, p_70091_3_, var17));
+            var36 = this.field_70170_p.func_72945_a(this, this.field_70121_D.func_72321_a(var13, p_70091_3_, var17));
 
-            for(var30 = 0; var30 < var35.size(); ++var30) {
-               p_70091_3_ = ((AxisAlignedBB)var35.get(var30)).func_72323_b(this.field_70121_D, p_70091_3_);
+            for(var30 = 0; var30 < var36.size(); ++var30) {
+               p_70091_3_ = ((AxisAlignedBB)var36.get(var30)).func_72323_b(this.field_70121_D, p_70091_3_);
             }
 
             this.field_70121_D.func_72317_d(0.0D, p_70091_3_, 0.0D);
@@ -512,8 +512,8 @@ public abstract class Entity {
                p_70091_1_ = 0.0D;
             }
 
-            for(var30 = 0; var30 < var35.size(); ++var30) {
-               p_70091_1_ = ((AxisAlignedBB)var35.get(var30)).func_72316_a(this.field_70121_D, p_70091_1_);
+            for(var30 = 0; var30 < var36.size(); ++var30) {
+               p_70091_1_ = ((AxisAlignedBB)var36.get(var30)).func_72316_a(this.field_70121_D, p_70091_1_);
             }
 
             this.field_70121_D.func_72317_d(p_70091_1_, 0.0D, 0.0D);
@@ -523,8 +523,8 @@ public abstract class Entity {
                p_70091_1_ = 0.0D;
             }
 
-            for(var30 = 0; var30 < var35.size(); ++var30) {
-               p_70091_5_ = ((AxisAlignedBB)var35.get(var30)).func_72322_c(this.field_70121_D, p_70091_5_);
+            for(var30 = 0; var30 < var36.size(); ++var30) {
+               p_70091_5_ = ((AxisAlignedBB)var36.get(var30)).func_72322_c(this.field_70121_D, p_70091_5_);
             }
 
             this.field_70121_D.func_72317_d(0.0D, 0.0D, p_70091_5_);
@@ -541,8 +541,8 @@ public abstract class Entity {
             } else {
                p_70091_3_ = (double)(-this.field_70138_W);
 
-               for(var30 = 0; var30 < var35.size(); ++var30) {
-                  p_70091_3_ = ((AxisAlignedBB)var35.get(var30)).func_72323_b(this.field_70121_D, p_70091_3_);
+               for(var30 = 0; var30 < var36.size(); ++var30) {
+                  p_70091_3_ = ((AxisAlignedBB)var36.get(var30)).func_72323_b(this.field_70121_D, p_70091_3_);
                }
 
                this.field_70121_D.func_72317_d(0.0D, p_70091_3_, 0.0D);
@@ -582,14 +582,14 @@ public abstract class Entity {
          var25 = this.field_70163_u - var9;
          var27 = this.field_70161_v - var11;
          if(this.func_70041_e_() && !var20 && this.field_70154_o == null) {
-            int var38 = MathHelper.func_76128_c(this.field_70165_t);
+            int var39 = MathHelper.func_76128_c(this.field_70165_t);
             var30 = MathHelper.func_76128_c(this.field_70163_u - 0.20000000298023224D - (double)this.field_70129_M);
             int var31 = MathHelper.func_76128_c(this.field_70161_v);
-            int var32 = this.field_70170_p.func_72798_a(var38, var30, var31);
+            int var32 = this.field_70170_p.func_72798_a(var39, var30, var31);
             if(var32 == 0) {
-               int var33 = this.field_70170_p.func_85175_e(var38, var30 - 1, var31);
+               int var33 = this.field_70170_p.func_85175_e(var39, var30 - 1, var31);
                if(var33 == 11 || var33 == 32 || var33 == 21) {
-                  var32 = this.field_70170_p.func_72798_a(var38, var30 - 1, var31);
+                  var32 = this.field_70170_p.func_72798_a(var39, var30 - 1, var31);
                }
             }
 
@@ -610,8 +610,8 @@ public abstract class Entity {
                   this.func_85030_a("liquid.swim", var42, 1.0F + (this.field_70146_Z.nextFloat() - this.field_70146_Z.nextFloat()) * 0.4F);
                }
 
-               this.func_70036_a(var38, var30, var31, var32);
-               Block.field_71973_m[var32].func_71891_b(this.field_70170_p, var38, var30, var31, this);
+               this.func_70036_a(var39, var30, var31, var32);
+               Block.field_71973_m[var32].func_71891_b(this.field_70170_p, var39, var30, var31, this);
             }
          }
 
@@ -619,15 +619,15 @@ public abstract class Entity {
             this.func_70017_D();
          } catch (Throwable var34) {
             CrashReport var41 = CrashReport.func_85055_a(var34, "Checking entity tile collision");
-            CrashReportCategory var40 = var41.func_85058_a("Entity being checked for collision");
-            this.func_85029_a(var40);
+            CrashReportCategory var38 = var41.func_85058_a("Entity being checked for collision");
+            this.func_85029_a(var38);
             throw new ReportedException(var41);
          }
 
-         boolean var39 = this.func_70026_G();
+         boolean var40 = this.func_70026_G();
          if(this.field_70170_p.func_72978_e(this.field_70121_D.func_72331_e(0.001D, 0.001D, 0.001D))) {
             this.func_70081_e(1);
-            if(!var39) {
+            if(!var40) {
                ++this.field_70151_c;
                if(this.field_70151_c == 0) {
                   this.func_70015_d(8);
@@ -637,7 +637,7 @@ public abstract class Entity {
             this.field_70151_c = -this.field_70174_ab;
          }
 
-         if(var39 && this.field_70151_c > 0) {
+         if(var40 && this.field_70151_c > 0) {
             this.func_85030_a("random.fizz", 0.7F, 1.6F + (this.field_70146_Z.nextFloat() - this.field_70146_Z.nextFloat()) * 0.4F);
             this.field_70151_c = -this.field_70174_ab;
          }

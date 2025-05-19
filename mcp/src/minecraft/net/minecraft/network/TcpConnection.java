@@ -189,9 +189,9 @@ public class TcpConnection implements INetworkManager
 
         try
         {
-            int[] aint;
-            int i;
             Packet packet;
+            int i;
+            int[] aint;
 
             if (this.field_74468_e == 0 || !this.dataPackets.isEmpty() && MinecraftServer.getSystemTimeMillis() - ((Packet)this.dataPackets.get(0)).creationTimeMillis >= (long)this.field_74468_e)
             {

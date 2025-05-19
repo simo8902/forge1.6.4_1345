@@ -9,6 +9,14 @@ import net.minecraft.server.gui.IUpdatePlayerListBox;
 import net.minecraft.util.MathHelper;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class SoundUpdaterMinecart implements IUpdatePlayerListBox {
 
    private final SoundManager field_82477_a;

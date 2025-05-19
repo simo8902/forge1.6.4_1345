@@ -9,6 +9,14 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.passive.EntitySheep;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelSheep2 extends ModelQuadruped {
 
    private float field_78153_i;

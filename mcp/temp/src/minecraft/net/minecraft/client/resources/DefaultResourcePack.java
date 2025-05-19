@@ -20,6 +20,14 @@ import net.minecraft.client.resources.data.MetadataSerializer;
 import net.minecraft.util.ResourceLocation;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class DefaultResourcePack implements ResourcePack {
 
    public static final Set field_110608_a = ImmutableSet.of("minecraft");

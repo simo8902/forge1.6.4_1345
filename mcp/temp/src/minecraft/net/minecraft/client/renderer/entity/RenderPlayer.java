@@ -26,6 +26,14 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderPlayer extends RendererLivingEntity {
 
    private static final ResourceLocation field_110826_a = new ResourceLocation("textures/entity/steve.png");
@@ -166,15 +174,15 @@ public class RenderPlayer extends RendererLivingEntity {
          this.func_110776_a(p_77100_1_.func_110306_p());
 
          for(int var23 = 0; var23 < 2; ++var23) {
-            float var25 = p_77100_1_.field_70126_B + (p_77100_1_.field_70177_z - p_77100_1_.field_70126_B) * p_77100_2_ - (p_77100_1_.field_70760_ar + (p_77100_1_.field_70761_aq - p_77100_1_.field_70760_ar) * p_77100_2_);
+            float var27 = p_77100_1_.field_70126_B + (p_77100_1_.field_70177_z - p_77100_1_.field_70126_B) * p_77100_2_ - (p_77100_1_.field_70760_ar + (p_77100_1_.field_70761_aq - p_77100_1_.field_70760_ar) * p_77100_2_);
             float var7 = p_77100_1_.field_70127_C + (p_77100_1_.field_70125_A - p_77100_1_.field_70127_C) * p_77100_2_;
             GL11.glPushMatrix();
-            GL11.glRotatef(var25, 0.0F, 1.0F, 0.0F);
+            GL11.glRotatef(var27, 0.0F, 1.0F, 0.0F);
             GL11.glRotatef(var7, 1.0F, 0.0F, 0.0F);
             GL11.glTranslatef(0.375F * (float)(var23 * 2 - 1), 0.0F, 0.0F);
             GL11.glTranslatef(0.0F, -0.375F, 0.0F);
             GL11.glRotatef(-var7, 1.0F, 0.0F, 0.0F);
-            GL11.glRotatef(-var25, 0.0F, 1.0F, 0.0F);
+            GL11.glRotatef(-var27, 0.0F, 1.0F, 0.0F);
             float var8 = 1.3333334F;
             GL11.glScalef(var8, var8, var8);
             this.field_77109_a.func_78110_b(0.0625F);
@@ -183,14 +191,14 @@ public class RenderPlayer extends RendererLivingEntity {
       }
 
       boolean var24 = p_77100_1_.func_110310_o().func_110557_a();
-      boolean var26 = !p_77100_1_.func_82150_aj();
-      boolean var27 = !p_77100_1_.func_82238_cc();
+      boolean var25 = !p_77100_1_.func_82150_aj();
+      boolean var26 = !p_77100_1_.func_82238_cc();
       float var14;
-      if(var24 && var26 && var27) {
+      if(var24 && var25 && var26) {
          this.func_110776_a(p_77100_1_.func_110303_q());
          GL11.glPushMatrix();
          GL11.glTranslatef(0.0F, 0.0F, 0.125F);
-         double var28 = p_77100_1_.field_71091_bM + (p_77100_1_.field_71094_bP - p_77100_1_.field_71091_bM) * (double)p_77100_2_ - (p_77100_1_.field_70169_q + (p_77100_1_.field_70165_t - p_77100_1_.field_70169_q) * (double)p_77100_2_);
+         double var29 = p_77100_1_.field_71091_bM + (p_77100_1_.field_71094_bP - p_77100_1_.field_71091_bM) * (double)p_77100_2_ - (p_77100_1_.field_70169_q + (p_77100_1_.field_70165_t - p_77100_1_.field_70169_q) * (double)p_77100_2_);
          double var10 = p_77100_1_.field_71096_bN + (p_77100_1_.field_71095_bQ - p_77100_1_.field_71096_bN) * (double)p_77100_2_ - (p_77100_1_.field_70167_r + (p_77100_1_.field_70163_u - p_77100_1_.field_70167_r) * (double)p_77100_2_);
          double var12 = p_77100_1_.field_71097_bO + (p_77100_1_.field_71085_bR - p_77100_1_.field_71097_bO) * (double)p_77100_2_ - (p_77100_1_.field_70166_s + (p_77100_1_.field_70161_v - p_77100_1_.field_70166_s) * (double)p_77100_2_);
          var14 = p_77100_1_.field_70760_ar + (p_77100_1_.field_70761_aq - p_77100_1_.field_70760_ar) * p_77100_2_;
@@ -205,8 +213,8 @@ public class RenderPlayer extends RendererLivingEntity {
             var19 = 32.0F;
          }
 
-         float var20 = (float)(var28 * var15 + var12 * var17) * 100.0F;
-         float var21 = (float)(var28 * var17 - var12 * var15) * 100.0F;
+         float var20 = (float)(var29 * var15 + var12 * var17) * 100.0F;
+         float var21 = (float)(var29 * var17 - var12 * var15) * 100.0F;
          if(var20 < 0.0F) {
             var20 = 0.0F;
          }
@@ -225,38 +233,38 @@ public class RenderPlayer extends RendererLivingEntity {
          GL11.glPopMatrix();
       }
 
-      ItemStack var29 = p_77100_1_.field_71071_by.func_70448_g();
-      if(var29 != null) {
+      ItemStack var28 = p_77100_1_.field_71071_by.func_70448_g();
+      if(var28 != null) {
          GL11.glPushMatrix();
          this.field_77109_a.field_78112_f.func_78794_c(0.0625F);
          GL11.glTranslatef(-0.0625F, 0.4375F, 0.0625F);
          if(p_77100_1_.field_71104_cf != null) {
-            var29 = new ItemStack(Item.field_77669_D);
+            var28 = new ItemStack(Item.field_77669_D);
          }
 
          EnumAction var9 = null;
          if(p_77100_1_.func_71052_bv() > 0) {
-            var9 = var29.func_77975_n();
+            var9 = var28.func_77975_n();
          }
 
-         float var30;
-         if(var29.field_77993_c < 256 && RenderBlocks.func_78597_b(Block.field_71973_m[var29.field_77993_c].func_71857_b())) {
-            var30 = 0.5F;
+         float var31;
+         if(var28.field_77993_c < 256 && RenderBlocks.func_78597_b(Block.field_71973_m[var28.field_77993_c].func_71857_b())) {
+            var31 = 0.5F;
             GL11.glTranslatef(0.0F, 0.1875F, -0.3125F);
-            var30 *= 0.75F;
+            var31 *= 0.75F;
             GL11.glRotatef(20.0F, 1.0F, 0.0F, 0.0F);
             GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
-            GL11.glScalef(-var30, -var30, var30);
-         } else if(var29.field_77993_c == Item.field_77707_k.field_77779_bT) {
-            var30 = 0.625F;
+            GL11.glScalef(-var31, -var31, var31);
+         } else if(var28.field_77993_c == Item.field_77707_k.field_77779_bT) {
+            var31 = 0.625F;
             GL11.glTranslatef(0.0F, 0.125F, 0.3125F);
             GL11.glRotatef(-20.0F, 0.0F, 1.0F, 0.0F);
-            GL11.glScalef(var30, -var30, var30);
+            GL11.glScalef(var31, -var31, var31);
             GL11.glRotatef(-100.0F, 1.0F, 0.0F, 0.0F);
             GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
-         } else if(Item.field_77698_e[var29.field_77993_c].func_77662_d()) {
-            var30 = 0.625F;
-            if(Item.field_77698_e[var29.field_77993_c].func_77629_n_()) {
+         } else if(Item.field_77698_e[var28.field_77993_c].func_77662_d()) {
+            var31 = 0.625F;
+            if(Item.field_77698_e[var28.field_77993_c].func_77629_n_()) {
                GL11.glRotatef(180.0F, 0.0F, 0.0F, 1.0F);
                GL11.glTranslatef(0.0F, -0.125F, 0.0F);
             }
@@ -269,37 +277,37 @@ public class RenderPlayer extends RendererLivingEntity {
             }
 
             GL11.glTranslatef(0.0F, 0.1875F, 0.0F);
-            GL11.glScalef(var30, -var30, var30);
+            GL11.glScalef(var31, -var31, var31);
             GL11.glRotatef(-100.0F, 1.0F, 0.0F, 0.0F);
             GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
          } else {
-            var30 = 0.375F;
+            var31 = 0.375F;
             GL11.glTranslatef(0.25F, 0.1875F, -0.1875F);
-            GL11.glScalef(var30, var30, var30);
+            GL11.glScalef(var31, var31, var31);
             GL11.glRotatef(60.0F, 0.0F, 0.0F, 1.0F);
             GL11.glRotatef(-90.0F, 1.0F, 0.0F, 0.0F);
             GL11.glRotatef(20.0F, 0.0F, 0.0F, 1.0F);
          }
 
          float var13;
-         int var32;
-         float var33;
-         if(var29.func_77973_b().func_77623_v()) {
-            for(var32 = 0; var32 <= 1; ++var32) {
-               int var11 = var29.func_77973_b().func_82790_a(var29, var32);
-               var33 = (float)(var11 >> 16 & 255) / 255.0F;
+         float var32;
+         int var33;
+         if(var28.func_77973_b().func_77623_v()) {
+            for(var33 = 0; var33 <= 1; ++var33) {
+               int var11 = var28.func_77973_b().func_82790_a(var28, var33);
+               var32 = (float)(var11 >> 16 & 255) / 255.0F;
                var13 = (float)(var11 >> 8 & 255) / 255.0F;
                var14 = (float)(var11 & 255) / 255.0F;
-               GL11.glColor4f(var33, var13, var14, 1.0F);
-               this.field_76990_c.field_78721_f.func_78443_a(p_77100_1_, var29, var32);
+               GL11.glColor4f(var32, var13, var14, 1.0F);
+               this.field_76990_c.field_78721_f.func_78443_a(p_77100_1_, var28, var33);
             }
          } else {
-            var32 = var29.func_77973_b().func_82790_a(var29, 0);
-            float var31 = (float)(var32 >> 16 & 255) / 255.0F;
-            var33 = (float)(var32 >> 8 & 255) / 255.0F;
-            var13 = (float)(var32 & 255) / 255.0F;
-            GL11.glColor4f(var31, var33, var13, 1.0F);
-            this.field_76990_c.field_78721_f.func_78443_a(p_77100_1_, var29, 0);
+            var33 = var28.func_77973_b().func_82790_a(var28, 0);
+            float var30 = (float)(var33 >> 16 & 255) / 255.0F;
+            var32 = (float)(var33 >> 8 & 255) / 255.0F;
+            var13 = (float)(var33 & 255) / 255.0F;
+            GL11.glColor4f(var30, var32, var13, 1.0F);
+            this.field_76990_c.field_78721_f.func_78443_a(p_77100_1_, var28, 0);
          }
 
          GL11.glPopMatrix();

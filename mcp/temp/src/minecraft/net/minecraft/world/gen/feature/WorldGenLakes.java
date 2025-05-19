@@ -90,8 +90,8 @@ public class WorldGenLakes extends WorldGenerator {
             for(var32 = 0; var32 < 16; ++var32) {
                for(var10 = 4; var10 < 8; ++var10) {
                   if(var6[(var8 * 16 + var32) * 8 + var10] && p_76484_1_.func_72798_a(p_76484_3_ + var8, p_76484_4_ + var10 - 1, p_76484_5_ + var32) == Block.field_71979_v.field_71990_ca && p_76484_1_.func_72972_b(EnumSkyBlock.Sky, p_76484_3_ + var8, p_76484_4_ + var10, p_76484_5_ + var32) > 0) {
-                     BiomeGenBase var34 = p_76484_1_.func_72807_a(p_76484_3_ + var8, p_76484_5_ + var32);
-                     if(var34.field_76752_A == Block.field_71994_by.field_71990_ca) {
+                     BiomeGenBase var35 = p_76484_1_.func_72807_a(p_76484_3_ + var8, p_76484_5_ + var32);
+                     if(var35.field_76752_A == Block.field_71994_by.field_71990_ca) {
                         p_76484_1_.func_72832_d(p_76484_3_ + var8, p_76484_4_ + var10 - 1, p_76484_5_ + var32, Block.field_71994_by.field_71990_ca, 0, 2);
                      } else {
                         p_76484_1_.func_72832_d(p_76484_3_ + var8, p_76484_4_ + var10 - 1, p_76484_5_ + var32, Block.field_71980_u.field_71990_ca, 0, 2);
@@ -117,9 +117,9 @@ public class WorldGenLakes extends WorldGenerator {
          if(Block.field_71973_m[this.field_76524_a].field_72018_cp == Material.field_76244_g) {
             for(var8 = 0; var8 < 16; ++var8) {
                for(var32 = 0; var32 < 16; ++var32) {
-                  byte var35 = 4;
-                  if(p_76484_1_.func_72884_u(p_76484_3_ + var8, p_76484_4_ + var35, p_76484_5_ + var32)) {
-                     p_76484_1_.func_72832_d(p_76484_3_ + var8, p_76484_4_ + var35, p_76484_5_ + var32, Block.field_72036_aT.field_71990_ca, 0, 2);
+                  byte var34 = 4;
+                  if(p_76484_1_.func_72884_u(p_76484_3_ + var8, p_76484_4_ + var34, p_76484_5_ + var32)) {
+                     p_76484_1_.func_72832_d(p_76484_3_ + var8, p_76484_4_ + var34, p_76484_5_ + var32, Block.field_72036_aT.field_71990_ca, 0, 2);
                   }
                }
             }

@@ -25,6 +25,14 @@ import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public abstract class GuiContainer extends GuiScreen {
 
    protected static final ResourceLocation field_110408_a = new ResourceLocation("textures/gui/container/inventory.png");
@@ -93,14 +101,14 @@ public abstract class GuiContainer extends GuiScreen {
 
       int var9;
       for(int var13 = 0; var13 < this.field_74193_d.field_75151_b.size(); ++var13) {
-         Slot var15 = (Slot)this.field_74193_d.field_75151_b.get(var13);
-         this.func_74192_a(var15);
-         if(this.func_74186_a(var15, p_73863_1_, p_73863_2_) && var15.func_111238_b()) {
-            this.field_82320_o = var15;
+         Slot var14 = (Slot)this.field_74193_d.field_75151_b.get(var13);
+         this.func_74192_a(var14);
+         if(this.func_74186_a(var14, p_73863_1_, p_73863_2_) && var14.func_111238_b()) {
+            this.field_82320_o = var14;
             GL11.glDisable(2896);
             GL11.glDisable(2929);
-            int var8 = var15.field_75223_e;
-            var9 = var15.field_75221_f;
+            int var8 = var14.field_75223_e;
+            var9 = var14.field_75221_f;
             this.func_73733_a(var8, var9, var8 + 16, var9 + 16, -2130706433, -2130706433);
             GL11.glEnable(2896);
             GL11.glEnable(2929);
@@ -108,10 +116,10 @@ public abstract class GuiContainer extends GuiScreen {
       }
 
       this.func_74189_g(p_73863_1_, p_73863_2_);
-      InventoryPlayer var14 = this.field_73882_e.field_71439_g.field_71071_by;
-      ItemStack var16 = this.field_85050_q == null?var14.func_70445_o():this.field_85050_q;
+      InventoryPlayer var15 = this.field_73882_e.field_71439_g.field_71071_by;
+      ItemStack var16 = this.field_85050_q == null?var15.func_70445_o():this.field_85050_q;
       if(var16 != null) {
-         byte var17 = 8;
+         byte var18 = 8;
          var9 = this.field_85050_q == null?8:16;
          String var10 = null;
          if(this.field_85050_q != null && this.field_90018_r) {
@@ -125,25 +133,25 @@ public abstract class GuiContainer extends GuiScreen {
             }
          }
 
-         this.func_85044_b(var16, p_73863_1_ - var4 - var17, p_73863_2_ - var5 - var9, var10);
+         this.func_85044_b(var16, p_73863_1_ - var4 - var18, p_73863_2_ - var5 - var9, var10);
       }
 
       if(this.field_85045_v != null) {
-         float var18 = (float)(Minecraft.func_71386_F() - this.field_85046_u) / 100.0F;
-         if(var18 >= 1.0F) {
-            var18 = 1.0F;
+         float var17 = (float)(Minecraft.func_71386_F() - this.field_85046_u) / 100.0F;
+         if(var17 >= 1.0F) {
+            var17 = 1.0F;
             this.field_85045_v = null;
          }
 
          var9 = this.field_85047_t.field_75223_e - this.field_85049_r;
          int var20 = this.field_85047_t.field_75221_f - this.field_85048_s;
-         int var11 = this.field_85049_r + (int)((float)var9 * var18);
-         int var12 = this.field_85048_s + (int)((float)var20 * var18);
+         int var11 = this.field_85049_r + (int)((float)var9 * var17);
+         int var12 = this.field_85048_s + (int)((float)var20 * var17);
          this.func_85044_b(this.field_85045_v, var11, var12, (String)null);
       }
 
       GL11.glPopMatrix();
-      if(var14.func_70445_o() == null && this.field_82320_o != null && this.field_82320_o.func_75216_d()) {
+      if(var15.func_70445_o() == null && this.field_82320_o != null && this.field_82320_o.func_75216_d()) {
          ItemStack var19 = this.field_82320_o.func_75211_c();
          this.func_74184_a(var19, p_73863_1_, p_73863_2_);
       }

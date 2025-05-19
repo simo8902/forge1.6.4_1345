@@ -55,8 +55,8 @@ public class MessageComponentSerializer implements JsonDeserializer, JsonSeriali
 
       if(var6 != null) {
          if(var6.isJsonArray()) {
-            JsonArray var17 = var6.getAsJsonArray();
-            Iterator var14 = var17.iterator();
+            JsonArray var18 = var6.getAsJsonArray();
+            Iterator var14 = var18.iterator();
 
             while(var14.hasNext()) {
                JsonElement var15 = (JsonElement)var14.next();
@@ -70,24 +70,24 @@ public class MessageComponentSerializer implements JsonDeserializer, JsonSeriali
             var4.func_111079_a(var6.getAsString());
          }
       } else if(var7 != null && var7.isJsonPrimitive()) {
-         JsonElement var18 = var5.get("using");
-         if(var18 != null) {
-            if(var18.isJsonArray()) {
-               ArrayList var19 = Lists.newArrayList();
-               Iterator var20 = var18.getAsJsonArray().iterator();
+         JsonElement var17 = var5.get("using");
+         if(var17 != null) {
+            if(var17.isJsonArray()) {
+               ArrayList var20 = Lists.newArrayList();
+               Iterator var19 = var17.getAsJsonArray().iterator();
 
-               while(var20.hasNext()) {
-                  JsonElement var16 = (JsonElement)var20.next();
+               while(var19.hasNext()) {
+                  JsonElement var16 = (JsonElement)var19.next();
                   if(var16.isJsonPrimitive()) {
-                     var19.add(var16.getAsString());
+                     var20.add(var16.getAsString());
                   } else if(var16.isJsonObject()) {
-                     var19.add(this.func_111056_a(var16, p_111056_2_, p_111056_3_));
+                     var20.add(this.func_111056_a(var16, p_111056_2_, p_111056_3_));
                   }
                }
 
-               var4.func_111080_a(var7.getAsString(), var19.toArray());
-            } else if(var18.isJsonPrimitive()) {
-               var4.func_111080_a(var7.getAsString(), new Object[]{var18.getAsString()});
+               var4.func_111080_a(var7.getAsString(), var20.toArray());
+            } else if(var17.isJsonPrimitive()) {
+               var4.func_111080_a(var7.getAsString(), new Object[]{var17.getAsString()});
             }
          } else {
             var4.func_111072_b(var7.getAsString());

@@ -69,7 +69,7 @@ public class WorldGenDungeons extends WorldGenerator {
 
             while(true) {
                if(var11 < 3) {
-                  label197: {
+                  label101: {
                      var12 = p_76484_3_ + p_76484_2_.nextInt(var7 * 2 + 1) - var7;
                      int var14 = p_76484_5_ + p_76484_2_.nextInt(var8 * 2 + 1) - var8;
                      if(p_76484_1_.func_72799_c(var12, p_76484_4_, var14)) {
@@ -97,7 +97,7 @@ public class WorldGenDungeons extends WorldGenerator {
                            if(var17 != null) {
                               WeightedRandomChestContent.func_76293_a(p_76484_2_, var16, var17, 8);
                            }
-                           break label197;
+                           break label101;
                         }
                      }
 

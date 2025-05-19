@@ -6,6 +6,14 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.settings.EnumOptions;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiSmallButton extends GuiButton {
 
    private final EnumOptions field_73754_j;

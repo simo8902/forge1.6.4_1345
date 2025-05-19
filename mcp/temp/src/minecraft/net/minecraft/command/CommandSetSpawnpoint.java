@@ -28,10 +28,10 @@ public class CommandSetSpawnpoint extends CommandBase {
          if(var3.field_70170_p != null) {
             byte var4 = 1;
             int var5 = 30000000;
-            int var9 = var4 + 1;
+            int var10 = var4 + 1;
             int var6 = func_71532_a(p_71515_1_, p_71515_2_[var4], -var5, var5);
-            int var7 = func_71532_a(p_71515_1_, p_71515_2_[var9++], 0, 256);
-            int var8 = func_71532_a(p_71515_1_, p_71515_2_[var9++], -var5, var5);
+            int var7 = func_71532_a(p_71515_1_, p_71515_2_[var10++], 0, 256);
+            int var8 = func_71532_a(p_71515_1_, p_71515_2_[var10++], -var5, var5);
             var3.func_71063_a(new ChunkCoordinates(var6, var7, var8), true);
             func_71522_a(p_71515_1_, "commands.spawnpoint.success", new Object[]{var3.func_70023_ak(), Integer.valueOf(var6), Integer.valueOf(var7), Integer.valueOf(var8)});
          }
@@ -40,9 +40,9 @@ public class CommandSetSpawnpoint extends CommandBase {
             throw new WrongUsageException("commands.spawnpoint.usage", new Object[0]);
          }
 
-         ChunkCoordinates var10 = var3.func_82114_b();
-         var3.func_71063_a(var10, true);
-         func_71522_a(p_71515_1_, "commands.spawnpoint.success", new Object[]{var3.func_70023_ak(), Integer.valueOf(var10.field_71574_a), Integer.valueOf(var10.field_71572_b), Integer.valueOf(var10.field_71573_c)});
+         ChunkCoordinates var11 = var3.func_82114_b();
+         var3.func_71063_a(var11, true);
+         func_71522_a(p_71515_1_, "commands.spawnpoint.success", new Object[]{var3.func_70023_ak(), Integer.valueOf(var11.field_71574_a), Integer.valueOf(var11.field_71572_b), Integer.valueOf(var11.field_71573_c)});
       }
 
    }

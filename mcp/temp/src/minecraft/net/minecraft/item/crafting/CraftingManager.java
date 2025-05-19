@@ -184,30 +184,30 @@ public class CraftingManager {
       HashMap var12;
       for(var12 = new HashMap(); var4 < p_92103_2_.length; var4 += 2) {
          Character var13 = (Character)p_92103_2_[var4];
-         ItemStack var15 = null;
+         ItemStack var14 = null;
          if(p_92103_2_[var4 + 1] instanceof Item) {
-            var15 = new ItemStack((Item)p_92103_2_[var4 + 1]);
+            var14 = new ItemStack((Item)p_92103_2_[var4 + 1]);
          } else if(p_92103_2_[var4 + 1] instanceof Block) {
-            var15 = new ItemStack((Block)p_92103_2_[var4 + 1], 1, 32767);
+            var14 = new ItemStack((Block)p_92103_2_[var4 + 1], 1, 32767);
          } else if(p_92103_2_[var4 + 1] instanceof ItemStack) {
-            var15 = (ItemStack)p_92103_2_[var4 + 1];
+            var14 = (ItemStack)p_92103_2_[var4 + 1];
          }
 
-         var12.put(var13, var15);
+         var12.put(var13, var14);
       }
 
-      ItemStack[] var14 = new ItemStack[var5 * var6];
+      ItemStack[] var15 = new ItemStack[var5 * var6];
 
       for(int var16 = 0; var16 < var5 * var6; ++var16) {
          char var10 = var3.charAt(var16);
          if(var12.containsKey(Character.valueOf(var10))) {
-            var14[var16] = ((ItemStack)var12.get(Character.valueOf(var10))).func_77946_l();
+            var15[var16] = ((ItemStack)var12.get(Character.valueOf(var10))).func_77946_l();
          } else {
-            var14[var16] = null;
+            var15[var16] = null;
          }
       }
 
-      ShapedRecipes var17 = new ShapedRecipes(var5, var6, var14, p_92103_1_);
+      ShapedRecipes var17 = new ShapedRecipes(var5, var6, var15, p_92103_1_);
       this.field_77597_b.add(var17);
       return var17;
    }

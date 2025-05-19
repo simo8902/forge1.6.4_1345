@@ -400,15 +400,15 @@ public class BlockStairs extends Block {
       }
 
       int[] var21 = var11;
-      int var23 = var11.length;
+      int var24 = var11.length;
 
-      for(var14 = 0; var14 < var23; ++var14) {
+      for(var14 = 0; var14 < var24; ++var14) {
          var15 = var21[var14];
          var7[var15] = null;
       }
 
-      MovingObjectPosition var22 = null;
-      double var24 = 0.0D;
+      MovingObjectPosition var23 = null;
+      double var22 = 0.0D;
       MovingObjectPosition[] var25 = var7;
       var16 = var7.length;
 
@@ -416,14 +416,14 @@ public class BlockStairs extends Block {
          MovingObjectPosition var18 = var25[var17];
          if(var18 != null) {
             double var19 = var18.field_72307_f.func_72436_e(p_71878_6_);
-            if(var19 > var24) {
-               var22 = var18;
-               var24 = var19;
+            if(var19 > var22) {
+               var23 = var18;
+               var22 = var19;
             }
          }
       }
 
-      return var22;
+      return var23;
    }
 
    @SideOnly(Side.CLIENT)

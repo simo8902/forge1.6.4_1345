@@ -9,6 +9,14 @@ import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public abstract class SelectionListBase {
 
    private final Minecraft field_96622_a;
@@ -80,7 +88,7 @@ public abstract class SelectionListBase {
       int var10;
       int var11;
       int var13;
-      int var20;
+      int var19;
       if(Mouse.isButtonDown(0)) {
          if(this.field_96628_i == -1.0F) {
             boolean var7 = true;
@@ -100,9 +108,9 @@ public abstract class SelectionListBase {
 
                if(p_96612_1_ >= var5 && p_96612_1_ <= var6) {
                   this.field_96625_j = -1.0F;
-                  var20 = this.func_96607_d();
-                  if(var20 < 1) {
-                     var20 = 1;
+                  var19 = this.func_96607_d();
+                  if(var19 < 1) {
+                     var19 = 1;
                   }
 
                   var13 = (int)((float)((this.field_96627_h - this.field_96616_f) * (this.field_96627_h - this.field_96616_f)) / (float)this.func_96613_b());
@@ -114,7 +122,7 @@ public abstract class SelectionListBase {
                      var13 = this.field_96627_h - this.field_96616_f - 8;
                   }
 
-                  this.field_96625_j /= (float)(this.field_96627_h - this.field_96616_f - var13) / (float)var20;
+                  this.field_96625_j /= (float)(this.field_96627_h - this.field_96616_f - var13) / (float)var19;
                } else {
                   this.field_96625_j = 1.0F;
                }
@@ -167,9 +175,9 @@ public abstract class SelectionListBase {
 
       int var14;
       for(var11 = 0; var11 < var4; ++var11) {
-         var20 = var10 + var11 * this.field_96620_b;
+         var19 = var10 + var11 * this.field_96620_b;
          var13 = this.field_96620_b - 4;
-         if(var20 + this.field_96620_b <= this.field_96627_h && var20 - 4 >= this.field_96616_f) {
+         if(var19 + this.field_96620_b <= this.field_96627_h && var19 - 4 >= this.field_96616_f) {
             if(this.func_96609_a(var11)) {
                var14 = this.field_96619_e + 2;
                int var15 = this.field_96617_g - 2;
@@ -177,25 +185,25 @@ public abstract class SelectionListBase {
                GL11.glDisable(3553);
                var18.func_78382_b();
                var18.func_78378_d(8421504);
-               var18.func_78374_a((double)var14, (double)(var20 + var13 + 2), 0.0D, 0.0D, 1.0D);
-               var18.func_78374_a((double)var15, (double)(var20 + var13 + 2), 0.0D, 1.0D, 1.0D);
-               var18.func_78374_a((double)var15, (double)(var20 - 2), 0.0D, 1.0D, 0.0D);
-               var18.func_78374_a((double)var14, (double)(var20 - 2), 0.0D, 0.0D, 0.0D);
+               var18.func_78374_a((double)var14, (double)(var19 + var13 + 2), 0.0D, 0.0D, 1.0D);
+               var18.func_78374_a((double)var15, (double)(var19 + var13 + 2), 0.0D, 1.0D, 1.0D);
+               var18.func_78374_a((double)var15, (double)(var19 - 2), 0.0D, 1.0D, 0.0D);
+               var18.func_78374_a((double)var14, (double)(var19 - 2), 0.0D, 0.0D, 0.0D);
                var18.func_78378_d(0);
-               var18.func_78374_a((double)(var14 + 1), (double)(var20 + var13 + 1), 0.0D, 0.0D, 1.0D);
-               var18.func_78374_a((double)(var15 - 1), (double)(var20 + var13 + 1), 0.0D, 1.0D, 1.0D);
-               var18.func_78374_a((double)(var15 - 1), (double)(var20 - 1), 0.0D, 1.0D, 0.0D);
-               var18.func_78374_a((double)(var14 + 1), (double)(var20 - 1), 0.0D, 0.0D, 0.0D);
+               var18.func_78374_a((double)(var14 + 1), (double)(var19 + var13 + 1), 0.0D, 0.0D, 1.0D);
+               var18.func_78374_a((double)(var15 - 1), (double)(var19 + var13 + 1), 0.0D, 1.0D, 1.0D);
+               var18.func_78374_a((double)(var15 - 1), (double)(var19 - 1), 0.0D, 1.0D, 0.0D);
+               var18.func_78374_a((double)(var14 + 1), (double)(var19 - 1), 0.0D, 0.0D, 0.0D);
                var18.func_78381_a();
                GL11.glEnable(3553);
             }
 
-            this.func_96610_a(var11, var9, var20, var13, var18);
+            this.func_96610_a(var11, var9, var19, var13, var18);
          }
       }
 
       GL11.glDisable(2929);
-      byte var19 = 4;
+      byte var20 = 4;
       GL11.glEnable(3042);
       GL11.glBlendFunc(770, 771);
       GL11.glDisable(3008);
@@ -203,8 +211,8 @@ public abstract class SelectionListBase {
       GL11.glDisable(3553);
       var18.func_78382_b();
       var18.func_78384_a(0, 0);
-      var18.func_78374_a((double)this.field_96619_e, (double)(this.field_96616_f + var19), 0.0D, 0.0D, 1.0D);
-      var18.func_78374_a((double)this.field_96617_g, (double)(this.field_96616_f + var19), 0.0D, 1.0D, 1.0D);
+      var18.func_78374_a((double)this.field_96619_e, (double)(this.field_96616_f + var20), 0.0D, 0.0D, 1.0D);
+      var18.func_78374_a((double)this.field_96617_g, (double)(this.field_96616_f + var20), 0.0D, 1.0D, 1.0D);
       var18.func_78384_a(0, 255);
       var18.func_78374_a((double)this.field_96617_g, (double)this.field_96616_f, 0.0D, 1.0D, 0.0D);
       var18.func_78374_a((double)this.field_96619_e, (double)this.field_96616_f, 0.0D, 0.0D, 0.0D);
@@ -214,11 +222,11 @@ public abstract class SelectionListBase {
       var18.func_78374_a((double)this.field_96619_e, (double)this.field_96627_h, 0.0D, 0.0D, 1.0D);
       var18.func_78374_a((double)this.field_96617_g, (double)this.field_96627_h, 0.0D, 1.0D, 1.0D);
       var18.func_78384_a(0, 0);
-      var18.func_78374_a((double)this.field_96617_g, (double)(this.field_96627_h - var19), 0.0D, 1.0D, 0.0D);
-      var18.func_78374_a((double)this.field_96619_e, (double)(this.field_96627_h - var19), 0.0D, 0.0D, 0.0D);
+      var18.func_78374_a((double)this.field_96617_g, (double)(this.field_96627_h - var20), 0.0D, 1.0D, 0.0D);
+      var18.func_78374_a((double)this.field_96619_e, (double)(this.field_96627_h - var20), 0.0D, 0.0D, 0.0D);
       var18.func_78381_a();
-      var20 = this.func_96607_d();
-      if(var20 > 0) {
+      var19 = this.func_96607_d();
+      if(var19 > 0) {
          var13 = (this.field_96627_h - this.field_96616_f) * (this.field_96627_h - this.field_96616_f) / this.func_96613_b();
          if(var13 < 32) {
             var13 = 32;
@@ -228,7 +236,7 @@ public abstract class SelectionListBase {
             var13 = this.field_96627_h - this.field_96616_f - 8;
          }
 
-         var14 = (int)this.field_96626_k * (this.field_96627_h - this.field_96616_f - var13) / var20 + this.field_96616_f;
+         var14 = (int)this.field_96626_k * (this.field_96627_h - this.field_96616_f - var13) / var19 + this.field_96616_f;
          if(var14 < this.field_96616_f) {
             var14 = this.field_96616_f;
          }

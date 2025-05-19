@@ -53,7 +53,7 @@ public class BlockBed extends BlockDirectional {
 
          if(p_71903_1_.field_73011_w.func_76567_e() && p_71903_1_.func_72807_a(p_71903_2_, p_71903_4_) != BiomeGenBase.field_76778_j) {
             if(func_72225_b_(var10)) {
-               EntityPlayer var19 = null;
+               EntityPlayer var20 = null;
                Iterator var12 = p_71903_1_.field_73010_i.iterator();
 
                while(var12.hasNext()) {
@@ -61,12 +61,12 @@ public class BlockBed extends BlockDirectional {
                   if(var21.func_70608_bn()) {
                      ChunkCoordinates var14 = var21.field_71081_bT;
                      if(var14.field_71574_a == p_71903_2_ && var14.field_71572_b == p_71903_3_ && var14.field_71573_c == p_71903_4_) {
-                        var19 = var21;
+                        var20 = var21;
                      }
                   }
                }
 
-               if(var19 != null) {
+               if(var20 != null) {
                   p_71903_5_.func_71035_c("tile.bed.occupied");
                   return true;
                }
@@ -74,14 +74,14 @@ public class BlockBed extends BlockDirectional {
                func_72228_a(p_71903_1_, p_71903_2_, p_71903_3_, p_71903_4_, false);
             }
 
-            EnumStatus var20 = p_71903_5_.func_71018_a(p_71903_2_, p_71903_3_, p_71903_4_);
-            if(var20 == EnumStatus.OK) {
+            EnumStatus var19 = p_71903_5_.func_71018_a(p_71903_2_, p_71903_3_, p_71903_4_);
+            if(var19 == EnumStatus.OK) {
                func_72228_a(p_71903_1_, p_71903_2_, p_71903_3_, p_71903_4_, true);
                return true;
             } else {
-               if(var20 == EnumStatus.NOT_POSSIBLE_NOW) {
+               if(var19 == EnumStatus.NOT_POSSIBLE_NOW) {
                   p_71903_5_.func_71035_c("tile.bed.noSleep");
-               } else if(var20 == EnumStatus.NOT_SAFE) {
+               } else if(var19 == EnumStatus.NOT_SAFE) {
                   p_71903_5_.func_71035_c("tile.bed.notSafe");
                }
 

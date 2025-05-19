@@ -22,6 +22,14 @@ import net.minecraft.client.mco.WorldTemplateList;
 import net.minecraft.util.Session;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class McoClient {
 
    private final String field_96390_a;

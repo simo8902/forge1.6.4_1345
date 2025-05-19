@@ -69,9 +69,9 @@ public class MapGenCaves extends MapGenBase {
             if(p_75042_6_ >= var19 - 16.0D - var29 * 2.0D && p_75042_10_ >= var21 - 16.0D - var29 * 2.0D && p_75042_6_ <= var19 + 16.0D + var29 * 2.0D && p_75042_10_ <= var21 + 16.0D + var29 * 2.0D) {
                int var55 = MathHelper.func_76128_c(p_75042_6_ - var29) - p_75042_3_ * 16 - 1;
                int var36 = MathHelper.func_76128_c(p_75042_6_ + var29) - p_75042_3_ * 16 + 1;
-               int var56 = MathHelper.func_76128_c(p_75042_8_ - var31) - 1;
+               int var57 = MathHelper.func_76128_c(p_75042_8_ - var31) - 1;
                int var38 = MathHelper.func_76128_c(p_75042_8_ + var31) + 1;
-               int var57 = MathHelper.func_76128_c(p_75042_10_ - var29) - p_75042_4_ * 16 - 1;
+               int var56 = MathHelper.func_76128_c(p_75042_10_ - var29) - p_75042_4_ * 16 - 1;
                int var40 = MathHelper.func_76128_c(p_75042_10_ + var29) - p_75042_4_ * 16 + 1;
                if(var55 < 0) {
                   var55 = 0;
@@ -81,16 +81,16 @@ public class MapGenCaves extends MapGenBase {
                   var36 = 16;
                }
 
-               if(var56 < 1) {
-                  var56 = 1;
+               if(var57 < 1) {
+                  var57 = 1;
                }
 
                if(var38 > 120) {
                   var38 = 120;
                }
 
-               if(var57 < 0) {
-                  var57 = 0;
+               if(var56 < 0) {
+                  var56 = 0;
                }
 
                if(var40 > 16) {
@@ -102,16 +102,16 @@ public class MapGenCaves extends MapGenBase {
                int var42;
                int var45;
                for(var42 = var55; !var58 && var42 < var36; ++var42) {
-                  for(int var43 = var57; !var58 && var43 < var40; ++var43) {
-                     for(int var44 = var38 + 1; !var58 && var44 >= var56 - 1; --var44) {
+                  for(int var43 = var56; !var58 && var43 < var40; ++var43) {
+                     for(int var44 = var38 + 1; !var58 && var44 >= var57 - 1; --var44) {
                         var45 = (var42 * 16 + var43) * 128 + var44;
                         if(var44 >= 0 && var44 < 128) {
                            if(p_75042_5_[var45] == Block.field_71942_A.field_71990_ca || p_75042_5_[var45] == Block.field_71943_B.field_71990_ca) {
                               var58 = true;
                            }
 
-                           if(var44 != var56 - 1 && var42 != var55 && var42 != var36 - 1 && var43 != var57 && var43 != var40 - 1) {
-                              var44 = var56;
+                           if(var44 != var57 - 1 && var42 != var55 && var42 != var36 - 1 && var43 != var56 && var43 != var40 - 1) {
+                              var44 = var57;
                            }
                         }
                      }
@@ -122,12 +122,12 @@ public class MapGenCaves extends MapGenBase {
                   for(var42 = var55; var42 < var36; ++var42) {
                      double var59 = ((double)(var42 + p_75042_3_ * 16) + 0.5D - p_75042_6_) / var29;
 
-                     for(var45 = var57; var45 < var40; ++var45) {
+                     for(var45 = var56; var45 < var40; ++var45) {
                         double var46 = ((double)(var45 + p_75042_4_ * 16) + 0.5D - p_75042_10_) / var29;
                         int var48 = (var42 * 16 + var45) * 128 + var38;
                         boolean var49 = false;
                         if(var59 * var59 + var46 * var46 < 1.0D) {
-                           for(int var50 = var38 - 1; var50 >= var56; --var50) {
+                           for(int var50 = var38 - 1; var50 >= var57; --var50) {
                               double var51 = ((double)var50 + 0.5D - p_75042_8_) / var31;
                               if(var51 > -0.7D && var59 * var59 + var51 * var51 + var46 * var46 < 1.0D) {
                                  byte var53 = p_75042_5_[var48];

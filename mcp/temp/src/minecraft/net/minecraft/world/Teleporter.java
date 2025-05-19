@@ -213,17 +213,17 @@ public class Teleporter {
 
       int var13;
       double var14;
-      int var16;
       double var17;
+      int var16;
       int var19;
-      int var20;
       int var21;
-      int var22;
+      int var20;
       int var23;
-      int var24;
+      int var22;
       int var25;
-      int var26;
+      int var24;
       int var27;
+      int var26;
       double var31;
       double var32;
       for(var13 = var5 - var2; var13 <= var5 + var2; ++var13) {
@@ -260,10 +260,10 @@ public class Teleporter {
                         }
                      }
 
-                     var31 = (double)var19 + 0.5D - p_85188_1_.field_70163_u;
-                     var32 = var14 * var14 + var31 * var31 + var17 * var17;
-                     if(var3 < 0.0D || var32 < var3) {
-                        var3 = var32;
+                     var32 = (double)var19 + 0.5D - p_85188_1_.field_70163_u;
+                     var31 = var14 * var14 + var32 * var32 + var17 * var17;
+                     if(var3 < 0.0D || var31 < var3) {
+                        var3 = var31;
                         var8 = var13;
                         var9 = var19;
                         var10 = var16;
@@ -304,10 +304,10 @@ public class Teleporter {
                            }
                         }
 
-                        var31 = (double)var19 + 0.5D - p_85188_1_.field_70163_u;
-                        var32 = var14 * var14 + var31 * var31 + var17 * var17;
-                        if(var3 < 0.0D || var32 < var3) {
-                           var3 = var32;
+                        var32 = (double)var19 + 0.5D - p_85188_1_.field_70163_u;
+                        var31 = var14 * var14 + var32 * var32 + var17 * var17;
+                        if(var3 < 0.0D || var31 < var3) {
+                           var3 = var31;
                            var8 = var13;
                            var9 = var19;
                            var10 = var16;

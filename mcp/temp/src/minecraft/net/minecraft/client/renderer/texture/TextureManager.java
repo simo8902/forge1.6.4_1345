@@ -26,6 +26,14 @@ import net.minecraft.util.ReportedException;
 import net.minecraft.util.ResourceLocation;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TextureManager implements Tickable, ResourceManagerReloadListener {
 
    private final Map field_110585_a = Maps.newHashMap();

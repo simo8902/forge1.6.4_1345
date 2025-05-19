@@ -144,6 +144,14 @@ import org.lwjgl.opengl.PixelFormat;
 import org.lwjgl.util.glu.GLU;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class Minecraft implements IPlayerUsage {
 
    private static final ResourceLocation field_110444_H = new ResourceLocation("textures/gui/title/mojang.png");
@@ -878,8 +886,8 @@ public class Minecraft implements IPlayerUsage {
 
             int var14;
             float var15;
-            float var16;
             float var17;
+            float var16;
             for(var14 = var13; var14 >= 0; --var14) {
                var15 = (float)((var9 + var12.field_76332_a * (double)var14 / (double)var13) * 3.1415927410125732D * 2.0D / 100.0D);
                var16 = MathHelper.func_76126_a(var15) * (float)var6;
@@ -903,22 +911,22 @@ public class Minecraft implements IPlayerUsage {
             var9 += var12.field_76332_a;
          }
 
-         DecimalFormat var18 = new DecimalFormat("##0.00");
+         DecimalFormat var19 = new DecimalFormat("##0.00");
          GL11.glEnable(3553);
-         String var19 = "";
+         String var18 = "";
          if(!var4.field_76331_c.equals("unspecified")) {
-            var19 = var19 + "[0] ";
+            var18 = var18 + "[0] ";
          }
 
          if(var4.field_76331_c.length() == 0) {
-            var19 = var19 + "ROOT ";
+            var18 = var18 + "ROOT ";
          } else {
-            var19 = var19 + var4.field_76331_c + " ";
+            var18 = var18 + var4.field_76331_c + " ";
          }
 
          var13 = 16777215;
-         this.field_71466_p.func_78261_a(var19, var7 - var6, var8 - var6 / 2 - 16, var13);
-         this.field_71466_p.func_78261_a(var19 = var18.format(var4.field_76330_b) + "%", var7 + var6 - this.field_71466_p.func_78256_a(var19), var8 - var6 / 2 - 16, var13);
+         this.field_71466_p.func_78261_a(var18, var7 - var6, var8 - var6 / 2 - 16, var13);
+         this.field_71466_p.func_78261_a(var18 = var19.format(var4.field_76330_b) + "%", var7 + var6 - this.field_71466_p.func_78256_a(var18), var8 - var6 / 2 - 16, var13);
 
          for(int var21 = 0; var21 < var3.size(); ++var21) {
             ProfilerResult var20 = (ProfilerResult)var3.get(var21);
@@ -931,8 +939,8 @@ public class Minecraft implements IPlayerUsage {
 
             var22 = var22 + var20.field_76331_c;
             this.field_71466_p.func_78261_a(var22, var7 - var6, var8 + var6 / 2 + var21 * 8 + 20, var20.func_76329_a());
-            this.field_71466_p.func_78261_a(var22 = var18.format(var20.field_76332_a) + "%", var7 + var6 - 50 - this.field_71466_p.func_78256_a(var22), var8 + var6 / 2 + var21 * 8 + 20, var20.func_76329_a());
-            this.field_71466_p.func_78261_a(var22 = var18.format(var20.field_76330_b) + "%", var7 + var6 - this.field_71466_p.func_78256_a(var22), var8 + var6 / 2 + var21 * 8 + 20, var20.func_76329_a());
+            this.field_71466_p.func_78261_a(var22 = var19.format(var20.field_76332_a) + "%", var7 + var6 - 50 - this.field_71466_p.func_78256_a(var22), var8 + var6 / 2 + var21 * 8 + 20, var20.func_76329_a());
+            this.field_71466_p.func_78261_a(var22 = var19.format(var20.field_76330_b) + "%", var7 + var6 - this.field_71466_p.func_78256_a(var22), var8 + var6 / 2 + var21 * 8 + 20, var20.func_76329_a());
          }
 
       }

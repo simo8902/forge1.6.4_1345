@@ -198,32 +198,32 @@ public class ChunkProviderFlat implements IChunkProvider
 
         if (this.waterLakeGenerator != null && !flag && this.random.nextInt(4) == 0)
         {
-            k1 = k + this.random.nextInt(16) + 8;
-            l1 = this.random.nextInt(128);
+            l1 = k + this.random.nextInt(16) + 8;
+            k1 = this.random.nextInt(128);
             i2 = l + this.random.nextInt(16) + 8;
-            this.waterLakeGenerator.generate(this.worldObj, this.random, k1, l1, i2);
+            this.waterLakeGenerator.generate(this.worldObj, this.random, l1, k1, i2);
         }
 
         if (this.lavaLakeGenerator != null && !flag && this.random.nextInt(8) == 0)
         {
-            k1 = k + this.random.nextInt(16) + 8;
-            l1 = this.random.nextInt(this.random.nextInt(120) + 8);
+            l1 = k + this.random.nextInt(16) + 8;
+            k1 = this.random.nextInt(this.random.nextInt(120) + 8);
             i2 = l + this.random.nextInt(16) + 8;
 
-            if (l1 < 63 || this.random.nextInt(10) == 0)
+            if (k1 < 63 || this.random.nextInt(10) == 0)
             {
-                this.lavaLakeGenerator.generate(this.worldObj, this.random, k1, l1, i2);
+                this.lavaLakeGenerator.generate(this.worldObj, this.random, l1, k1, i2);
             }
         }
 
         if (this.hasDungeons)
         {
-            for (k1 = 0; k1 < 8; ++k1)
+            for (l1 = 0; l1 < 8; ++l1)
             {
-                l1 = k + this.random.nextInt(16) + 8;
+                k1 = k + this.random.nextInt(16) + 8;
                 i2 = this.random.nextInt(128);
                 int j2 = l + this.random.nextInt(16) + 8;
-                (new WorldGenDungeons()).generate(this.worldObj, this.random, l1, i2, j2);
+                (new WorldGenDungeons()).generate(this.worldObj, this.random, k1, i2, j2);
             }
         }
 

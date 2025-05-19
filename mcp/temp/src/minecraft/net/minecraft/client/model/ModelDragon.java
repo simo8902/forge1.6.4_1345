@@ -10,6 +10,14 @@ import net.minecraft.entity.boss.EntityDragon;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelDragon extends ModelBase {
 
    private ModelRenderer field_78221_a;
@@ -148,9 +156,9 @@ public class ModelDragon extends ModelBase {
       this.field_78221_a.field_78797_d = var11;
       this.field_78221_a.field_78798_e = var12;
       this.field_78221_a.field_78800_c = var13;
-      double[] var22 = var8.func_70974_a(0, this.field_78223_m);
-      this.field_78221_a.field_78796_g = this.func_78214_a(var22[0] - var15[0]) * 3.1415927F / 180.0F * 1.0F;
-      this.field_78221_a.field_78808_h = -this.func_78214_a(var22[0] - (double)var17) * 3.1415927F / 180.0F * 1.0F;
+      double[] var23 = var8.func_70974_a(0, this.field_78223_m);
+      this.field_78221_a.field_78796_g = this.func_78214_a(var23[0] - var15[0]) * 3.1415927F / 180.0F * 1.0F;
+      this.field_78221_a.field_78808_h = -this.func_78214_a(var23[0] - (double)var17) * 3.1415927F / 180.0F * 1.0F;
       this.field_78221_a.func_78785_a(p_78088_7_);
       GL11.glPushMatrix();
       GL11.glTranslatef(0.0F, 1.0F, 0.0F);
@@ -159,7 +167,7 @@ public class ModelDragon extends ModelBase {
       this.field_78217_d.field_78808_h = 0.0F;
       this.field_78217_d.func_78785_a(p_78088_7_);
 
-      for(int var23 = 0; var23 < 2; ++var23) {
+      for(int var22 = 0; var22 < 2; ++var22) {
          GL11.glEnable(2884);
          var21 = var9 * 3.1415927F * 2.0F;
          this.field_78225_k.field_78795_f = 0.125F - (float)Math.cos((double)var21) * 0.2F;
@@ -176,7 +184,7 @@ public class ModelDragon extends ModelBase {
          this.field_78215_f.func_78785_a(p_78088_7_);
          this.field_78218_e.func_78785_a(p_78088_7_);
          GL11.glScalef(-1.0F, 1.0F, 1.0F);
-         if(var23 == 0) {
+         if(var22 == 0) {
             GL11.glCullFace(1028);
          }
       }
@@ -192,11 +200,11 @@ public class ModelDragon extends ModelBase {
       var15 = var8.func_70974_a(11, this.field_78223_m);
 
       for(int var25 = 0; var25 < 12; ++var25) {
-         var22 = var8.func_70974_a(12 + var25, this.field_78223_m);
+         var23 = var8.func_70974_a(12 + var25, this.field_78223_m);
          var24 = (float)((double)var24 + Math.sin((double)((float)var25 * 0.45F + var18)) * 0.05000000074505806D);
-         this.field_78219_b.field_78796_g = (this.func_78214_a(var22[0] - var15[0]) * var14 + 180.0F) * 3.1415927F / 180.0F;
-         this.field_78219_b.field_78795_f = var24 + (float)(var22[1] - var15[1]) * 3.1415927F / 180.0F * var14 * 5.0F;
-         this.field_78219_b.field_78808_h = this.func_78214_a(var22[0] - (double)var17) * 3.1415927F / 180.0F * var14;
+         this.field_78219_b.field_78796_g = (this.func_78214_a(var23[0] - var15[0]) * var14 + 180.0F) * 3.1415927F / 180.0F;
+         this.field_78219_b.field_78795_f = var24 + (float)(var23[1] - var15[1]) * 3.1415927F / 180.0F * var14 * 5.0F;
+         this.field_78219_b.field_78808_h = this.func_78214_a(var23[0] - (double)var17) * 3.1415927F / 180.0F * var14;
          this.field_78219_b.field_78797_d = var11;
          this.field_78219_b.field_78798_e = var12;
          this.field_78219_b.field_78800_c = var13;

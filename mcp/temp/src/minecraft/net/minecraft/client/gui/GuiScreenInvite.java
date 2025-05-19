@@ -14,6 +14,14 @@ import net.minecraft.client.resources.I18n;
 import org.lwjgl.input.Keyboard;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiScreenInvite extends GuiScreen {
 
    private GuiTextField field_96227_a;

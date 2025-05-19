@@ -184,40 +184,40 @@ public class BlockTripWireSource extends Block
         int k3;
         int l3;
 
-        for (l2 = 1; l2 < 42; ++l2)
+        for (i3 = 1; i3 < 42; ++i3)
         {
-            i3 = par2 + i2 * l2;
-            j3 = par4 + j2 * l2;
-            k3 = par1World.getBlockId(i3, par3, j3);
+            l2 = par2 + i2 * i3;
+            k3 = par4 + j2 * i3;
+            j3 = par1World.getBlockId(l2, par3, k3);
 
-            if (k3 == Block.tripWireSource.blockID)
+            if (j3 == Block.tripWireSource.blockID)
             {
-                l3 = par1World.getBlockMetadata(i3, par3, j3);
+                l3 = par1World.getBlockMetadata(l2, par3, k3);
 
                 if ((l3 & 3) == Direction.rotateOpposite[l1])
                 {
-                    k2 = l2;
+                    k2 = i3;
                 }
 
                 break;
             }
 
-            if (k3 != Block.tripWire.blockID && l2 != par8)
+            if (j3 != Block.tripWire.blockID && i3 != par8)
             {
-                aint[l2] = -1;
+                aint[i3] = -1;
                 flag3 = false;
             }
             else
             {
-                l3 = l2 == par8 ? par9 : par1World.getBlockMetadata(i3, par3, j3);
+                l3 = i3 == par8 ? par9 : par1World.getBlockMetadata(l2, par3, k3);
                 boolean flag6 = (l3 & 8) != 8;
                 boolean flag7 = (l3 & 1) == 1;
                 boolean flag8 = (l3 & 2) == 2;
                 flag3 &= flag8 == flag5;
                 flag4 |= flag6 && flag7;
-                aint[l2] = l3;
+                aint[i3] = l3;
 
-                if (l2 == par8)
+                if (i3 == par8)
                 {
                     par1World.scheduleBlockUpdate(par2, par3, par4, par5, this.tickRate(par1World));
                     flag3 &= flag6;
@@ -227,17 +227,17 @@ public class BlockTripWireSource extends Block
 
         flag3 &= k2 > 1;
         flag4 &= flag3;
-        l2 = (flag3 ? 4 : 0) | (flag4 ? 8 : 0);
-        par6 = l1 | l2;
+        i3 = (flag3 ? 4 : 0) | (flag4 ? 8 : 0);
+        par6 = l1 | i3;
 
         if (k2 > 0)
         {
-            i3 = par2 + i2 * k2;
-            j3 = par4 + j2 * k2;
-            k3 = Direction.rotateOpposite[l1];
-            par1World.setBlockMetadataWithNotify(i3, par3, j3, k3 | l2, 3);
-            this.notifyNeighborOfChange(par1World, i3, par3, j3, k3);
-            this.playSoundEffect(par1World, i3, par3, j3, flag3, flag4, flag1, flag2);
+            l2 = par2 + i2 * k2;
+            k3 = par4 + j2 * k2;
+            j3 = Direction.rotateOpposite[l1];
+            par1World.setBlockMetadataWithNotify(l2, par3, k3, j3 | i3, 3);
+            this.notifyNeighborOfChange(par1World, l2, par3, k3, j3);
+            this.playSoundEffect(par1World, l2, par3, k3, flag3, flag4, flag1, flag2);
         }
 
         this.playSoundEffect(par1World, par2, par3, par4, flag3, flag4, flag1, flag2);
@@ -254,11 +254,11 @@ public class BlockTripWireSource extends Block
 
         if (flag1 != flag3)
         {
-            for (i3 = 1; i3 < k2; ++i3)
+            for (l2 = 1; l2 < k2; ++l2)
             {
-                j3 = par2 + i2 * i3;
-                k3 = par4 + j2 * i3;
-                l3 = aint[i3];
+                k3 = par2 + i2 * l2;
+                j3 = par4 + j2 * l2;
+                l3 = aint[l2];
 
                 if (l3 >= 0)
                 {
@@ -271,7 +271,7 @@ public class BlockTripWireSource extends Block
                         l3 &= -5;
                     }
 
-                    par1World.setBlockMetadataWithNotify(j3, par3, k3, l3, 3);
+                    par1World.setBlockMetadataWithNotify(k3, par3, j3, l3, 3);
                 }
             }
         }

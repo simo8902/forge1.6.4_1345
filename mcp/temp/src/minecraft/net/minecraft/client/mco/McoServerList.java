@@ -15,6 +15,14 @@ import net.minecraft.client.mco.McoServerListUpdateTask;
 import net.minecraft.util.Session;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class McoServerList {
 
    private volatile boolean field_98259_a;

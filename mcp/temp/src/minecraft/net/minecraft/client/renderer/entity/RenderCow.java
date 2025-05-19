@@ -9,6 +9,14 @@ import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.util.ResourceLocation;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderCow extends RenderLiving {
 
    private static final ResourceLocation field_110833_a = new ResourceLocation("textures/entity/cow/cow.png");

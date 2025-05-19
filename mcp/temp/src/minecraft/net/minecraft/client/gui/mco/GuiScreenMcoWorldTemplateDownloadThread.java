@@ -7,6 +7,14 @@ import net.minecraft.client.mco.ExceptionMcoService;
 import net.minecraft.client.mco.McoClient;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiScreenMcoWorldTemplateDownloadThread extends Thread {
 
    // $FF: synthetic field

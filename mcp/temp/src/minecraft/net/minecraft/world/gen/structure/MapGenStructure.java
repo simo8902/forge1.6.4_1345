@@ -130,10 +130,10 @@ public abstract class MapGenStructure extends MapGenBase {
       Iterator var16 = this.field_75053_d.values().iterator();
 
       ChunkPosition var19;
-      int var20;
       int var21;
-      int var22;
+      int var20;
       double var23;
+      int var22;
       while(var16.hasNext()) {
          StructureStart var17 = (StructureStart)var16.next();
          if(var17.func_75069_d()) {

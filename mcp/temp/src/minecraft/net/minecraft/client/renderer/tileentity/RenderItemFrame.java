@@ -28,6 +28,14 @@ import net.minecraft.world.storage.MapData;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderItemFrame extends Render {
 
    private static final ResourceLocation field_110789_a = new ResourceLocation("textures/map/map_background.png");

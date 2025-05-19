@@ -10,6 +10,14 @@ import net.minecraft.client.audio.SoundPoolProtocolHandler;
 import net.minecraft.util.ResourceLocation;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class SoundPoolURLConnection extends URLConnection {
 
    private final ResourceLocation field_110659_b;

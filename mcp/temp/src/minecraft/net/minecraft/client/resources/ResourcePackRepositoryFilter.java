@@ -6,6 +6,14 @@ import java.io.File;
 import java.io.FileFilter;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 final class ResourcePackRepositoryFilter implements FileFilter {
 
    public boolean accept(File p_accept_1_) {

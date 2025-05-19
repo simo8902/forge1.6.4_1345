@@ -5,6 +5,14 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.resources.Locale;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class I18n {
 
    private static Locale field_135054_a;

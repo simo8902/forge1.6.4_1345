@@ -6,6 +6,14 @@ import net.minecraft.client.particle.EntityFX;
 import net.minecraft.world.World;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntityEnchantmentTableParticleFX extends EntityFX {
 
    private float field_70565_a;

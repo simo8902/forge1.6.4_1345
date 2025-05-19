@@ -383,8 +383,8 @@ public class RenderPlayer extends RendererLivingEntity
             }
 
             float f12;
-            int j;
             float f13;
+            int j;
 
             if (itemstack1.getItem().requiresMultipleRenderPasses())
             {

@@ -148,8 +148,8 @@ public class CommandSpreadPlayers extends CommandBase
         {
             flag1 = false;
             d5 = 3.4028234663852886E38D;
-            int j;
             CommandSpreadPlayersPosition commandspreadplayersposition1;
+            int j;
 
             for (int k = 0; k < par14ArrayOfCommandSpreadPlayersPosition.length; ++k)
             {

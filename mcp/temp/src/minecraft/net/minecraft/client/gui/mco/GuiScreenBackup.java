@@ -20,6 +20,14 @@ import net.minecraft.client.resources.I18n;
 import org.lwjgl.input.Keyboard;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiScreenBackup extends GuiScreen {
 
    private final GuiScreenConfigureWorld field_110380_a;

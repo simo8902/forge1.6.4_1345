@@ -76,7 +76,7 @@ public class Profiler {
             }
          }
 
-         float var20 = (float)var8;
+         float var21 = (float)var8;
          if(var8 < var5) {
             var8 = var5;
          }
@@ -85,11 +85,11 @@ public class Profiler {
             var3 = var8;
          }
 
-         Iterator var21 = this.field_76324_e.keySet().iterator();
+         Iterator var20 = this.field_76324_e.keySet().iterator();
 
          String var12;
-         while(var21.hasNext()) {
-            var12 = (String)var21.next();
+         while(var20.hasNext()) {
+            var12 = (String)var20.next();
             if(var12.length() > p_76321_1_.length() && var12.startsWith(p_76321_1_) && var12.indexOf(".", p_76321_1_.length() + 1) < 0) {
                long var13 = ((Long)this.field_76324_e.get(var12)).longValue();
                double var15 = (double)var13 * 100.0D / (double)var8;
@@ -99,15 +99,15 @@ public class Profiler {
             }
          }
 
-         var21 = this.field_76324_e.keySet().iterator();
+         var20 = this.field_76324_e.keySet().iterator();
 
-         while(var21.hasNext()) {
-            var12 = (String)var21.next();
+         while(var20.hasNext()) {
+            var12 = (String)var20.next();
             this.field_76324_e.put(var12, Long.valueOf(((Long)this.field_76324_e.get(var12)).longValue() * 999L / 1000L));
          }
 
-         if((float)var8 > var20) {
-            var7.add(new ProfilerResult("unspecified", (double)((float)var8 - var20) * 100.0D / (double)var8, (double)((float)var8 - var20) * 100.0D / (double)var3));
+         if((float)var8 > var21) {
+            var7.add(new ProfilerResult("unspecified", (double)((float)var8 - var21) * 100.0D / (double)var8, (double)((float)var8 - var21) * 100.0D / (double)var3));
          }
 
          Collections.sort(var7);

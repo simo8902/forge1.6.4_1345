@@ -92,7 +92,7 @@ public class WorldGenDungeons extends WorldGenerator
                 {
                     if (l1 < 3)
                     {
-                        label197:
+                        label101:
                         {
                             i2 = par3 + par2Random.nextInt(l * 2 + 1) - l;
                             int j2 = par5 + par2Random.nextInt(i1 * 2 + 1) - i1;
@@ -132,7 +132,7 @@ public class WorldGenDungeons extends WorldGenerator
                                         WeightedRandomChestContent.generateChestContents(par2Random, info.getItems(par2Random), tileentitychest, info.getCount(par2Random));
                                     }
 
-                                    break label197;
+                                    break label101;
                                 }
                             }
 

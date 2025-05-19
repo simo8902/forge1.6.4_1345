@@ -8,6 +8,14 @@ import net.minecraft.client.mco.McoClient;
 import net.minecraft.client.mco.McoServer;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class ThreadOnlineScreen extends Thread {
 
    // $FF: synthetic field

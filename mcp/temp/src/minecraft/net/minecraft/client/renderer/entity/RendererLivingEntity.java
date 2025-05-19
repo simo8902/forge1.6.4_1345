@@ -22,6 +22,14 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public abstract class RendererLivingEntity extends Render {
 
    private static final ResourceLocation field_110814_a = new ResourceLocation("textures/misc/enchanted_item_glint.png");
@@ -114,8 +122,8 @@ public abstract class RendererLivingEntity extends Render {
          this.field_77045_g.func_78086_a(p_130000_1_, var16, var15, p_130000_9_);
          this.func_77036_a(p_130000_1_, var16, var15, var13, var11 - var10, var26, var14);
 
-         int var18;
          float var19;
+         int var18;
          float var20;
          float var22;
          for(int var17 = 0; var17 < 4; ++var17) {
@@ -196,14 +204,14 @@ public abstract class RendererLivingEntity extends Render {
             if((var18 >> 24 & 255) > 0) {
                var19 = (float)(var18 >> 16 & 255) / 255.0F;
                var20 = (float)(var18 >> 8 & 255) / 255.0F;
-               float var29 = (float)(var18 & 255) / 255.0F;
+               float var30 = (float)(var18 & 255) / 255.0F;
                var22 = (float)(var18 >> 24 & 255) / 255.0F;
-               GL11.glColor4f(var19, var20, var29, var22);
+               GL11.glColor4f(var19, var20, var30, var22);
                this.field_77045_g.func_78088_a(p_130000_1_, var16, var15, var13, var11 - var10, var26, var14);
 
-               for(int var30 = 0; var30 < 4; ++var30) {
-                  if(this.func_77035_b(p_130000_1_, var30, p_130000_9_) >= 0) {
-                     GL11.glColor4f(var19, var20, var29, var22);
+               for(int var29 = 0; var29 < 4; ++var29) {
+                  if(this.func_77035_b(p_130000_1_, var29, p_130000_9_) >= 0) {
+                     GL11.glColor4f(var19, var20, var30, var22);
                      this.field_77046_h.func_78088_a(p_130000_1_, var16, var15, var13, var11 - var10, var26, var14);
                   }
                }

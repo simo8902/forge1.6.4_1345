@@ -276,38 +276,38 @@ public class ChunkProviderGenerate implements IChunkProvider {
             var17 /= var18;
             var16 = var16 * 0.9F + 0.1F;
             var17 = (var17 * 4.0F - 1.0F) / 8.0F;
-            double var46 = this.field_73221_h[var13] / 8000.0D;
-            if(var46 < 0.0D) {
-               var46 = -var46 * 0.3D;
+            double var47 = this.field_73221_h[var13] / 8000.0D;
+            if(var47 < 0.0D) {
+               var47 = -var47 * 0.3D;
             }
 
-            var46 = var46 * 3.0D - 2.0D;
-            if(var46 < 0.0D) {
-               var46 /= 2.0D;
-               if(var46 < -1.0D) {
-                  var46 = -1.0D;
+            var47 = var47 * 3.0D - 2.0D;
+            if(var47 < 0.0D) {
+               var47 /= 2.0D;
+               if(var47 < -1.0D) {
+                  var47 = -1.0D;
                }
 
-               var46 /= 1.4D;
-               var46 /= 2.0D;
+               var47 /= 1.4D;
+               var47 /= 2.0D;
             } else {
-               if(var46 > 1.0D) {
-                  var46 = 1.0D;
+               if(var47 > 1.0D) {
+                  var47 = 1.0D;
                }
 
-               var46 /= 8.0D;
+               var47 /= 8.0D;
             }
 
             ++var13;
 
-            for(int var47 = 0; var47 < p_73205_6_; ++var47) {
+            for(int var46 = 0; var46 < p_73205_6_; ++var46) {
                double var48 = (double)var17;
                double var26 = (double)var16;
-               var48 += var46 * 0.2D;
+               var48 += var47 * 0.2D;
                var48 = var48 * (double)p_73205_6_ / 16.0D;
                double var28 = (double)p_73205_6_ / 2.0D + var48 * 4.0D;
                double var30 = 0.0D;
-               double var32 = ((double)var47 - var28) * 12.0D * 128.0D / 128.0D / var26;
+               double var32 = ((double)var46 - var28) * 12.0D * 128.0D / 128.0D / var26;
                if(var32 < 0.0D) {
                   var32 *= 4.0D;
                }
@@ -324,8 +324,8 @@ public class ChunkProviderGenerate implements IChunkProvider {
                }
 
                var30 -= var32;
-               if(var47 > p_73205_6_ - 4) {
-                  double var40 = (double)((float)(var47 - (p_73205_6_ - 4)) / 3.0F);
+               if(var46 > p_73205_6_ - 4) {
+                  double var40 = (double)((float)(var46 - (p_73205_6_ - 4)) / 3.0F);
                   var30 = var30 * (1.0D - var40) + -10.0D * var40;
                }
 

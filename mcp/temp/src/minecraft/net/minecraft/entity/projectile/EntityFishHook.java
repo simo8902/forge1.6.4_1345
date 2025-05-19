@@ -265,28 +265,28 @@ public class EntityFishHook extends Entity {
                var25 = 0.5F;
             }
 
-            byte var26 = 5;
-            double var27 = 0.0D;
+            byte var27 = 5;
+            double var26 = 0.0D;
 
-            for(int var28 = 0; var28 < var26; ++var28) {
-               double var14 = this.field_70121_D.field_72338_b + (this.field_70121_D.field_72337_e - this.field_70121_D.field_72338_b) * (double)(var28 + 0) / (double)var26 - 0.125D + 0.125D;
-               double var16 = this.field_70121_D.field_72338_b + (this.field_70121_D.field_72337_e - this.field_70121_D.field_72338_b) * (double)(var28 + 1) / (double)var26 - 0.125D + 0.125D;
+            for(int var29 = 0; var29 < var27; ++var29) {
+               double var14 = this.field_70121_D.field_72338_b + (this.field_70121_D.field_72337_e - this.field_70121_D.field_72338_b) * (double)(var29 + 0) / (double)var27 - 0.125D + 0.125D;
+               double var16 = this.field_70121_D.field_72338_b + (this.field_70121_D.field_72337_e - this.field_70121_D.field_72338_b) * (double)(var29 + 1) / (double)var27 - 0.125D + 0.125D;
                AxisAlignedBB var18 = AxisAlignedBB.func_72332_a().func_72299_a(this.field_70121_D.field_72340_a, var14, this.field_70121_D.field_72339_c, this.field_70121_D.field_72336_d, var16, this.field_70121_D.field_72334_f);
                if(this.field_70170_p.func_72830_b(var18, Material.field_76244_g)) {
-                  var27 += 1.0D / (double)var26;
+                  var26 += 1.0D / (double)var27;
                }
             }
 
-            if(var27 > 0.0D) {
+            if(var26 > 0.0D) {
                if(this.field_70219_an > 0) {
                   --this.field_70219_an;
                } else {
-                  short var29 = 500;
+                  short var28 = 500;
                   if(this.field_70170_p.func_72951_B(MathHelper.func_76128_c(this.field_70165_t), MathHelper.func_76128_c(this.field_70163_u) + 1, MathHelper.func_76128_c(this.field_70161_v))) {
-                     var29 = 300;
+                     var28 = 300;
                   }
 
-                  if(this.field_70146_Z.nextInt(var29) == 0) {
+                  if(this.field_70146_Z.nextInt(var28) == 0) {
                      this.field_70219_an = this.field_70146_Z.nextInt(30) + 10;
                      this.field_70181_x -= 0.20000000298023224D;
                      this.func_85030_a("random.splash", 0.25F, 1.0F + (this.field_70146_Z.nextFloat() - this.field_70146_Z.nextFloat()) * 0.4F);
@@ -314,9 +314,9 @@ public class EntityFishHook extends Entity {
                this.field_70181_x -= (double)(this.field_70146_Z.nextFloat() * this.field_70146_Z.nextFloat() * this.field_70146_Z.nextFloat()) * 0.2D;
             }
 
-            var13 = var27 * 2.0D - 1.0D;
+            var13 = var26 * 2.0D - 1.0D;
             this.field_70181_x += 0.03999999910593033D * var13;
-            if(var27 > 0.0D) {
+            if(var26 > 0.0D) {
                var25 = (float)((double)var25 * 0.9D);
                this.field_70181_x *= 0.8D;
             }

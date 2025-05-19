@@ -12,6 +12,14 @@ import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class ContainerCreative extends Container {
 
    public List field_75185_e = new ArrayList();

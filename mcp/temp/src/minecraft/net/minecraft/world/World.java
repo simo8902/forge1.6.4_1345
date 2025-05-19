@@ -1052,15 +1052,15 @@ public abstract class World implements IBlockAccess {
       }
 
       double var14 = 0.25D;
-      List var15 = this.func_72839_b(p_72945_1_, p_72945_2_.func_72314_b(var14, var14, var14));
+      List var16 = this.func_72839_b(p_72945_1_, p_72945_2_.func_72314_b(var14, var14, var14));
 
-      for(int var16 = 0; var16 < var15.size(); ++var16) {
-         AxisAlignedBB var13 = ((Entity)var15.get(var16)).func_70046_E();
+      for(int var15 = 0; var15 < var16.size(); ++var15) {
+         AxisAlignedBB var13 = ((Entity)var16.get(var15)).func_70046_E();
          if(var13 != null && var13.func_72326_a(p_72945_2_)) {
             this.field_72998_d.add(var13);
          }
 
-         var13 = p_72945_1_.func_70114_g((Entity)var15.get(var16));
+         var13 = p_72945_1_.func_70114_g((Entity)var16.get(var15));
          if(var13 != null && var13.func_72326_a(p_72945_2_)) {
             this.field_72998_d.add(var13);
          }
@@ -2233,8 +2233,8 @@ public abstract class World implements IBlockAccess {
          int var13;
          int var14;
          int var15;
-         int var16;
          int var17;
+         int var16;
          if(var8 > var7) {
             this.field_72994_J[var6++] = 133152;
          } else if(var8 < var7) {

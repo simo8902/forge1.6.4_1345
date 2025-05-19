@@ -5,6 +5,14 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.util.EnumOS;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class Util {
 
    public static EnumOS func_110647_a() {

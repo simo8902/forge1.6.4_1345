@@ -10,6 +10,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class SlotCreativeInventory extends Slot {
 
    private final Slot field_75241_b;

@@ -53,34 +53,34 @@ class ThreadPollServers extends Thread
                                 this.pollServersServerData.pingToServer = -1L;
                                 this.pollServersServerData.serverMOTD = EnumChatFormatting.DARK_RED + "Can\'t resolve hostname";
                                 flag = false;
-                                break label184;
                             }
                             catch (SocketTimeoutException sockettimeoutexception)
                             {
                                 this.pollServersServerData.pingToServer = -1L;
                                 this.pollServersServerData.serverMOTD = EnumChatFormatting.DARK_RED + "Can\'t reach server";
                                 flag = false;
+                                break label187;
                             }
                             catch (ConnectException connectexception)
                             {
                                 this.pollServersServerData.pingToServer = -1L;
                                 this.pollServersServerData.serverMOTD = EnumChatFormatting.DARK_RED + "Can\'t reach server";
                                 flag = false;
-                                break label187;
+                                break label186;
                             }
                             catch (IOException ioexception)
                             {
                                 this.pollServersServerData.pingToServer = -1L;
                                 this.pollServersServerData.serverMOTD = EnumChatFormatting.DARK_RED + "Communication error";
                                 flag = false;
-                                break label186;
+                                break label185;
                             }
                             catch (Exception exception)
                             {
                                 this.pollServersServerData.pingToServer = -1L;
                                 this.pollServersServerData.serverMOTD = "ERROR: " + exception.getClass();
                                 flag = false;
-                                break label185;
+                                break label184;
                             }
                             finally
                             {

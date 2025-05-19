@@ -18,6 +18,14 @@ import net.minecraft.client.resources.data.MetadataSerializer;
 import net.minecraft.client.settings.GameSettings;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ResourcePackRepository {
 
    protected static final FileFilter field_110622_a = new ResourcePackRepositoryFilter();

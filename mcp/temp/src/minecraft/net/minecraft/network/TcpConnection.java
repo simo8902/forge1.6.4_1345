@@ -123,9 +123,9 @@ public class TcpConnection implements INetworkManager {
       boolean var1 = false;
 
       try {
-         int[] var10000;
-         int var10001;
          Packet var2;
+         int var10001;
+         int[] var10000;
          if(this.field_74468_e == 0 || !this.field_74487_p.isEmpty() && MinecraftServer.func_130071_aq() - ((Packet)this.field_74487_p.get(0)).field_73295_m >= (long)this.field_74468_e) {
             var2 = this.func_74460_a(false);
             if(var2 != null) {

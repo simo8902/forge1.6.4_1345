@@ -288,16 +288,16 @@ public class GuiAchievements extends GuiScreen
             float f1 = 0.6F - (float)(j2 + i3) / 25.0F * 0.3F;
             GL11.glColor4f(f1, f1, f1, 1.0F);
 
-            for (j3 = 0; j3 * 16 - k2 < 224; ++j3)
+            for (k3 = 0; k3 * 16 - k2 < 224; ++k3)
             {
-                random.setSeed((long)(1234 + i2 + j3));
+                random.setSeed((long)(1234 + i2 + k3));
                 random.nextInt();
-                k3 = random.nextInt(1 + j2 + i3) + (j2 + i3) / 2;
+                j3 = random.nextInt(1 + j2 + i3) + (j2 + i3) / 2;
                 Icon icon = Block.sand.getIcon(0, 0);
 
-                if (k3 <= 37 && j2 + i3 != 35)
+                if (j3 <= 37 && j2 + i3 != 35)
                 {
-                    if (k3 == 22)
+                    if (j3 == 22)
                     {
                         if (random.nextInt(2) == 0)
                         {
@@ -308,19 +308,19 @@ public class GuiAchievements extends GuiScreen
                             icon = Block.oreRedstone.getIcon(0, 0);
                         }
                     }
-                    else if (k3 == 10)
+                    else if (j3 == 10)
                     {
                         icon = Block.oreIron.getIcon(0, 0);
                     }
-                    else if (k3 == 8)
+                    else if (j3 == 8)
                     {
                         icon = Block.oreCoal.getIcon(0, 0);
                     }
-                    else if (k3 > 4)
+                    else if (j3 > 4)
                     {
                         icon = Block.stone.getIcon(0, 0);
                     }
-                    else if (k3 > 0)
+                    else if (j3 > 0)
                     {
                         icon = Block.dirt.getIcon(0, 0);
                     }
@@ -331,7 +331,7 @@ public class GuiAchievements extends GuiScreen
                 }
 
                 this.mc.getTextureManager().bindTexture(TextureMap.locationBlocksTexture);
-                this.drawTexturedModelRectFromIcon(k1 + j3 * 16 - k2, l1 + i3 * 16 - l2, icon, 16, 16);
+                this.drawTexturedModelRectFromIcon(k1 + k3 * 16 - k2, l1 + i3 * 16 - l2, icon, 16, 16);
             }
         }
 
@@ -349,8 +349,8 @@ public class GuiAchievements extends GuiScreen
 
             if (achievement.parentAchievement != null && achievementList.contains(achievement.parentAchievement))
             {
-                j3 = achievement.displayColumn * 24 - k + 11 + k1;
-                k3 = achievement.displayRow * 24 - l + 11 + l1;
+                k3 = achievement.displayColumn * 24 - k + 11 + k1;
+                j3 = achievement.displayRow * 24 - l + 11 + l1;
                 j4 = achievement.parentAchievement.displayColumn * 24 - k + 11 + k1;
                 l3 = achievement.parentAchievement.displayRow * 24 - l + 11 + l1;
                 boolean flag5 = this.statFileWriter.hasAchievementUnlocked(achievement);
@@ -367,8 +367,8 @@ public class GuiAchievements extends GuiScreen
                     k4 = 65280 + (i4 << 24);
                 }
 
-                this.drawHorizontalLine(j3, j4, k3, k4);
-                this.drawVerticalLine(j4, k3, l3, k4);
+                this.drawHorizontalLine(k3, j4, j3, k4);
+                this.drawVerticalLine(j4, j3, l3, k4);
             }
         }
 
@@ -381,9 +381,9 @@ public class GuiAchievements extends GuiScreen
         int l4;
         int i5;
 
-        for (j3 = 0; j3 < AchievementList.achievementList.size(); ++j3)
+        for (k3 = 0; k3 < achievementList.size(); ++k3)
         {
-            Achievement achievement2 = (Achievement)AchievementList.achievementList.get(j3);
+            Achievement achievement2 = (Achievement)achievementList.get(k3);
             j4 = achievement2.displayColumn * 24 - k;
             l3 = achievement2.displayRow * 24 - l;
 
@@ -408,16 +408,16 @@ public class GuiAchievements extends GuiScreen
                 }
 
                 this.mc.getTextureManager().bindTexture(achievementTextures);
-                l4 = k1 + j4;
-                i5 = l1 + l3;
+                i5 = k1 + j4;
+                l4 = l1 + l3;
 
                 if (achievement2.getSpecial())
                 {
-                    this.drawTexturedModalRect(l4 - 2, i5 - 2, 26, 202, 26, 26);
+                    this.drawTexturedModalRect(i5 - 2, l4 - 2, 26, 202, 26, 26);
                 }
                 else
                 {
-                    this.drawTexturedModalRect(l4 - 2, i5 - 2, 0, 202, 26, 26);
+                    this.drawTexturedModalRect(i5 - 2, l4 - 2, 0, 202, 26, 26);
                 }
 
                 if (!this.statFileWriter.canUnlockAchievement(achievement2))
@@ -429,7 +429,7 @@ public class GuiAchievements extends GuiScreen
 
                 GL11.glEnable(GL11.GL_LIGHTING);
                 GL11.glEnable(GL11.GL_CULL_FACE);
-                renderitem.renderItemAndEffectIntoGUI(this.mc.fontRenderer, this.mc.getTextureManager(), achievement2.theItemStack, l4 + 3, i5 + 3);
+                renderitem.renderItemAndEffectIntoGUI(this.mc.fontRenderer, this.mc.getTextureManager(), achievement2.theItemStack, i5 + 3, l4 + 3);
                 GL11.glDisable(GL11.GL_LIGHTING);
 
                 if (!this.statFileWriter.canUnlockAchievement(achievement2))
@@ -439,7 +439,7 @@ public class GuiAchievements extends GuiScreen
 
                 GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
 
-                if (par1 >= k1 && par2 >= l1 && par1 < k1 + 224 && par2 < l1 + 155 && par1 >= l4 && par1 <= l4 + 22 && par2 >= i5 && par2 <= i5 + 22)
+                if (par1 >= k1 && par2 >= l1 && par1 < k1 + 224 && par2 < l1 + 155 && par1 >= i5 && par1 <= i5 + 22 && par2 >= l4 && par2 <= l4 + 22)
                 {
                     achievement1 = achievement2;
                 }
@@ -467,29 +467,29 @@ public class GuiAchievements extends GuiScreen
 
             if (this.statFileWriter.canUnlockAchievement(achievement1))
             {
-                l4 = Math.max(this.fontRenderer.getStringWidth(s), 120);
-                i5 = this.fontRenderer.splitStringWidth(s1, l4);
+                i5 = Math.max(this.fontRenderer.getStringWidth(s), 120);
+                l4 = this.fontRenderer.splitStringWidth(s1, i5);
 
                 if (this.statFileWriter.hasAchievementUnlocked(achievement1))
                 {
-                    i5 += 12;
+                    l4 += 12;
                 }
 
-                this.drawGradientRect(j4 - 3, l3 - 3, j4 + l4 + 3, l3 + i5 + 3 + 12, -1073741824, -1073741824);
-                this.fontRenderer.drawSplitString(s1, j4, l3 + 12, l4, -6250336);
+                this.drawGradientRect(j4 - 3, l3 - 3, j4 + i5 + 3, l3 + l4 + 3 + 12, -1073741824, -1073741824);
+                this.fontRenderer.drawSplitString(s1, j4, l3 + 12, i5, -6250336);
 
                 if (this.statFileWriter.hasAchievementUnlocked(achievement1))
                 {
-                    this.fontRenderer.drawStringWithShadow(I18n.getString("achievement.taken"), j4, l3 + i5 + 4, -7302913);
+                    this.fontRenderer.drawStringWithShadow(I18n.getString("achievement.taken"), j4, l3 + l4 + 4, -7302913);
                 }
             }
             else
             {
-                l4 = Math.max(this.fontRenderer.getStringWidth(s), 120);
+                i5 = Math.max(this.fontRenderer.getStringWidth(s), 120);
                 String s2 = I18n.getStringParams("achievement.requires", new Object[] {I18n.getString(achievement1.parentAchievement.getName())});
-                i4 = this.fontRenderer.splitStringWidth(s2, l4);
-                this.drawGradientRect(j4 - 3, l3 - 3, j4 + l4 + 3, l3 + i4 + 12 + 3, -1073741824, -1073741824);
-                this.fontRenderer.drawSplitString(s2, j4, l3 + 12, l4, -9416624);
+                i4 = this.fontRenderer.splitStringWidth(s2, i5);
+                this.drawGradientRect(j4 - 3, l3 - 3, j4 + i5 + 3, l3 + i4 + 12 + 3, -1073741824, -1073741824);
+                this.fontRenderer.drawSplitString(s2, j4, l3 + 12, i5, -9416624);
             }
 
             this.fontRenderer.drawStringWithShadow(s, j4, l3, this.statFileWriter.canUnlockAchievement(achievement1) ? (achievement1.getSpecial() ? -128 : -1) : (achievement1.getSpecial() ? -8355776 : -8355712));

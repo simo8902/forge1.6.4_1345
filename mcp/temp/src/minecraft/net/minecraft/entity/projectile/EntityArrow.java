@@ -222,34 +222,34 @@ public class EntityArrow extends Entity implements IProjectile {
          }
 
          if(var4 != null && var4.field_72308_g != null && var4.field_72308_g instanceof EntityPlayer) {
-            EntityPlayer var20 = (EntityPlayer)var4.field_72308_g;
-            if(var20.field_71075_bZ.field_75102_a || this.field_70250_c instanceof EntityPlayer && !((EntityPlayer)this.field_70250_c).func_96122_a(var20)) {
+            EntityPlayer var21 = (EntityPlayer)var4.field_72308_g;
+            if(var21.field_71075_bZ.field_75102_a || this.field_70250_c instanceof EntityPlayer && !((EntityPlayer)this.field_70250_c).func_96122_a(var21)) {
                var4 = null;
             }
          }
 
-         float var21;
+         float var20;
          float var27;
          if(var4 != null) {
             if(var4.field_72308_g != null) {
-               var21 = MathHelper.func_76133_a(this.field_70159_w * this.field_70159_w + this.field_70181_x * this.field_70181_x + this.field_70179_y * this.field_70179_y);
-               int var22 = MathHelper.func_76143_f((double)var21 * this.field_70255_ao);
+               var20 = MathHelper.func_76133_a(this.field_70159_w * this.field_70159_w + this.field_70181_x * this.field_70181_x + this.field_70179_y * this.field_70179_y);
+               int var24 = MathHelper.func_76143_f((double)var20 * this.field_70255_ao);
                if(this.func_70241_g()) {
-                  var22 += this.field_70146_Z.nextInt(var22 / 2 + 2);
+                  var24 += this.field_70146_Z.nextInt(var24 / 2 + 2);
                }
 
-               DamageSource var23 = null;
+               DamageSource var22 = null;
                if(this.field_70250_c == null) {
-                  var23 = DamageSource.func_76353_a(this, this);
+                  var22 = DamageSource.func_76353_a(this, this);
                } else {
-                  var23 = DamageSource.func_76353_a(this, this.field_70250_c);
+                  var22 = DamageSource.func_76353_a(this, this.field_70250_c);
                }
 
                if(this.func_70027_ad() && !(var4.field_72308_g instanceof EntityEnderman)) {
                   var4.field_72308_g.func_70015_d(5);
                }
 
-               if(var4.field_72308_g.func_70097_a(var23, (float)var22)) {
+               if(var4.field_72308_g.func_70097_a(var22, (float)var24)) {
                   if(var4.field_72308_g instanceof EntityLivingBase) {
                      EntityLivingBase var25 = (EntityLivingBase)var4.field_72308_g;
                      if(!this.field_70170_p.field_72995_K) {
@@ -293,10 +293,10 @@ public class EntityArrow extends Entity implements IProjectile {
                this.field_70159_w = (double)((float)(var4.field_72307_f.field_72450_a - this.field_70165_t));
                this.field_70181_x = (double)((float)(var4.field_72307_f.field_72448_b - this.field_70163_u));
                this.field_70179_y = (double)((float)(var4.field_72307_f.field_72449_c - this.field_70161_v));
-               var21 = MathHelper.func_76133_a(this.field_70159_w * this.field_70159_w + this.field_70181_x * this.field_70181_x + this.field_70179_y * this.field_70179_y);
-               this.field_70165_t -= this.field_70159_w / (double)var21 * 0.05000000074505806D;
-               this.field_70163_u -= this.field_70181_x / (double)var21 * 0.05000000074505806D;
-               this.field_70161_v -= this.field_70179_y / (double)var21 * 0.05000000074505806D;
+               var20 = MathHelper.func_76133_a(this.field_70159_w * this.field_70159_w + this.field_70181_x * this.field_70181_x + this.field_70179_y * this.field_70179_y);
+               this.field_70165_t -= this.field_70159_w / (double)var20 * 0.05000000074505806D;
+               this.field_70163_u -= this.field_70181_x / (double)var20 * 0.05000000074505806D;
+               this.field_70161_v -= this.field_70179_y / (double)var20 * 0.05000000074505806D;
                this.func_85030_a("random.bowhit", 1.0F, 1.2F / (this.field_70146_Z.nextFloat() * 0.2F + 0.9F));
                this.field_70254_i = true;
                this.field_70249_b = 7;
@@ -316,10 +316,10 @@ public class EntityArrow extends Entity implements IProjectile {
          this.field_70165_t += this.field_70159_w;
          this.field_70163_u += this.field_70181_x;
          this.field_70161_v += this.field_70179_y;
-         var21 = MathHelper.func_76133_a(this.field_70159_w * this.field_70159_w + this.field_70179_y * this.field_70179_y);
+         var20 = MathHelper.func_76133_a(this.field_70159_w * this.field_70159_w + this.field_70179_y * this.field_70179_y);
          this.field_70177_z = (float)(Math.atan2(this.field_70159_w, this.field_70179_y) * 180.0D / 3.1415927410125732D);
 
-         for(this.field_70125_A = (float)(Math.atan2(this.field_70181_x, (double)var21) * 180.0D / 3.1415927410125732D); this.field_70125_A - this.field_70127_C < -180.0F; this.field_70127_C -= 360.0F) {
+         for(this.field_70125_A = (float)(Math.atan2(this.field_70181_x, (double)var20) * 180.0D / 3.1415927410125732D); this.field_70125_A - this.field_70127_C < -180.0F; this.field_70127_C -= 360.0F) {
             ;
          }
 
@@ -337,7 +337,7 @@ public class EntityArrow extends Entity implements IProjectile {
 
          this.field_70125_A = this.field_70127_C + (this.field_70125_A - this.field_70127_C) * 0.2F;
          this.field_70177_z = this.field_70126_B + (this.field_70177_z - this.field_70126_B) * 0.2F;
-         float var24 = 0.99F;
+         float var23 = 0.99F;
          var11 = 0.05F;
          if(this.func_70090_H()) {
             for(int var26 = 0; var26 < 4; ++var26) {
@@ -345,12 +345,12 @@ public class EntityArrow extends Entity implements IProjectile {
                this.field_70170_p.func_72869_a("bubble", this.field_70165_t - this.field_70159_w * (double)var27, this.field_70163_u - this.field_70181_x * (double)var27, this.field_70161_v - this.field_70179_y * (double)var27, this.field_70159_w, this.field_70181_x, this.field_70179_y);
             }
 
-            var24 = 0.8F;
+            var23 = 0.8F;
          }
 
-         this.field_70159_w *= (double)var24;
-         this.field_70181_x *= (double)var24;
-         this.field_70179_y *= (double)var24;
+         this.field_70159_w *= (double)var23;
+         this.field_70181_x *= (double)var23;
+         this.field_70179_y *= (double)var23;
          this.field_70181_x -= (double)var11;
          this.func_70107_b(this.field_70165_t, this.field_70163_u, this.field_70161_v);
          this.func_70017_D();

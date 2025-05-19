@@ -10,6 +10,15 @@ import sys
 import logging
 from optparse import OptionParser
 
+import os
+import glob
+
+# Add asm-all to classpath
+asm_path = glob.glob(os.path.join("jars", "libraries", "org", "ow2", "asm", "asm-all", "4.1", "asm-all-4.1.jar"))
+if asm_path:
+    os.environ["CLASSPATH"] = asm_path[0] + os.pathsep + os.environ.get("CLASSPATH", "")
+    print(">> Added ASM to CLASSPATH:", asm_path[0])
+
 from commands import Commands, CLIENT, SERVER, CalledProcessError
 from mcp import decompile_side, updatemd5_side
 import clientCopy

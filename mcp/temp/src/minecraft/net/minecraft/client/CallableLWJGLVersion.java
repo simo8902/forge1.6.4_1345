@@ -7,6 +7,14 @@ import net.minecraft.client.Minecraft;
 import org.lwjgl.Sys;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class CallableLWJGLVersion implements Callable {
 
    // $FF: synthetic field

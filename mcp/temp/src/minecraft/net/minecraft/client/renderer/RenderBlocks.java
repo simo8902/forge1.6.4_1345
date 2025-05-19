@@ -47,6 +47,14 @@ import net.minecraft.world.World;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderBlocks {
 
    public IBlockAccess field_78669_a;
@@ -1494,7 +1502,7 @@ public class RenderBlocks {
          var27[var42].field_72449_c += (double)p_78577_4_ + 0.5D;
       }
 
-      byte var64 = 5;
+      byte var65 = 5;
       byte var43 = 11;
       byte var44 = 3;
       byte var45 = 9;
@@ -1505,7 +1513,7 @@ public class RenderBlocks {
             var32 = var27[1];
             var33 = var27[2];
             var34 = var27[3];
-            var19 = (double)var18.func_94214_a((double)var64);
+            var19 = (double)var18.func_94214_a((double)var65);
             var21 = (double)var18.func_94207_b((double)var44);
             var23 = (double)var18.func_94214_a((double)var43);
             var25 = (double)var18.func_94207_b((double)var45);
@@ -1519,7 +1527,7 @@ public class RenderBlocks {
             var32 = var27[0];
             var33 = var27[4];
             var34 = var27[5];
-            var19 = (double)var18.func_94214_a((double)var64);
+            var19 = (double)var18.func_94214_a((double)var65);
             var21 = (double)var18.func_94207_b((double)var44);
             var23 = (double)var18.func_94214_a((double)var43);
             var25 = (double)var18.func_94207_b((double)(var44 + 2));
@@ -1547,7 +1555,7 @@ public class RenderBlocks {
       }
 
       if(var8) {
-         double var65 = var27[0].field_72448_b;
+         double var64 = var27[0].field_72448_b;
          float var48 = 0.03125F;
          float var49 = 0.5F - var48 / 2.0F;
          float var50 = var49 + var48;
@@ -1564,15 +1572,15 @@ public class RenderBlocks {
             var5.func_78374_a((double)((float)p_78577_2_ + var50), (double)p_78577_3_ + var60, (double)p_78577_4_ + 0.25D, var52, var58);
             var5.func_78374_a((double)((float)p_78577_2_ + var50), (double)p_78577_3_ + var60, (double)p_78577_4_, var56, var58);
             var5.func_78374_a((double)((float)p_78577_2_ + var49), (double)p_78577_3_ + var60, (double)p_78577_4_, var56, var54);
-            var5.func_78374_a((double)((float)p_78577_2_ + var49), var65, (double)p_78577_4_ + 0.5D, var52, var54);
-            var5.func_78374_a((double)((float)p_78577_2_ + var50), var65, (double)p_78577_4_ + 0.5D, var52, var58);
+            var5.func_78374_a((double)((float)p_78577_2_ + var49), var64, (double)p_78577_4_ + 0.5D, var52, var54);
+            var5.func_78374_a((double)((float)p_78577_2_ + var50), var64, (double)p_78577_4_ + 0.5D, var52, var58);
             var5.func_78374_a((double)((float)p_78577_2_ + var50), (double)p_78577_3_ + var60, (double)p_78577_4_ + 0.25D, var56, var58);
             var5.func_78374_a((double)((float)p_78577_2_ + var49), (double)p_78577_3_ + var60, (double)p_78577_4_ + 0.25D, var56, var54);
          } else if(var7 == 0) {
             var5.func_78374_a((double)((float)p_78577_2_ + var49), (double)p_78577_3_ + var60, (double)p_78577_4_ + 0.75D, var52, var54);
             var5.func_78374_a((double)((float)p_78577_2_ + var50), (double)p_78577_3_ + var60, (double)p_78577_4_ + 0.75D, var52, var58);
-            var5.func_78374_a((double)((float)p_78577_2_ + var50), var65, (double)p_78577_4_ + 0.5D, var56, var58);
-            var5.func_78374_a((double)((float)p_78577_2_ + var49), var65, (double)p_78577_4_ + 0.5D, var56, var54);
+            var5.func_78374_a((double)((float)p_78577_2_ + var50), var64, (double)p_78577_4_ + 0.5D, var56, var58);
+            var5.func_78374_a((double)((float)p_78577_2_ + var49), var64, (double)p_78577_4_ + 0.5D, var56, var54);
             var5.func_78374_a((double)((float)p_78577_2_ + var49), (double)p_78577_3_ + var60, (double)(p_78577_4_ + 1), var52, var54);
             var5.func_78374_a((double)((float)p_78577_2_ + var50), (double)p_78577_3_ + var60, (double)(p_78577_4_ + 1), var52, var58);
             var5.func_78374_a((double)((float)p_78577_2_ + var50), (double)p_78577_3_ + var60, (double)p_78577_4_ + 0.75D, var56, var58);
@@ -1583,14 +1591,14 @@ public class RenderBlocks {
             var5.func_78374_a((double)p_78577_2_ + 0.25D, (double)p_78577_3_ + var60, (double)((float)p_78577_4_ + var49), var56, var54);
             var5.func_78374_a((double)p_78577_2_, (double)p_78577_3_ + var60, (double)((float)p_78577_4_ + var49), var52, var54);
             var5.func_78374_a((double)p_78577_2_ + 0.25D, (double)p_78577_3_ + var60, (double)((float)p_78577_4_ + var50), var52, var58);
-            var5.func_78374_a((double)p_78577_2_ + 0.5D, var65, (double)((float)p_78577_4_ + var50), var56, var58);
-            var5.func_78374_a((double)p_78577_2_ + 0.5D, var65, (double)((float)p_78577_4_ + var49), var56, var54);
+            var5.func_78374_a((double)p_78577_2_ + 0.5D, var64, (double)((float)p_78577_4_ + var50), var56, var58);
+            var5.func_78374_a((double)p_78577_2_ + 0.5D, var64, (double)((float)p_78577_4_ + var49), var56, var54);
             var5.func_78374_a((double)p_78577_2_ + 0.25D, (double)p_78577_3_ + var60, (double)((float)p_78577_4_ + var49), var52, var54);
          } else {
-            var5.func_78374_a((double)p_78577_2_ + 0.5D, var65, (double)((float)p_78577_4_ + var50), var52, var58);
+            var5.func_78374_a((double)p_78577_2_ + 0.5D, var64, (double)((float)p_78577_4_ + var50), var52, var58);
             var5.func_78374_a((double)p_78577_2_ + 0.75D, (double)p_78577_3_ + var60, (double)((float)p_78577_4_ + var50), var56, var58);
             var5.func_78374_a((double)p_78577_2_ + 0.75D, (double)p_78577_3_ + var60, (double)((float)p_78577_4_ + var49), var56, var54);
-            var5.func_78374_a((double)p_78577_2_ + 0.5D, var65, (double)((float)p_78577_4_ + var49), var52, var54);
+            var5.func_78374_a((double)p_78577_2_ + 0.5D, var64, (double)((float)p_78577_4_ + var49), var52, var54);
             var5.func_78374_a((double)p_78577_2_ + 0.75D, (double)p_78577_3_ + var60, (double)((float)p_78577_4_ + var50), var52, var58);
             var5.func_78374_a((double)(p_78577_2_ + 1), (double)p_78577_3_ + var60, (double)((float)p_78577_4_ + var50), var56, var58);
             var5.func_78374_a((double)(p_78577_2_ + 1), (double)p_78577_3_ + var60, (double)((float)p_78577_4_ + var49), var56, var54);
@@ -1738,13 +1746,13 @@ public class RenderBlocks {
       double var13 = (double)var8.func_94212_f();
       double var15 = (double)var8.func_94210_h();
       float var17 = 1.4F;
+      double var32;
       double var20;
       double var22;
       double var24;
       double var26;
       double var28;
       double var30;
-      double var32;
       if(!this.field_78669_a.func_72797_t(p_78590_2_, p_78590_3_ - 1, p_78590_4_) && !Block.field_72067_ar.func_72256_d(this.field_78669_a, p_78590_2_, p_78590_3_ - 1, p_78590_4_)) {
          float var36 = 0.2F;
          float var19 = 0.0625F;
@@ -3023,9 +3031,9 @@ public class RenderBlocks {
          double var28 = (double)this.func_78596_a(p_78621_2_ + 1, p_78621_3_, p_78621_4_ + 1, var22);
          double var30 = (double)this.func_78596_a(p_78621_2_ + 1, p_78621_3_, p_78621_4_, var22);
          double var32 = 0.0010000000474974513D;
-         float var52;
-         float var53;
          float var54;
+         float var53;
+         float var52;
          if(this.field_78661_f || var10) {
             var13 = true;
             Icon var34 = this.func_94165_a(p_78621_1_, 1, var23);
@@ -3038,14 +3046,14 @@ public class RenderBlocks {
             var26 -= var32;
             var28 -= var32;
             var30 -= var32;
-            double var36;
             double var38;
-            double var40;
+            double var36;
             double var42;
-            double var44;
+            double var40;
             double var46;
-            double var48;
+            double var44;
             double var50;
+            double var48;
             if(var35 < -999.0F) {
                var36 = (double)var34.func_94214_a(0.0D);
                var44 = (double)var34.func_94207_b(0.0D);
@@ -3080,54 +3088,54 @@ public class RenderBlocks {
 
          if(this.field_78661_f || var11) {
             var5.func_78380_c(p_78621_1_.func_71874_e(this.field_78669_a, p_78621_2_, p_78621_3_ - 1, p_78621_4_));
-            float var57 = 1.0F;
-            var5.func_78386_a(var14 * var57, var14 * var57, var14 * var57);
+            float var58 = 1.0F;
+            var5.func_78386_a(var14 * var58, var14 * var58, var14 * var58);
             this.func_78613_a(p_78621_1_, (double)p_78621_2_, (double)p_78621_3_ + var32, (double)p_78621_4_, this.func_94173_a(p_78621_1_, 0));
             var13 = true;
          }
 
-         for(int var59 = 0; var59 < 4; ++var59) {
-            int var58 = p_78621_2_;
+         for(int var57 = 0; var57 < 4; ++var57) {
+            int var59 = p_78621_2_;
             int var37 = p_78621_4_;
-            if(var59 == 0) {
+            if(var57 == 0) {
                var37 = p_78621_4_ - 1;
             }
 
-            if(var59 == 1) {
+            if(var57 == 1) {
                ++var37;
             }
 
-            if(var59 == 2) {
-               var58 = p_78621_2_ - 1;
+            if(var57 == 2) {
+               var59 = p_78621_2_ - 1;
             }
 
-            if(var59 == 3) {
-               ++var58;
+            if(var57 == 3) {
+               ++var59;
             }
 
-            Icon var60 = this.func_94165_a(p_78621_1_, var59 + 2, var23);
-            if(this.field_78661_f || var12[var59]) {
+            Icon var60 = this.func_94165_a(p_78621_1_, var57 + 2, var23);
+            if(this.field_78661_f || var12[var57]) {
                double var39;
-               double var41;
                double var43;
-               double var45;
+               double var41;
                double var47;
+               double var45;
                double var49;
-               if(var59 == 0) {
+               if(var57 == 0) {
                   var39 = var24;
                   var41 = var30;
                   var43 = (double)p_78621_2_;
                   var47 = (double)(p_78621_2_ + 1);
                   var45 = (double)p_78621_4_ + var32;
                   var49 = (double)p_78621_4_ + var32;
-               } else if(var59 == 1) {
+               } else if(var57 == 1) {
                   var39 = var28;
                   var41 = var26;
                   var43 = (double)(p_78621_2_ + 1);
                   var47 = (double)p_78621_2_;
                   var45 = (double)(p_78621_4_ + 1) - var32;
                   var49 = (double)(p_78621_4_ + 1) - var32;
-               } else if(var59 == 2) {
+               } else if(var57 == 2) {
                   var39 = var26;
                   var41 = var24;
                   var43 = (double)p_78621_2_ + var32;
@@ -3149,9 +3157,9 @@ public class RenderBlocks {
                var53 = var60.func_94207_b((1.0D - var39) * 16.0D * 0.5D);
                var54 = var60.func_94207_b((1.0D - var41) * 16.0D * 0.5D);
                float var55 = var60.func_94207_b(8.0D);
-               var5.func_78380_c(p_78621_1_.func_71874_e(this.field_78669_a, var58, p_78621_3_, var37));
+               var5.func_78380_c(p_78621_1_.func_71874_e(this.field_78669_a, var59, p_78621_3_, var37));
                float var56 = 1.0F;
-               if(var59 < 2) {
+               if(var57 < 2) {
                   var56 *= var16;
                } else {
                   var56 *= var17;
@@ -3334,12 +3342,12 @@ public class RenderBlocks {
          var13 = false;
       }
 
-      boolean var16;
       boolean var17;
-      boolean var18;
+      boolean var16;
       boolean var19;
-      int var20;
+      boolean var18;
       float var21;
+      int var20;
       if(this.field_78661_f || p_78578_1_.func_71877_c(this.field_78669_a, p_78578_2_, p_78578_3_ - 1, p_78578_4_, 0)) {
          if(this.field_83027_i <= 0.0D) {
             --p_78578_3_;
@@ -3981,12 +3989,12 @@ public class RenderBlocks {
          var13 = false;
       }
 
-      boolean var16;
       boolean var17;
-      boolean var18;
+      boolean var16;
       boolean var19;
-      int var20;
+      boolean var18;
       float var21;
+      int var20;
       if(this.field_78661_f || p_102027_1_.func_71877_c(this.field_78669_a, p_102027_2_, p_102027_3_ - 1, p_102027_4_, 0)) {
          if(this.field_83027_i <= 0.0D) {
             --p_102027_3_;
@@ -4166,14 +4174,14 @@ public class RenderBlocks {
          var8 = true;
       }
 
-      float var22;
       float var23;
-      float var24;
+      float var22;
       float var25;
-      int var26;
+      float var24;
       int var27;
-      int var28;
+      int var26;
       int var29;
+      int var28;
       Icon var30;
       if(this.field_78661_f || p_102027_1_.func_71877_c(this.field_78669_a, p_102027_2_, p_102027_3_, p_102027_4_ - 1, 2)) {
          if(this.field_83025_k <= 0.0D) {
@@ -5185,8 +5193,8 @@ public class RenderBlocks {
 
       this.field_78661_f = true;
       float var15;
-      float var16;
       float var17;
+      float var16;
       float var18;
       if(var8 != 3 && var8 != 1) {
          var15 = 0.0F;
@@ -5220,8 +5228,8 @@ public class RenderBlocks {
          }
 
          float var19;
-         float var20;
          float var21;
+         float var20;
          if(var8 == 3) {
             var15 = 0.0F;
             var16 = 0.125F;

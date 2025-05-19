@@ -5,6 +5,14 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.util.Icon;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class IconFlipped implements Icon {
 
    private final Icon field_96454_a;

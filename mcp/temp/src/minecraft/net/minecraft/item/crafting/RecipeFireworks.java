@@ -57,13 +57,13 @@ public class RecipeFireworks implements IRecipe {
 
       var7 += var5 + var8;
       if(var4 <= 3 && var3 <= 1) {
-         NBTTagCompound var16;
-         NBTTagCompound var19;
+         NBTTagCompound var15;
+         NBTTagCompound var18;
          if(var4 >= 1 && var3 == 1 && var7 == 0) {
             this.field_92102_a = new ItemStack(Item.field_92104_bU);
             if(var6 > 0) {
-               var16 = new NBTTagCompound();
-               var19 = new NBTTagCompound("Fireworks");
+               var15 = new NBTTagCompound();
+               var18 = new NBTTagCompound("Fireworks");
                NBTTagList var25 = new NBTTagList("Explosions");
 
                for(int var22 = 0; var22 < p_77569_1_.func_70302_i_(); ++var22) {
@@ -73,18 +73,18 @@ public class RecipeFireworks implements IRecipe {
                   }
                }
 
-               var19.func_74782_a("Explosions", var25);
-               var19.func_74774_a("Flight", (byte)var4);
-               var16.func_74782_a("Fireworks", var19);
-               this.field_92102_a.func_77982_d(var16);
+               var18.func_74782_a("Explosions", var25);
+               var18.func_74774_a("Flight", (byte)var4);
+               var15.func_74782_a("Fireworks", var18);
+               this.field_92102_a.func_77982_d(var15);
             }
 
             return true;
          } else if(var4 == 1 && var3 == 0 && var6 == 0 && var5 > 0 && var8 <= 1) {
             this.field_92102_a = new ItemStack(Item.field_92106_bV);
-            var16 = new NBTTagCompound();
-            var19 = new NBTTagCompound("Explosion");
-            byte var23 = 0;
+            var15 = new NBTTagCompound();
+            var18 = new NBTTagCompound("Explosion");
+            byte var21 = 0;
             ArrayList var12 = new ArrayList();
 
             for(int var13 = 0; var13 < p_77569_1_.func_70302_i_(); ++var13) {
@@ -93,17 +93,17 @@ public class RecipeFireworks implements IRecipe {
                   if(var14.field_77993_c == Item.field_77756_aW.field_77779_bT) {
                      var12.add(Integer.valueOf(ItemDye.field_77859_b[var14.func_77960_j()]));
                   } else if(var14.field_77993_c == Item.field_77751_aT.field_77779_bT) {
-                     var19.func_74757_a("Flicker", true);
+                     var18.func_74757_a("Flicker", true);
                   } else if(var14.field_77993_c == Item.field_77702_n.field_77779_bT) {
-                     var19.func_74757_a("Trail", true);
+                     var18.func_74757_a("Trail", true);
                   } else if(var14.field_77993_c == Item.field_77811_bE.field_77779_bT) {
-                     var23 = 1;
+                     var21 = 1;
                   } else if(var14.field_77993_c == Item.field_77676_L.field_77779_bT) {
-                     var23 = 4;
+                     var21 = 4;
                   } else if(var14.field_77993_c == Item.field_77733_bq.field_77779_bT) {
-                     var23 = 2;
+                     var21 = 2;
                   } else if(var14.field_77993_c == Item.field_82799_bQ.field_77779_bT) {
-                     var23 = 3;
+                     var21 = 3;
                   }
                }
             }
@@ -114,19 +114,19 @@ public class RecipeFireworks implements IRecipe {
                var24[var27] = ((Integer)var12.get(var27)).intValue();
             }
 
-            var19.func_74783_a("Colors", var24);
-            var19.func_74774_a("Type", var23);
-            var16.func_74782_a("Explosion", var19);
-            this.field_92102_a.func_77982_d(var16);
+            var18.func_74783_a("Colors", var24);
+            var18.func_74774_a("Type", var21);
+            var15.func_74782_a("Explosion", var18);
+            this.field_92102_a.func_77982_d(var15);
             return true;
          } else if(var4 == 0 && var3 == 0 && var6 == 1 && var5 > 0 && var5 == var7) {
-            ArrayList var15 = new ArrayList();
+            ArrayList var16 = new ArrayList();
 
-            for(int var17 = 0; var17 < p_77569_1_.func_70302_i_(); ++var17) {
-               ItemStack var11 = p_77569_1_.func_70301_a(var17);
+            for(int var20 = 0; var20 < p_77569_1_.func_70302_i_(); ++var20) {
+               ItemStack var11 = p_77569_1_.func_70301_a(var20);
                if(var11 != null) {
                   if(var11.field_77993_c == Item.field_77756_aW.field_77779_bT) {
-                     var15.add(Integer.valueOf(ItemDye.field_77859_b[var11.func_77960_j()]));
+                     var16.add(Integer.valueOf(ItemDye.field_77859_b[var11.func_77960_j()]));
                   } else if(var11.field_77993_c == Item.field_92106_bV.field_77779_bT) {
                      this.field_92102_a = var11.func_77946_l();
                      this.field_92102_a.field_77994_a = 1;
@@ -134,18 +134,18 @@ public class RecipeFireworks implements IRecipe {
                }
             }
 
-            int[] var18 = new int[var15.size()];
+            int[] var17 = new int[var16.size()];
 
-            for(int var20 = 0; var20 < var18.length; ++var20) {
-               var18[var20] = ((Integer)var15.get(var20)).intValue();
+            for(int var19 = 0; var19 < var17.length; ++var19) {
+               var17[var19] = ((Integer)var16.get(var19)).intValue();
             }
 
             if(this.field_92102_a != null && this.field_92102_a.func_77942_o()) {
-               NBTTagCompound var21 = this.field_92102_a.func_77978_p().func_74775_l("Explosion");
-               if(var21 == null) {
+               NBTTagCompound var23 = this.field_92102_a.func_77978_p().func_74775_l("Explosion");
+               if(var23 == null) {
                   return false;
                } else {
-                  var21.func_74783_a("FadeColors", var18);
+                  var23.func_74783_a("FadeColors", var17);
                   return true;
                }
             } else {

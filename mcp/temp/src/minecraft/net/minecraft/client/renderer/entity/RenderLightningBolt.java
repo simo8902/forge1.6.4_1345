@@ -11,6 +11,14 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderLightningBolt extends Render {
 
    public void func_77028_a(EntityLightningBolt p_77028_1_, double p_77028_2_, double p_77028_4_, double p_77028_6_, float p_77028_8_, float p_77028_9_) {

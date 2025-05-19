@@ -11,6 +11,14 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.network.packet.Packet2ClientProtocol;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class ThreadOnlineConnect extends Thread {
 
    // $FF: synthetic field

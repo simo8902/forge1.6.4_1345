@@ -307,20 +307,20 @@ public class WorldServer extends World {
          var9 = var19.length;
 
          for(var10 = 0; var10 < var9; ++var10) {
-            ExtendedBlockStorage var20 = var19[var10];
-            if(var20 != null && var20.func_76675_b()) {
-               for(int var21 = 0; var21 < 3; ++var21) {
+            ExtendedBlockStorage var21 = var19[var10];
+            if(var21 != null && var21.func_76675_b()) {
+               for(int var20 = 0; var20 < 3; ++var20) {
                   this.field_73005_l = this.field_73005_l * 3 + 1013904223;
                   var13 = this.field_73005_l >> 2;
                   int var14 = var13 & 15;
                   int var15 = var13 >> 8 & 15;
                   int var16 = var13 >> 16 & 15;
-                  int var17 = var20.func_76656_a(var14, var16, var15);
+                  int var17 = var21.func_76656_a(var14, var16, var15);
                   ++var2;
                   Block var18 = Block.field_71973_m[var17];
                   if(var18 != null && var18.func_71881_r()) {
                      ++var1;
-                     var18.func_71847_b(this, var14 + var5, var16 + var20.func_76662_d(), var15 + var6, this.field_73012_v);
+                     var18.func_71847_b(this, var14 + var5, var16 + var21.func_76662_d(), var15 + var6, this.field_73012_v);
                   }
                }
             }

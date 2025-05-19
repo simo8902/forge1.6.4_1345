@@ -12,6 +12,14 @@ import net.minecraft.client.settings.EnumOptions;
 import net.minecraft.client.settings.GameSettings;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiVideoSettings extends GuiScreen {
 
    private GuiScreen field_74105_b;

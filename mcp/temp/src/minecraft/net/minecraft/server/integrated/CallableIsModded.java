@@ -8,6 +8,14 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.server.integrated.IntegratedServer;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class CallableIsModded implements Callable {
 
    // $FF: synthetic field

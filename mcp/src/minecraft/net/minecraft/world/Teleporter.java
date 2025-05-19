@@ -274,8 +274,8 @@ public class Teleporter
         int l1 = this.random.nextInt(4);
         int i2;
         double d1;
-        int j2;
         double d2;
+        int j2;
         int k2;
         int l2;
         int i3;
@@ -306,28 +306,28 @@ public class Teleporter
                             --k2;
                         }
 
-                        for (l2 = l1; l2 < l1 + 4; ++l2)
+                        for (i3 = l1; i3 < l1 + 4; ++i3)
                         {
-                            i3 = l2 % 2;
-                            j3 = 1 - i3;
+                            l2 = i3 % 2;
+                            k3 = 1 - l2;
 
-                            if (l2 % 4 >= 2)
+                            if (i3 % 4 >= 2)
                             {
-                                i3 = -i3;
-                                j3 = -j3;
+                                l2 = -l2;
+                                k3 = -k3;
                             }
 
-                            for (k3 = 0; k3 < 3; ++k3)
+                            for (j3 = 0; j3 < 3; ++j3)
                             {
-                                for (l3 = 0; l3 < 4; ++l3)
+                                for (i4 = 0; i4 < 4; ++i4)
                                 {
-                                    for (i4 = -1; i4 < 4; ++i4)
+                                    for (l3 = -1; l3 < 4; ++l3)
                                     {
-                                        j4 = i2 + (l3 - 1) * i3 + k3 * j3;
-                                        k4 = k2 + i4;
-                                        int l4 = j2 + (l3 - 1) * j3 - k3 * i3;
+                                        k4 = i2 + (i4 - 1) * l2 + j3 * k3;
+                                        j4 = k2 + l3;
+                                        int l4 = j2 + (i4 - 1) * k3 - j3 * l2;
 
-                                        if (i4 < 0 && !this.worldServerInstance.getBlockMaterial(j4, k4, l4).isSolid() || i4 >= 0 && !this.worldServerInstance.isAirBlock(j4, k4, l4))
+                                        if (l3 < 0 && !this.worldServerInstance.getBlockMaterial(k4, j4, l4).isSolid() || l3 >= 0 && !this.worldServerInstance.isAirBlock(k4, j4, l4))
                                         {
                                             continue label274;
                                         }
@@ -335,16 +335,16 @@ public class Teleporter
                                 }
                             }
 
-                            d3 = (double)k2 + 0.5D - par1Entity.posY;
-                            d4 = d1 * d1 + d3 * d3 + d2 * d2;
+                            d4 = (double)k2 + 0.5D - par1Entity.posY;
+                            d3 = d1 * d1 + d4 * d4 + d2 * d2;
 
-                            if (d0 < 0.0D || d4 < d0)
+                            if (d0 < 0.0D || d3 < d0)
                             {
-                                d0 = d4;
+                                d0 = d3;
                                 l = i2;
                                 i1 = k2;
                                 j1 = j2;
-                                k1 = l2 % 4;
+                                k1 = i3 % 4;
                             }
                         }
                     }
@@ -372,36 +372,36 @@ public class Teleporter
                                 --k2;
                             }
 
-                            for (l2 = l1; l2 < l1 + 2; ++l2)
+                            for (i3 = l1; i3 < l1 + 2; ++i3)
                             {
-                                i3 = l2 % 2;
-                                j3 = 1 - i3;
+                                l2 = i3 % 2;
+                                k3 = 1 - l2;
 
-                                for (k3 = 0; k3 < 4; ++k3)
+                                for (j3 = 0; j3 < 4; ++j3)
                                 {
-                                    for (l3 = -1; l3 < 4; ++l3)
+                                    for (i4 = -1; i4 < 4; ++i4)
                                     {
-                                        i4 = i2 + (k3 - 1) * i3;
-                                        j4 = k2 + l3;
-                                        k4 = j2 + (k3 - 1) * j3;
+                                        l3 = i2 + (j3 - 1) * l2;
+                                        k4 = k2 + i4;
+                                        j4 = j2 + (j3 - 1) * k3;
 
-                                        if (l3 < 0 && !this.worldServerInstance.getBlockMaterial(i4, j4, k4).isSolid() || l3 >= 0 && !this.worldServerInstance.isAirBlock(i4, j4, k4))
+                                        if (i4 < 0 && !this.worldServerInstance.getBlockMaterial(l3, k4, j4).isSolid() || i4 >= 0 && !this.worldServerInstance.isAirBlock(l3, k4, j4))
                                         {
                                             continue label222;
                                         }
                                     }
                                 }
 
-                                d3 = (double)k2 + 0.5D - par1Entity.posY;
-                                d4 = d1 * d1 + d3 * d3 + d2 * d2;
+                                d4 = (double)k2 + 0.5D - par1Entity.posY;
+                                d3 = d1 * d1 + d4 * d4 + d2 * d2;
 
-                                if (d0 < 0.0D || d4 < d0)
+                                if (d0 < 0.0D || d3 < d0)
                                 {
-                                    d0 = d4;
+                                    d0 = d3;
                                     l = i2;
                                     i1 = k2;
                                     j1 = j2;
-                                    k1 = l2 % 2;
+                                    k1 = i3 % 2;
                                 }
                             }
                         }
@@ -440,15 +440,15 @@ public class Teleporter
 
             for (k2 = -1; k2 <= 1; ++k2)
             {
-                for (l2 = 1; l2 < 3; ++l2)
+                for (i3 = 1; i3 < 3; ++i3)
                 {
-                    for (i3 = -1; i3 < 3; ++i3)
+                    for (l2 = -1; l2 < 3; ++l2)
                     {
-                        j3 = i5 + (l2 - 1) * k5 + k2 * l5;
-                        k3 = j5 + i3;
-                        l3 = j2 + (l2 - 1) * l5 - k2 * k5;
-                        flag = i3 < 0;
-                        this.worldServerInstance.setBlock(j3, k3, l3, flag ? Block.obsidian.blockID : 0);
+                        k3 = i5 + (i3 - 1) * k5 + k2 * l5;
+                        j3 = j5 + l2;
+                        i4 = j2 + (i3 - 1) * l5 - k2 * k5;
+                        flag = l2 < 0;
+                        this.worldServerInstance.setBlock(k3, j3, i4, flag ? Block.obsidian.blockID : 0);
                     }
                 }
             }
@@ -456,26 +456,26 @@ public class Teleporter
 
         for (k2 = 0; k2 < 4; ++k2)
         {
-            for (l2 = 0; l2 < 4; ++l2)
+            for (i3 = 0; i3 < 4; ++i3)
             {
-                for (i3 = -1; i3 < 4; ++i3)
+                for (l2 = -1; l2 < 4; ++l2)
                 {
-                    j3 = i5 + (l2 - 1) * k5;
-                    k3 = j5 + i3;
-                    l3 = j2 + (l2 - 1) * l5;
-                    flag = l2 == 0 || l2 == 3 || i3 == -1 || i3 == 3;
-                    this.worldServerInstance.setBlock(j3, k3, l3, flag ? Block.obsidian.blockID : Block.portal.blockID, 0, 2);
+                    k3 = i5 + (i3 - 1) * k5;
+                    j3 = j5 + l2;
+                    i4 = j2 + (i3 - 1) * l5;
+                    flag = i3 == 0 || i3 == 3 || l2 == -1 || l2 == 3;
+                    this.worldServerInstance.setBlock(k3, j3, i4, flag ? Block.obsidian.blockID : Block.portal.blockID, 0, 2);
                 }
             }
 
-            for (l2 = 0; l2 < 4; ++l2)
+            for (i3 = 0; i3 < 4; ++i3)
             {
-                for (i3 = -1; i3 < 4; ++i3)
+                for (l2 = -1; l2 < 4; ++l2)
                 {
-                    j3 = i5 + (l2 - 1) * k5;
-                    k3 = j5 + i3;
-                    l3 = j2 + (l2 - 1) * l5;
-                    this.worldServerInstance.notifyBlocksOfNeighborChange(j3, k3, l3, this.worldServerInstance.getBlockId(j3, k3, l3));
+                    k3 = i5 + (i3 - 1) * k5;
+                    j3 = j5 + l2;
+                    i4 = j2 + (i3 - 1) * l5;
+                    this.worldServerInstance.notifyBlocksOfNeighborChange(k3, j3, i4, this.worldServerInstance.getBlockId(k3, j3, i4));
                 }
             }
         }

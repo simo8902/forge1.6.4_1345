@@ -433,34 +433,34 @@ public final class ItemStack {
          }
 
          if(this.field_77990_d.func_74764_b("display")) {
-            NBTTagCompound var16 = this.field_77990_d.func_74775_l("display");
-            if(var16.func_74764_b("color")) {
+            NBTTagCompound var17 = this.field_77990_d.func_74775_l("display");
+            if(var17.func_74764_b("color")) {
                if(p_82840_2_) {
-                  var3.add("Color: #" + Integer.toHexString(var16.func_74762_e("color")).toUpperCase());
+                  var3.add("Color: #" + Integer.toHexString(var17.func_74762_e("color")).toUpperCase());
                } else {
                   var3.add(EnumChatFormatting.ITALIC + StatCollector.func_74838_a("item.dyed"));
                }
             }
 
-            if(var16.func_74764_b("Lore")) {
-               NBTTagList var18 = var16.func_74761_m("Lore");
-               if(var18.func_74745_c() > 0) {
-                  for(int var20 = 0; var20 < var18.func_74745_c(); ++var20) {
-                     var3.add(EnumChatFormatting.DARK_PURPLE + "" + EnumChatFormatting.ITALIC + ((NBTTagString)var18.func_74743_b(var20)).field_74751_a);
+            if(var17.func_74764_b("Lore")) {
+               NBTTagList var19 = var17.func_74761_m("Lore");
+               if(var19.func_74745_c() > 0) {
+                  for(int var20 = 0; var20 < var19.func_74745_c(); ++var20) {
+                     var3.add(EnumChatFormatting.DARK_PURPLE + "" + EnumChatFormatting.ITALIC + ((NBTTagString)var19.func_74743_b(var20)).field_74751_a);
                   }
                }
             }
          }
       }
 
-      Multimap var15 = this.func_111283_C();
-      if(!var15.isEmpty()) {
+      Multimap var16 = this.func_111283_C();
+      if(!var16.isEmpty()) {
          var3.add("");
-         Iterator var17 = var15.entries().iterator();
+         Iterator var15 = var16.entries().iterator();
 
-         while(var17.hasNext()) {
-            Entry var19 = (Entry)var17.next();
-            AttributeModifier var21 = (AttributeModifier)var19.getValue();
+         while(var15.hasNext()) {
+            Entry var18 = (Entry)var15.next();
+            AttributeModifier var21 = (AttributeModifier)var18.getValue();
             double var10 = var21.func_111164_d();
             double var12;
             if(var21.func_111169_c() != 1 && var21.func_111169_c() != 2) {
@@ -470,10 +470,10 @@ public final class ItemStack {
             }
 
             if(var10 > 0.0D) {
-               var3.add(EnumChatFormatting.BLUE + StatCollector.func_74837_a("attribute.modifier.plus." + var21.func_111169_c(), new Object[]{field_111284_a.format(var12), StatCollector.func_74838_a("attribute.name." + (String)var19.getKey())}));
+               var3.add(EnumChatFormatting.BLUE + StatCollector.func_74837_a("attribute.modifier.plus." + var21.func_111169_c(), new Object[]{field_111284_a.format(var12), StatCollector.func_74838_a("attribute.name." + (String)var18.getKey())}));
             } else if(var10 < 0.0D) {
                var12 *= -1.0D;
-               var3.add(EnumChatFormatting.RED + StatCollector.func_74837_a("attribute.modifier.take." + var21.func_111169_c(), new Object[]{field_111284_a.format(var12), StatCollector.func_74838_a("attribute.name." + (String)var19.getKey())}));
+               var3.add(EnumChatFormatting.RED + StatCollector.func_74837_a("attribute.modifier.take." + var21.func_111169_c(), new Object[]{field_111284_a.format(var12), StatCollector.func_74838_a("attribute.name." + (String)var18.getKey())}));
             }
          }
       }

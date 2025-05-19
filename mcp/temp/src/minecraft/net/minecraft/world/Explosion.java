@@ -113,13 +113,13 @@ public class Explosion {
             var15 = var32.field_70165_t - this.field_77284_b;
             var17 = var32.field_70163_u + (double)var32.func_70047_e() - this.field_77285_c;
             var19 = var32.field_70161_v - this.field_77282_d;
-            double var33 = (double)MathHelper.func_76133_a(var15 * var15 + var17 * var17 + var19 * var19);
-            if(var33 != 0.0D) {
-               var15 /= var33;
-               var17 /= var33;
-               var19 /= var33;
-               double var34 = (double)this.field_77287_j.func_72842_a(var31, var32.field_70121_D);
-               double var35 = (1.0D - var13) * var34;
+            double var34 = (double)MathHelper.func_76133_a(var15 * var15 + var17 * var17 + var19 * var19);
+            if(var34 != 0.0D) {
+               var15 /= var34;
+               var17 /= var34;
+               var19 /= var34;
+               double var33 = (double)this.field_77287_j.func_72842_a(var31, var32.field_70121_D);
+               double var35 = (1.0D - var13) * var33;
                var32.func_70097_a(DamageSource.func_94539_a(this), (float)((int)((var35 * var35 + var35) / 2.0D * 8.0D * (double)this.field_77280_f + 1.0D)));
                double var36 = EnchantmentProtection.func_92092_a(var32, var35);
                var32.field_70159_w += var15 * var36;
@@ -179,13 +179,13 @@ public class Explosion {
             }
 
             if(var7 > 0) {
-               Block var24 = Block.field_71973_m[var7];
-               if(var24.func_85103_a(this)) {
-                  var24.func_71914_a(this.field_77287_j, var4, var5, var6, this.field_77287_j.func_72805_g(var4, var5, var6), 1.0F / this.field_77280_f, 0);
+               Block var25 = Block.field_71973_m[var7];
+               if(var25.func_85103_a(this)) {
+                  var25.func_71914_a(this.field_77287_j, var4, var5, var6, this.field_77287_j.func_72805_g(var4, var5, var6), 1.0F / this.field_77280_f, 0);
                }
 
                this.field_77287_j.func_72832_d(var4, var5, var6, 0, 0, 3);
-               var24.func_71867_k(this.field_77287_j, var4, var5, var6, this);
+               var25.func_71867_k(this.field_77287_j, var4, var5, var6, this);
             }
          }
       }
@@ -199,8 +199,8 @@ public class Explosion {
             var5 = var3.field_76928_b;
             var6 = var3.field_76929_c;
             var7 = this.field_77287_j.func_72798_a(var4, var5, var6);
-            int var25 = this.field_77287_j.func_72798_a(var4, var5 - 1, var6);
-            if(var7 == 0 && Block.field_71970_n[var25] && this.field_77290_i.nextInt(3) == 0) {
+            int var24 = this.field_77287_j.func_72798_a(var4, var5 - 1, var6);
+            if(var7 == 0 && Block.field_71970_n[var24] && this.field_77290_i.nextInt(3) == 0) {
                this.field_77287_j.func_94575_c(var4, var5, var6, Block.field_72067_ar.field_71990_ca);
             }
          }

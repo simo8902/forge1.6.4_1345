@@ -160,8 +160,8 @@ public abstract class MapGenStructure extends MapGenBase
         ChunkPosition chunkposition1;
         int l1;
         int i2;
-        int j2;
         double d1;
+        int j2;
 
         while (iterator.hasNext())
         {
@@ -171,10 +171,10 @@ public abstract class MapGenStructure extends MapGenBase
             {
                 StructureComponent structurecomponent = (StructureComponent)structurestart.getComponents().get(0);
                 chunkposition1 = structurecomponent.getCenter();
-                l1 = chunkposition1.x - par2;
-                i2 = chunkposition1.y - par3;
+                i2 = chunkposition1.x - par2;
+                l1 = chunkposition1.y - par3;
                 j2 = chunkposition1.z - par4;
-                d1 = (double)(l1 * l1 + i2 * i2 + j2 * j2);
+                d1 = (double)(i2 * i2 + l1 * l1 + j2 * j2);
 
                 if (d1 < d0)
                 {
@@ -200,10 +200,10 @@ public abstract class MapGenStructure extends MapGenBase
                 while (iterator1.hasNext())
                 {
                     chunkposition1 = (ChunkPosition)iterator1.next();
-                    l1 = chunkposition1.x - par2;
-                    i2 = chunkposition1.y - par3;
+                    i2 = chunkposition1.x - par2;
+                    l1 = chunkposition1.y - par3;
                     j2 = chunkposition1.z - par4;
-                    d1 = (double)(l1 * l1 + i2 * i2 + j2 * j2);
+                    d1 = (double)(i2 * i2 + l1 * l1 + j2 * j2);
 
                     if (d1 < d0)
                     {

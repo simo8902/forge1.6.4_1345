@@ -14,6 +14,14 @@ import net.minecraft.tileentity.TileEntityCommandBlock;
 import org.lwjgl.input.Keyboard;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiCommandBlock extends GuiScreen {
 
    private GuiTextField field_82318_a;

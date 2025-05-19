@@ -15,6 +15,14 @@ import net.minecraft.world.storage.MapData;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class MapItemRenderer {
 
    private static final ResourceLocation field_111277_a = new ResourceLocation("textures/map/map_icons.png");
@@ -78,24 +86,24 @@ public class MapItemRenderer {
       GL11.glEnable(3008);
       GL11.glDisable(3042);
       p_78319_2_.func_110577_a(field_111277_a);
-      int var19 = 0;
+      int var20 = 0;
 
-      for(Iterator var20 = p_78319_3_.field_76203_h.values().iterator(); var20.hasNext(); ++var19) {
-         MapCoord var21 = (MapCoord)var20.next();
+      for(Iterator var19 = p_78319_3_.field_76203_h.values().iterator(); var19.hasNext(); ++var20) {
+         MapCoord var22 = (MapCoord)var19.next();
          GL11.glPushMatrix();
-         GL11.glTranslatef((float)var15 + (float)var21.field_76214_b / 2.0F + 64.0F, (float)var16 + (float)var21.field_76215_c / 2.0F + 64.0F, -0.02F);
-         GL11.glRotatef((float)(var21.field_76212_d * 360) / 16.0F, 0.0F, 0.0F, 1.0F);
+         GL11.glTranslatef((float)var15 + (float)var22.field_76214_b / 2.0F + 64.0F, (float)var16 + (float)var22.field_76215_c / 2.0F + 64.0F, -0.02F);
+         GL11.glRotatef((float)(var22.field_76212_d * 360) / 16.0F, 0.0F, 0.0F, 1.0F);
          GL11.glScalef(4.0F, 4.0F, 3.0F);
          GL11.glTranslatef(-0.125F, 0.125F, 0.0F);
-         float var22 = (float)(var21.field_76216_a % 4 + 0) / 4.0F;
-         float var12 = (float)(var21.field_76216_a / 4 + 0) / 4.0F;
-         float var13 = (float)(var21.field_76216_a % 4 + 1) / 4.0F;
-         float var14 = (float)(var21.field_76216_a / 4 + 1) / 4.0F;
+         float var21 = (float)(var22.field_76216_a % 4 + 0) / 4.0F;
+         float var12 = (float)(var22.field_76216_a / 4 + 0) / 4.0F;
+         float var13 = (float)(var22.field_76216_a % 4 + 1) / 4.0F;
+         float var14 = (float)(var22.field_76216_a / 4 + 1) / 4.0F;
          var17.func_78382_b();
-         var17.func_78374_a(-1.0D, 1.0D, (double)((float)var19 * 0.001F), (double)var22, (double)var12);
-         var17.func_78374_a(1.0D, 1.0D, (double)((float)var19 * 0.001F), (double)var13, (double)var12);
-         var17.func_78374_a(1.0D, -1.0D, (double)((float)var19 * 0.001F), (double)var13, (double)var14);
-         var17.func_78374_a(-1.0D, -1.0D, (double)((float)var19 * 0.001F), (double)var22, (double)var14);
+         var17.func_78374_a(-1.0D, 1.0D, (double)((float)var20 * 0.001F), (double)var21, (double)var12);
+         var17.func_78374_a(1.0D, 1.0D, (double)((float)var20 * 0.001F), (double)var13, (double)var12);
+         var17.func_78374_a(1.0D, -1.0D, (double)((float)var20 * 0.001F), (double)var13, (double)var14);
+         var17.func_78374_a(-1.0D, -1.0D, (double)((float)var20 * 0.001F), (double)var21, (double)var14);
          var17.func_78381_a();
          GL11.glPopMatrix();
       }

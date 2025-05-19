@@ -54,8 +54,8 @@ public class WorldGenTaiga2 extends WorldGenerator {
                var13 = 1;
                byte var22 = 0;
 
-               int var16;
                int var17;
+               int var16;
                for(var15 = 0; var15 <= var8; ++var15) {
                   var16 = p_76484_4_ + var6 - var15;
 

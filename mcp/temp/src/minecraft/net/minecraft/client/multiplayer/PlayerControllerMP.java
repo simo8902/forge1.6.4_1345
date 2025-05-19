@@ -25,6 +25,14 @@ import net.minecraft.world.EnumGameType;
 import net.minecraft.world.World;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class PlayerControllerMP {
 
    private final Minecraft field_78776_a;

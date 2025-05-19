@@ -66,14 +66,14 @@ public class NoiseGeneratorPerlin extends NoiseGenerator
     {
         int l;
         int i1;
-        int j1;
         double d7;
         double d8;
-        int k1;
         double d9;
+        int j1;
+        double d10;
+        int k1;
         int l1;
         int i2;
-        double d10;
         int j2;
 
         if (par9 == 1)
@@ -101,36 +101,36 @@ public class NoiseGeneratorPerlin extends NoiseGenerator
                 d7 -= (double)l2;
                 d8 = d7 * d7 * d7 * (d7 * (d7 * 6.0D - 15.0D) + 10.0D);
 
-                for (k1 = 0; k1 < par10; ++k1)
+                for (j1 = 0; j1 < par10; ++j1)
                 {
-                    d9 = par6 + (double)k1 * par15 + this.zCoord;
-                    l1 = (int)d9;
+                    d9 = par6 + (double)j1 * par15 + this.zCoord;
+                    k1 = (int)d9;
 
-                    if (d9 < (double)l1)
+                    if (d9 < (double)k1)
                     {
-                        --l1;
+                        --k1;
                     }
 
-                    i2 = l1 & 255;
-                    d9 -= (double)l1;
+                    l1 = k1 & 255;
+                    d9 -= (double)k1;
                     d10 = d9 * d9 * d9 * (d9 * (d9 * 6.0D - 15.0D) + 10.0D);
-                    i1 = this.permutations[i3] + 0;
-                    int j3 = this.permutations[i1] + i2;
+                    l = this.permutations[i3] + 0;
+                    int j3 = this.permutations[l] + l1;
                     int k3 = this.permutations[i3 + 1] + 0;
-                    j1 = this.permutations[k3] + i2;
-                    d11 = this.lerp(d8, this.func_76309_a(this.permutations[j3], d7, d9), this.grad(this.permutations[j1], d7 - 1.0D, 0.0D, d9));
-                    d12 = this.lerp(d8, this.grad(this.permutations[j3 + 1], d7, 0.0D, d9 - 1.0D), this.grad(this.permutations[j1 + 1], d7 - 1.0D, 0.0D, d9 - 1.0D));
+                    i1 = this.permutations[k3] + l1;
+                    d11 = this.lerp(d8, this.func_76309_a(this.permutations[j3], d7, d9), this.grad(this.permutations[i1], d7 - 1.0D, 0.0D, d9));
+                    d12 = this.lerp(d8, this.grad(this.permutations[j3 + 1], d7, 0.0D, d9 - 1.0D), this.grad(this.permutations[i1 + 1], d7 - 1.0D, 0.0D, d9 - 1.0D));
                     double d14 = this.lerp(d10, d11, d12);
-                    l = j2++;
-                    par1ArrayOfDouble[l] += d14 * d13;
+                    i2 = j2++;
+                    par1ArrayOfDouble[i2] += d14 * d13;
                 }
             }
         }
         else
         {
-            i1 = 0;
+            l = 0;
             double d15 = 1.0D / par17;
-            j1 = -1;
+            i1 = -1;
             boolean flag4 = false;
             boolean flag5 = false;
             boolean flag6 = false;
@@ -142,18 +142,18 @@ public class NoiseGeneratorPerlin extends NoiseGenerator
             double d17 = 0.0D;
             d8 = 0.0D;
 
-            for (k1 = 0; k1 < par8; ++k1)
+            for (j1 = 0; j1 < par8; ++j1)
             {
-                d9 = par2 + (double)k1 * par11 + this.xCoord;
-                l1 = (int)d9;
+                d9 = par2 + (double)j1 * par11 + this.xCoord;
+                k1 = (int)d9;
 
-                if (d9 < (double)l1)
+                if (d9 < (double)k1)
                 {
-                    --l1;
+                    --k1;
                 }
 
-                i2 = l1 & 255;
-                d9 -= (double)l1;
+                l1 = k1 & 255;
+                d9 -= (double)k1;
                 d10 = d9 * d9 * d9 * (d9 * (d9 * 6.0D - 15.0D) + 10.0D);
 
                 for (int l3 = 0; l3 < par10; ++l3)
@@ -184,13 +184,13 @@ public class NoiseGeneratorPerlin extends NoiseGenerator
                         d20 -= (double)l4;
                         double d21 = d20 * d20 * d20 * (d20 * (d20 * 6.0D - 15.0D) + 10.0D);
 
-                        if (k4 == 0 || i5 != j1)
+                        if (k4 == 0 || i5 != i1)
                         {
-                            j1 = i5;
-                            int j5 = this.permutations[i2] + i5;
+                            i1 = i5;
+                            int j5 = this.permutations[l1] + i5;
                             int k5 = this.permutations[j5] + j4;
                             int l5 = this.permutations[j5 + 1] + j4;
-                            int i6 = this.permutations[i2 + 1] + i5;
+                            int i6 = this.permutations[l1 + 1] + i5;
                             j2 = this.permutations[i6] + j4;
                             int j6 = this.permutations[i6 + 1] + j4;
                             d16 = this.lerp(d10, this.grad(this.permutations[k5], d9, d20, d18), this.grad(this.permutations[j2], d9 - 1.0D, d20, d18));
@@ -202,8 +202,8 @@ public class NoiseGeneratorPerlin extends NoiseGenerator
                         double d22 = this.lerp(d21, d16, d7);
                         double d23 = this.lerp(d21, d17, d8);
                         double d24 = this.lerp(d19, d22, d23);
-                        l = i1++;
-                        par1ArrayOfDouble[l] += d24 * d15;
+                        i2 = l++;
+                        par1ArrayOfDouble[i2] += d24 * d15;
                     }
                 }
             }

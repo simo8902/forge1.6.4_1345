@@ -5,6 +5,14 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.util.Vec3;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class PositionTextureVertex {
 
    public Vec3 field_78243_a;

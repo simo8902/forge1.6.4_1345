@@ -51,6 +51,14 @@ import org.lwjgl.opengl.GLContext;
 import org.lwjgl.util.glu.Project;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntityRenderer {
 
    private static final ResourceLocation field_110924_q = new ResourceLocation("textures/environment/rain.png");
@@ -1096,8 +1104,8 @@ public class EntityRenderer {
                   if(var27 != var28) {
                      this.field_78537_ab.setSeed((long)(var21 * var21 * 3121 + var21 * 45238971 ^ var20 * var20 * 418711 + var20 * 13761));
                      float var31 = var25.func_76743_j();
-                     float var32;
                      double var35;
+                     float var32;
                      if(var42.func_72959_q().func_76939_a(var31, var26) >= 0.15F) {
                         if(var18 != 0) {
                            if(var18 >= 0) {

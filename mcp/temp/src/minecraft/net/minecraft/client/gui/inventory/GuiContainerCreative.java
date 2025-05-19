@@ -36,6 +36,14 @@ import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiContainerCreative extends InventoryEffectRenderer {
 
    private static final ResourceLocation field_110424_t = new ResourceLocation("textures/gui/container/creative_inventory/tabs.png");
@@ -261,9 +269,9 @@ public class GuiContainerCreative extends InventoryEffectRenderer {
       var3 = var8.length;
 
       for(var4 = 0; var4 < var3; ++var4) {
-         Enchantment var11 = var8[var4];
-         if(var11 != null && var11.field_77351_y != null) {
-            Item.field_92105_bW.func_92113_a(var11, var1.field_75185_e);
+         Enchantment var12 = var8[var4];
+         if(var12 != null && var12.field_77351_y != null) {
+            Item.field_92105_bW.func_92113_a(var12, var1.field_75185_e);
          }
       }
 
@@ -271,9 +279,9 @@ public class GuiContainerCreative extends InventoryEffectRenderer {
       String var10 = this.field_74237_t.func_73781_b().toLowerCase();
 
       while(var9.hasNext()) {
-         ItemStack var12 = (ItemStack)var9.next();
+         ItemStack var11 = (ItemStack)var9.next();
          boolean var13 = false;
-         Iterator var6 = var12.func_82840_a(this.field_73882_e.field_71439_g, this.field_73882_e.field_71474_y.field_82882_x).iterator();
+         Iterator var6 = var11.func_82840_a(this.field_73882_e.field_71439_g, this.field_73882_e.field_71474_y.field_82882_x).iterator();
 
          while(true) {
             if(var6.hasNext()) {

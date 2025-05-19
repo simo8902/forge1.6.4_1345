@@ -11,6 +11,14 @@ import net.minecraft.client.gui.GuiSlotOnlineServerList;
 import net.minecraft.client.mco.McoServer;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class ThreadConnectToOnlineServer extends Thread {
 
    // $FF: synthetic field
@@ -55,22 +63,22 @@ class ThreadConnectToOnlineServer extends Thread {
                      } catch (UnknownHostException var35) {
                         this.field_96597_a.field_96412_m = -1L;
                         var27 = false;
+                        break label195;
                      } catch (SocketTimeoutException var36) {
                         this.field_96597_a.field_96412_m = -1L;
                         var27 = false;
-                        break label198;
+                        break label196;
                      } catch (ConnectException var37) {
                         this.field_96597_a.field_96412_m = -1L;
                         var27 = false;
-                        break label197;
+                        break label198;
                      } catch (IOException var38) {
                         this.field_96597_a.field_96412_m = -1L;
                         var27 = false;
-                        break label196;
                      } catch (Exception var39) {
                         this.field_96597_a.field_96412_m = -1L;
                         var27 = false;
-                        break label195;
+                        break label197;
                      } finally {
                         if(var27) {
                            synchronized(GuiScreenOnlineServers.func_140029_i()) {

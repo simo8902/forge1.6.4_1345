@@ -9,6 +9,14 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.World;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EntityFireworkSparkFX extends EntityFX {
 
    private int field_92049_a = 160;

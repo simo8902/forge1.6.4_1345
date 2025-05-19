@@ -206,9 +206,9 @@ public class AnvilChunkLoader implements IChunkLoader, IThreadedFileIO {
          var18 = p_75820_1_.field_76645_j[var8].iterator();
 
          while(var18.hasNext()) {
-            Entity var20 = (Entity)var18.next();
+            Entity var21 = (Entity)var18.next();
             var11 = new NBTTagCompound();
-            if(var20.func_70039_c(var11)) {
+            if(var21.func_70039_c(var11)) {
                p_75820_1_.field_76644_m = true;
                var16.func_74742_a(var11);
             }
@@ -220,18 +220,18 @@ public class AnvilChunkLoader implements IChunkLoader, IThreadedFileIO {
       var18 = p_75820_1_.field_76648_i.values().iterator();
 
       while(var18.hasNext()) {
-         TileEntity var21 = (TileEntity)var18.next();
+         TileEntity var22 = (TileEntity)var18.next();
          var11 = new NBTTagCompound();
-         var21.func_70310_b(var11);
+         var22.func_70310_b(var11);
          var17.func_74742_a(var11);
       }
 
       p_75820_3_.func_74782_a("TileEntities", var17);
-      List var19 = p_75820_2_.func_72920_a(p_75820_1_, false);
-      if(var19 != null) {
-         long var22 = p_75820_2_.func_82737_E();
+      List var20 = p_75820_2_.func_72920_a(p_75820_1_, false);
+      if(var20 != null) {
+         long var19 = p_75820_2_.func_82737_E();
          NBTTagList var12 = new NBTTagList();
-         Iterator var13 = var19.iterator();
+         Iterator var13 = var20.iterator();
 
          while(var13.hasNext()) {
             NextTickListEntry var14 = (NextTickListEntry)var13.next();
@@ -240,7 +240,7 @@ public class AnvilChunkLoader implements IChunkLoader, IThreadedFileIO {
             var15.func_74768_a("x", var14.field_77183_a);
             var15.func_74768_a("y", var14.field_77181_b);
             var15.func_74768_a("z", var14.field_77182_c);
-            var15.func_74768_a("t", (int)(var14.field_77180_e - var22));
+            var15.func_74768_a("t", (int)(var14.field_77180_e - var19));
             var15.func_74768_a("p", var14.field_82754_f);
             var12.func_74742_a(var15);
          }
@@ -286,17 +286,17 @@ public class AnvilChunkLoader implements IChunkLoader, IThreadedFileIO {
          var5.func_76616_a(p_75823_2_.func_74770_j("Biomes"));
       }
 
-      NBTTagList var17 = p_75823_2_.func_74761_m("Entities");
-      if(var17 != null) {
-         for(int var18 = 0; var18 < var17.func_74745_c(); ++var18) {
-            NBTTagCompound var20 = (NBTTagCompound)var17.func_74743_b(var18);
-            Entity var22 = EntityList.func_75615_a(var20, p_75823_1_);
+      NBTTagList var18 = p_75823_2_.func_74761_m("Entities");
+      if(var18 != null) {
+         for(int var17 = 0; var17 < var18.func_74745_c(); ++var17) {
+            NBTTagCompound var19 = (NBTTagCompound)var18.func_74743_b(var17);
+            Entity var25 = EntityList.func_75615_a(var19, p_75823_1_);
             var5.field_76644_m = true;
-            if(var22 != null) {
-               var5.func_76612_a(var22);
-               Entity var14 = var22;
+            if(var25 != null) {
+               var5.func_76612_a(var25);
+               Entity var14 = var25;
 
-               for(NBTTagCompound var15 = var20; var15.func_74764_b("Riding"); var15 = var15.func_74775_l("Riding")) {
+               for(NBTTagCompound var15 = var19; var15.func_74764_b("Riding"); var15 = var15.func_74775_l("Riding")) {
                   Entity var16 = EntityList.func_75615_a(var15.func_74775_l("Riding"), p_75823_1_);
                   if(var16 != null) {
                      var5.func_76612_a(var16);
@@ -309,23 +309,23 @@ public class AnvilChunkLoader implements IChunkLoader, IThreadedFileIO {
          }
       }
 
-      NBTTagList var19 = p_75823_2_.func_74761_m("TileEntities");
-      if(var19 != null) {
-         for(int var21 = 0; var21 < var19.func_74745_c(); ++var21) {
-            NBTTagCompound var24 = (NBTTagCompound)var19.func_74743_b(var21);
-            TileEntity var26 = TileEntity.func_70317_c(var24);
-            if(var26 != null) {
-               var5.func_76620_a(var26);
+      NBTTagList var21 = p_75823_2_.func_74761_m("TileEntities");
+      if(var21 != null) {
+         for(int var20 = 0; var20 < var21.func_74745_c(); ++var20) {
+            NBTTagCompound var22 = (NBTTagCompound)var21.func_74743_b(var20);
+            TileEntity var27 = TileEntity.func_70317_c(var22);
+            if(var27 != null) {
+               var5.func_76620_a(var27);
             }
          }
       }
 
       if(p_75823_2_.func_74764_b("TileTicks")) {
-         NBTTagList var23 = p_75823_2_.func_74761_m("TileTicks");
-         if(var23 != null) {
-            for(int var25 = 0; var25 < var23.func_74745_c(); ++var25) {
-               NBTTagCompound var27 = (NBTTagCompound)var23.func_74743_b(var25);
-               p_75823_1_.func_72892_b(var27.func_74762_e("x"), var27.func_74762_e("y"), var27.func_74762_e("z"), var27.func_74762_e("i"), var27.func_74762_e("t"), var27.func_74762_e("p"));
+         NBTTagList var24 = p_75823_2_.func_74761_m("TileTicks");
+         if(var24 != null) {
+            for(int var23 = 0; var23 < var24.func_74745_c(); ++var23) {
+               NBTTagCompound var26 = (NBTTagCompound)var24.func_74743_b(var23);
+               p_75823_1_.func_72892_b(var26.func_74762_e("x"), var26.func_74762_e("y"), var26.func_74762_e("z"), var26.func_74762_e("i"), var26.func_74762_e("t"), var26.func_74762_e("p"));
             }
          }
       }

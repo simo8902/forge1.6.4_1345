@@ -7,6 +7,14 @@ import net.minecraft.client.renderer.RenderGlobal;
 import net.minecraft.crash.CrashReportCategory;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class CallableParticlePositionInfo implements Callable {
 
    // $FF: synthetic field

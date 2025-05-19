@@ -137,11 +137,11 @@ public class ItemMap extends ItemMapBase {
                                        var36 = var33 - 1;
                                        boolean var37 = false;
 
-                                       int var41;
+                                       int var43;
                                        do {
-                                          var41 = var25.func_76610_a(var31 + var26, var36--, var32 + var27);
+                                          var43 = var25.func_76610_a(var31 + var26, var36--, var32 + var27);
                                           ++var28;
-                                       } while(var36 > 0 && var41 != 0 && Block.field_71973_m[var41].field_72018_cp.func_76224_d());
+                                       } while(var36 > 0 && var43 != 0 && Block.field_71973_m[var43].field_72018_cp.func_76224_d());
                                     }
                                  }
 
@@ -162,28 +162,28 @@ public class ItemMap extends ItemMapBase {
                            }
                         }
 
-                        double var39 = (var29 - var16) * 4.0D / (double)(var6 + 4) + ((double)(var13 + var18 & 1) - 0.5D) * 0.4D;
-                        byte var40 = 1;
-                        if(var39 > 0.6D) {
-                           var40 = 2;
+                        double var40 = (var29 - var16) * 4.0D / (double)(var6 + 4) + ((double)(var13 + var18 & 1) - 0.5D) * 0.4D;
+                        byte var39 = 1;
+                        if(var40 > 0.6D) {
+                           var39 = 2;
                         }
 
-                        if(var39 < -0.6D) {
-                           var40 = 0;
+                        if(var40 < -0.6D) {
+                           var39 = 0;
                         }
 
                         var36 = 0;
                         if(var32 > 0) {
                            MapColor var42 = Block.field_71973_m[var32].field_72018_cp.field_76234_F;
                            if(var42 == MapColor.field_76282_n) {
-                              var39 = (double)var28 * 0.1D + (double)(var13 + var18 & 1) * 0.2D;
-                              var40 = 1;
-                              if(var39 < 0.5D) {
-                                 var40 = 2;
+                              var40 = (double)var28 * 0.1D + (double)(var13 + var18 & 1) * 0.2D;
+                              var39 = 1;
+                              if(var40 < 0.5D) {
+                                 var39 = 2;
                               }
 
-                              if(var39 > 0.9D) {
-                                 var40 = 0;
+                              if(var40 > 0.9D) {
+                                 var39 = 0;
                               }
                            }
 
@@ -192,9 +192,9 @@ public class ItemMap extends ItemMapBase {
 
                         var16 = var29;
                         if(var18 >= 0 && var19 * var19 + var20 * var20 < var11 * var11 && (!var21 || (var13 + var18 & 1) != 0)) {
-                           byte var43 = p_77872_3_.field_76198_e[var13 + var18 * var4];
-                           byte var38 = (byte)(var36 * 4 + var40);
-                           if(var43 != var38) {
+                           byte var41 = p_77872_3_.field_76198_e[var13 + var18 * var4];
+                           byte var38 = (byte)(var36 * 4 + var39);
+                           if(var41 != var38) {
                               if(var14 > var18) {
                                  var14 = var18;
                               }

@@ -5,18 +5,22 @@
 
 > ⚠️ MD5/SHA1 verification checks are **skipped**
 
-## 📁 Mod Structure
+## 📁 Mod Structure before obf
 ```
 helloworld.jar
-├── mcmod.info
-└── com/
-    └── example/
-        └── helloworld/
-            └── HelloWorldMod.class
+└──META-INF/
+   └── mcmod.info/
+└── src/
+    └── minecract/
+		└── net/
+			└── minecract/
+				└── src/
+					└── testmod/
+						└── TestMod.java
 ```
 		
 **after all is done, compile the .jar**
-```jar cf helloworld.jar com mcmod.info```
+```jar cf helloworld.jar -C reobf/minecraft . -C META-INF mcmod.info```
 			
 ## 🛠️ Setup & Compilation
 
@@ -28,9 +32,9 @@ install.cmd
 After writing the mod:
 ```
 recompile.bat
-the data is located within: mcp/src/minecraft/com...
+the data is located within: mcp/src/minecraft/net...
 reobfuscate.bat
-the data is located within: mcp/reobf/minecraft/com...
+the data is located within: mcp/reobf/minecraft/net...
 ```
 
 ![Created](https://img.shields.io/badge/Created-18_May_2025-blue)

@@ -6,6 +6,14 @@ import net.minecraft.client.mco.ExceptionMcoHttp;
 import net.minecraft.client.mco.Request;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RequestGet extends Request {
 
    public RequestGet(String p_i1141_1_, int p_i1141_2_, int p_i1141_3_) {

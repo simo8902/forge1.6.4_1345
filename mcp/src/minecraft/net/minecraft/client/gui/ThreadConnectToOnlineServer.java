@@ -67,30 +67,30 @@ class ThreadConnectToOnlineServer extends Thread
                             {
                                 this.field_96597_a.field_96412_m = -1L;
                                 flag = false;
+                                break label195;
                             }
                             catch (SocketTimeoutException sockettimeoutexception)
                             {
                                 this.field_96597_a.field_96412_m = -1L;
                                 flag = false;
-                                break label198;
+                                break label196;
                             }
                             catch (ConnectException connectexception)
                             {
                                 this.field_96597_a.field_96412_m = -1L;
                                 flag = false;
-                                break label197;
+                                break label198;
                             }
                             catch (IOException ioexception)
                             {
                                 this.field_96597_a.field_96412_m = -1L;
                                 flag = false;
-                                break label196;
                             }
                             catch (Exception exception)
                             {
                                 this.field_96597_a.field_96412_m = -1L;
                                 flag = false;
-                                break label195;
+                                break label197;
                             }
                             finally
                             {

@@ -18,6 +18,14 @@ import net.minecraft.client.resources.data.AnimationMetadataSection;
 import net.minecraft.client.resources.data.BaseMetadataSectionSerializer;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class AnimationMetadataSectionSerializer extends BaseMetadataSectionSerializer implements JsonSerializer {
 
    public AnimationMetadataSection func_110493_a(JsonElement p_110493_1_, Type p_110493_2_, JsonDeserializationContext p_110493_3_) {

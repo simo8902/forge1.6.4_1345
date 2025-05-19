@@ -22,6 +22,14 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderItem extends Render {
 
    private static final ResourceLocation field_110798_h = new ResourceLocation("textures/misc/enchanted_item_glint.png");
@@ -64,12 +72,12 @@ public class RenderItem extends Render {
 
          GL11.glTranslatef((float)p_77014_2_, (float)p_77014_4_ + var11, (float)p_77014_6_);
          GL11.glEnable('\u803a');
-         float var18;
          float var19;
+         float var18;
          float var20;
          int var26;
          if(var10.func_94608_d() == 0 && var10.field_77993_c < Block.field_71973_m.length && Block.field_71973_m[var10.field_77993_c] != null && RenderBlocks.func_78597_b(Block.field_71973_m[var10.field_77993_c].func_71857_b())) {
-            Block var22 = Block.field_71973_m[var10.field_77993_c];
+            Block var21 = Block.field_71973_m[var10.field_77993_c];
             GL11.glRotatef(var12, 0.0F, 1.0F, 0.0F);
             if(field_82407_g) {
                GL11.glScalef(1.25F, 1.25F, 1.25F);
@@ -77,25 +85,25 @@ public class RenderItem extends Render {
                GL11.glRotatef(-90.0F, 0.0F, 1.0F, 0.0F);
             }
 
-            float var24 = 0.25F;
-            int var25 = var22.func_71857_b();
-            if(var25 == 1 || var25 == 19 || var25 == 12 || var25 == 2) {
-               var24 = 0.5F;
+            float var25 = 0.25F;
+            int var24 = var21.func_71857_b();
+            if(var24 == 1 || var24 == 19 || var24 == 12 || var24 == 2) {
+               var25 = 0.5F;
             }
 
-            GL11.glScalef(var24, var24, var24);
+            GL11.glScalef(var25, var25, var25);
 
             for(var26 = 0; var26 < var13; ++var26) {
                GL11.glPushMatrix();
                if(var26 > 0) {
-                  var18 = (this.field_77025_h.nextFloat() * 2.0F - 1.0F) * 0.2F / var24;
-                  var19 = (this.field_77025_h.nextFloat() * 2.0F - 1.0F) * 0.2F / var24;
-                  var20 = (this.field_77025_h.nextFloat() * 2.0F - 1.0F) * 0.2F / var24;
+                  var18 = (this.field_77025_h.nextFloat() * 2.0F - 1.0F) * 0.2F / var25;
+                  var19 = (this.field_77025_h.nextFloat() * 2.0F - 1.0F) * 0.2F / var25;
+                  var20 = (this.field_77025_h.nextFloat() * 2.0F - 1.0F) * 0.2F / var25;
                   GL11.glTranslatef(var18, var19, var20);
                }
 
                var18 = 1.0F;
-               this.field_77022_g.func_78600_a(var22, var10.func_77960_j(), var18);
+               this.field_77022_g.func_78600_a(var21, var10.func_77960_j(), var18);
                GL11.glPopMatrix();
             }
          } else {
@@ -108,19 +116,19 @@ public class RenderItem extends Render {
                   GL11.glScalef(0.5F, 0.5F, 0.5F);
                }
 
-               for(int var21 = 0; var21 <= 1; ++var21) {
+               for(int var23 = 0; var23 <= 1; ++var23) {
                   this.field_77025_h.setSeed(187L);
-                  Icon var23 = var10.func_77973_b().func_77618_c(var10.func_77960_j(), var21);
+                  Icon var22 = var10.func_77973_b().func_77618_c(var10.func_77960_j(), var23);
                   var16 = 1.0F;
                   if(this.field_77024_a) {
-                     var26 = Item.field_77698_e[var10.field_77993_c].func_82790_a(var10, var21);
+                     var26 = Item.field_77698_e[var10.field_77993_c].func_82790_a(var10, var23);
                      var18 = (float)(var26 >> 16 & 255) / 255.0F;
                      var19 = (float)(var26 >> 8 & 255) / 255.0F;
                      var20 = (float)(var26 & 255) / 255.0F;
                      GL11.glColor4f(var18 * var16, var19 * var16, var20 * var16, 1.0F);
-                     this.func_77020_a(p_77014_1_, var23, var13, p_77014_9_, var18 * var16, var19 * var16, var20 * var16);
+                     this.func_77020_a(p_77014_1_, var22, var13, p_77014_9_, var18 * var16, var19 * var16, var20 * var16);
                   } else {
-                     this.func_77020_a(p_77014_1_, var23, var13, p_77014_9_, 1.0F, 1.0F, 1.0F);
+                     this.func_77020_a(p_77014_1_, var22, var13, p_77014_9_, 1.0F, 1.0F, 1.0F);
                   }
                }
             } else {
@@ -242,9 +250,9 @@ public class RenderItem extends Render {
             GL11.glPushMatrix();
             if(var27 > 0) {
                var17 = (this.field_77025_h.nextFloat() * 2.0F - 1.0F) * 0.3F;
-               float var28 = (this.field_77025_h.nextFloat() * 2.0F - 1.0F) * 0.3F;
                float var29 = (this.field_77025_h.nextFloat() * 2.0F - 1.0F) * 0.3F;
-               GL11.glTranslatef(var17, var28, var29);
+               float var28 = (this.field_77025_h.nextFloat() * 2.0F - 1.0F) * 0.3F;
+               GL11.glTranslatef(var17, var29, var28);
             }
 
             if(!field_82407_g) {
@@ -269,13 +277,13 @@ public class RenderItem extends Render {
       int var6 = p_77015_3_.field_77993_c;
       int var7 = p_77015_3_.func_77960_j();
       Object var8 = p_77015_3_.func_77954_c();
+      float var17;
+      int var18;
       float var12;
       float var13;
-      int var17;
-      float var18;
       if(p_77015_3_.func_94608_d() == 0 && RenderBlocks.func_78597_b(Block.field_71973_m[var6].func_71857_b())) {
          p_77015_2_.func_110577_a(TextureMap.field_110575_b);
-         Block var16 = Block.field_71973_m[var6];
+         Block var15 = Block.field_71973_m[var6];
          GL11.glPushMatrix();
          GL11.glTranslatef((float)(p_77015_4_ - 2), (float)(p_77015_5_ + 3), -3.0F + this.field_77023_b);
          GL11.glScalef(10.0F, 10.0F, 10.0F);
@@ -283,17 +291,17 @@ public class RenderItem extends Render {
          GL11.glScalef(1.0F, 1.0F, -1.0F);
          GL11.glRotatef(210.0F, 1.0F, 0.0F, 0.0F);
          GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
-         var17 = Item.field_77698_e[var6].func_82790_a(p_77015_3_, 0);
-         var18 = (float)(var17 >> 16 & 255) / 255.0F;
-         var12 = (float)(var17 >> 8 & 255) / 255.0F;
-         var13 = (float)(var17 & 255) / 255.0F;
+         var18 = Item.field_77698_e[var6].func_82790_a(p_77015_3_, 0);
+         var17 = (float)(var18 >> 16 & 255) / 255.0F;
+         var12 = (float)(var18 >> 8 & 255) / 255.0F;
+         var13 = (float)(var18 & 255) / 255.0F;
          if(this.field_77024_a) {
-            GL11.glColor4f(var18, var12, var13, 1.0F);
+            GL11.glColor4f(var17, var12, var13, 1.0F);
          }
 
          GL11.glRotatef(-90.0F, 0.0F, 1.0F, 0.0F);
          this.field_77022_g.field_78668_c = this.field_77024_a;
-         this.field_77022_g.func_78600_a(var16, var7, 1.0F);
+         this.field_77022_g.func_78600_a(var15, var7, 1.0F);
          this.field_77022_g.field_78668_c = true;
          GL11.glPopMatrix();
       } else if(Item.field_77698_e[var6].func_77623_v()) {
@@ -316,18 +324,18 @@ public class RenderItem extends Render {
          GL11.glEnable(2896);
       } else {
          GL11.glDisable(2896);
-         ResourceLocation var15 = p_77015_2_.func_130087_a(p_77015_3_.func_94608_d());
-         p_77015_2_.func_110577_a(var15);
+         ResourceLocation var16 = p_77015_2_.func_130087_a(p_77015_3_.func_94608_d());
+         p_77015_2_.func_110577_a(var16);
          if(var8 == null) {
-            var8 = ((TextureMap)Minecraft.func_71410_x().func_110434_K().func_110581_b(var15)).func_110572_b("missingno");
+            var8 = ((TextureMap)Minecraft.func_71410_x().func_110434_K().func_110581_b(var16)).func_110572_b("missingno");
          }
 
-         var17 = Item.field_77698_e[var6].func_82790_a(p_77015_3_, 0);
-         var18 = (float)(var17 >> 16 & 255) / 255.0F;
-         var12 = (float)(var17 >> 8 & 255) / 255.0F;
-         var13 = (float)(var17 & 255) / 255.0F;
+         var18 = Item.field_77698_e[var6].func_82790_a(p_77015_3_, 0);
+         var17 = (float)(var18 >> 16 & 255) / 255.0F;
+         var12 = (float)(var18 >> 8 & 255) / 255.0F;
+         var13 = (float)(var18 & 255) / 255.0F;
          if(this.field_77024_a) {
-            GL11.glColor4f(var18, var12, var13, 1.0F);
+            GL11.glColor4f(var17, var12, var13, 1.0F);
          }
 
          this.func_94149_a(p_77015_4_, p_77015_5_, (Icon)var8, 16, 16);

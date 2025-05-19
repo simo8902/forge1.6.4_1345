@@ -334,9 +334,9 @@ public class EntityTrackerEntry {
 
                if(this.field_73132_a instanceof EntityLivingBase) {
                   for(int var10 = 0; var10 < 5; ++var10) {
-                     ItemStack var12 = ((EntityLivingBase)this.field_73132_a).func_71124_b(var10);
-                     if(var12 != null) {
-                        p_73117_1_.field_71135_a.func_72567_b(new Packet5PlayerInventory(this.field_73132_a.field_70157_k, var10, var12));
+                     ItemStack var13 = ((EntityLivingBase)this.field_73132_a).func_71124_b(var10);
+                     if(var13 != null) {
+                        p_73117_1_.field_71135_a.func_72567_b(new Packet5PlayerInventory(this.field_73132_a.field_70157_k, var10, var13));
                      }
                   }
                }
@@ -349,11 +349,11 @@ public class EntityTrackerEntry {
                }
 
                if(this.field_73132_a instanceof EntityLivingBase) {
-                  EntityLivingBase var13 = (EntityLivingBase)this.field_73132_a;
-                  Iterator var14 = var13.func_70651_bq().iterator();
+                  EntityLivingBase var14 = (EntityLivingBase)this.field_73132_a;
+                  Iterator var12 = var14.func_70651_bq().iterator();
 
-                  while(var14.hasNext()) {
-                     PotionEffect var9 = (PotionEffect)var14.next();
+                  while(var12.hasNext()) {
+                     PotionEffect var9 = (PotionEffect)var12.next();
                      p_73117_1_.field_71135_a.func_72567_b(new Packet41EntityEffect(this.field_73132_a.field_70157_k, var9));
                   }
                }

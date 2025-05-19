@@ -136,20 +136,20 @@ public class ItemFireworkCharge extends Item {
       }
 
       int[] var13 = p_92107_0_.func_74759_k("FadeColors");
-      boolean var15;
+      boolean var16;
       if(var13.length > 0) {
-         var15 = true;
+         var16 = true;
          String var14 = StatCollector.func_74838_a("item.fireworksCharge.fadeTo") + " ";
-         int[] var16 = var13;
+         int[] var15 = var13;
          var8 = var13.length;
 
          for(var9 = 0; var9 < var8; ++var9) {
-            int var18 = var16[var9];
-            if(!var15) {
+            int var18 = var15[var9];
+            if(!var16) {
                var14 = var14 + ", ";
             }
 
-            var15 = false;
+            var16 = false;
             boolean var19 = false;
 
             for(int var12 = 0; var12 < 16; ++var12) {
@@ -168,8 +168,8 @@ public class ItemFireworkCharge extends Item {
          p_92107_1_.add(var14);
       }
 
-      var15 = p_92107_0_.func_74767_n("Trail");
-      if(var15) {
+      var16 = p_92107_0_.func_74767_n("Trail");
+      if(var16) {
          p_92107_1_.add(StatCollector.func_74838_a("item.fireworksCharge.trail"));
       }
 

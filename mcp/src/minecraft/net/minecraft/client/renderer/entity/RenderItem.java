@@ -103,14 +103,14 @@ public class RenderItem extends Render
 
                     if (i > 0)
                     {
-                        f4 = (this.random.nextFloat() * 2.0F - 1.0F) * 0.2F / f7;
                         f5 = (this.random.nextFloat() * 2.0F - 1.0F) * 0.2F / f7;
+                        f4 = (this.random.nextFloat() * 2.0F - 1.0F) * 0.2F / f7;
                         f6 = (this.random.nextFloat() * 2.0F - 1.0F) * 0.2F / f7;
-                        GL11.glTranslatef(f4, f5, f6);
+                        GL11.glTranslatef(f5, f4, f6);
                     }
 
-                    f4 = 1.0F;
-                    this.itemRenderBlocks.renderBlockAsItem(block, itemstack.getItemDamage(), f4);
+                    f5 = 1.0F;
+                    this.itemRenderBlocks.renderBlockAsItem(block, itemstack.getItemDamage(), f5);
                     GL11.glPopMatrix();
                 }
             }
@@ -139,15 +139,15 @@ public class RenderItem extends Render
                         if (this.renderWithColor)
                         {
                             i = Item.itemsList[itemstack.itemID].getColorFromItemStack(itemstack, k);
-                            f4 = (float)(i >> 16 & 255) / 255.0F;
-                            f5 = (float)(i >> 8 & 255) / 255.0F;
+                            f5 = (float)(i >> 16 & 255) / 255.0F;
+                            f4 = (float)(i >> 8 & 255) / 255.0F;
                             f6 = (float)(i & 255) / 255.0F;
-                            GL11.glColor4f(f4 * f8, f5 * f8, f6 * f8, 1.0F);
-                            this.renderDroppedItem(par1EntityItem, icon, b0, par9, f4 * f8, f5 * f8, f6 * f8);
+                            GL11.glColor4f(f5 * f8, f4 * f8, f6 * f8, 1.0F);
+                            this.renderDroppedItem(par1EntityItem, icon, b0, par9, f5 * f8, f4 * f8, f6 * f8, k);
                         }
                         else
                         {
-                            this.renderDroppedItem(par1EntityItem, icon, b0, par9, 1.0F, 1.0F, 1.0F);
+                            this.renderDroppedItem(par1EntityItem, icon, b0, par9, 1.0F, 1.0F, 1.0F, k);
                         }
                     }
                 }
@@ -170,9 +170,9 @@ public class RenderItem extends Render
                         int l = Item.itemsList[itemstack.itemID].getColorFromItemStack(itemstack, 0);
                         f8 = (float)(l >> 16 & 255) / 255.0F;
                         float f9 = (float)(l >> 8 & 255) / 255.0F;
-                        f4 = (float)(l & 255) / 255.0F;
-                        f5 = 1.0F;
-                        this.renderDroppedItem(par1EntityItem, icon1, b0, par9, f8 * f5, f9 * f5, f4 * f5);
+                        f5 = (float)(l & 255) / 255.0F;
+                        f4 = 1.0F;
+                        this.renderDroppedItem(par1EntityItem, icon1, b0, par9, f8 * f4, f9 * f4, f5 * f4);
                     }
                     else
                     {
@@ -345,8 +345,8 @@ public class RenderItem extends Render
         int l = par3ItemStack.getItemDamage();
         Object object = par3ItemStack.getIconIndex();
         float f;
-        float f1;
         int i1;
+        float f1;
         float f2;
 
         Block block = (k < Block.blocksList.length ? Block.blocksList[k] : null);
@@ -361,13 +361,13 @@ public class RenderItem extends Render
             GL11.glRotatef(210.0F, 1.0F, 0.0F, 0.0F);
             GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
             i1 = Item.itemsList[k].getColorFromItemStack(par3ItemStack, 0);
-            f2 = (float)(i1 >> 16 & 255) / 255.0F;
-            f = (float)(i1 >> 8 & 255) / 255.0F;
-            f1 = (float)(i1 & 255) / 255.0F;
+            f = (float)(i1 >> 16 & 255) / 255.0F;
+            f1 = (float)(i1 >> 8 & 255) / 255.0F;
+            f2 = (float)(i1 & 255) / 255.0F;
 
             if (this.renderWithColor)
             {
-                GL11.glColor4f(f2, f, f1, 1.0F);
+                GL11.glColor4f(f, f1, f2, 1.0F);
             }
 
             GL11.glRotatef(-90.0F, 0.0F, 1.0F, 0.0F);
@@ -385,13 +385,13 @@ public class RenderItem extends Render
                 par2TextureManager.bindTexture(par3ItemStack.getItemSpriteNumber() == 0 ? TextureMap.locationBlocksTexture : TextureMap.locationItemsTexture);
                 Icon icon = Item.itemsList[k].getIcon(par3ItemStack, j1);
                 int k1 = Item.itemsList[k].getColorFromItemStack(par3ItemStack, j1);
-                f = (float)(k1 >> 16 & 255) / 255.0F;
-                f1 = (float)(k1 >> 8 & 255) / 255.0F;
+                f1 = (float)(k1 >> 16 & 255) / 255.0F;
+                f2 = (float)(k1 >> 8 & 255) / 255.0F;
                 float f3 = (float)(k1 & 255) / 255.0F;
 
                 if (this.renderWithColor)
                 {
-                    GL11.glColor4f(f, f1, f3, 1.0F);
+                    GL11.glColor4f(f1, f2, f3, 1.0F);
                 }
 
                 this.renderIcon(par4, par5, icon, 16, 16);
@@ -416,13 +416,13 @@ public class RenderItem extends Render
             }
 
             i1 = Item.itemsList[k].getColorFromItemStack(par3ItemStack, 0);
-            f2 = (float)(i1 >> 16 & 255) / 255.0F;
-            f = (float)(i1 >> 8 & 255) / 255.0F;
-            f1 = (float)(i1 & 255) / 255.0F;
+            f = (float)(i1 >> 16 & 255) / 255.0F;
+            f1 = (float)(i1 >> 8 & 255) / 255.0F;
+            f2 = (float)(i1 & 255) / 255.0F;
 
             if (this.renderWithColor)
             {
-                GL11.glColor4f(f2, f, f1, 1.0F);
+                GL11.glColor4f(f, f1, f2, 1.0F);
             }
 
             this.renderIcon(par4, par5, (Icon)object, 16, 16);

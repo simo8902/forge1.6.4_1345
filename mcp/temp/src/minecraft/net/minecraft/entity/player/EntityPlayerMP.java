@@ -220,18 +220,18 @@ public class EntityPlayerMP extends EntityPlayer implements ICrafting {
 
          if(!var6.isEmpty()) {
             this.field_71135_a.func_72567_b(new Packet56MapChunks(var6));
-            Iterator var10 = var8.iterator();
+            Iterator var11 = var8.iterator();
 
-            while(var10.hasNext()) {
-               TileEntity var5 = (TileEntity)var10.next();
+            while(var11.hasNext()) {
+               TileEntity var5 = (TileEntity)var11.next();
                this.func_71119_a(var5);
             }
 
-            var10 = var6.iterator();
+            var11 = var6.iterator();
 
-            while(var10.hasNext()) {
-               Chunk var11 = (Chunk)var10.next();
-               this.func_71121_q().func_73039_n().func_85172_a(this, var11);
+            while(var11.hasNext()) {
+               Chunk var10 = (Chunk)var11.next();
+               this.func_71121_q().func_73039_n().func_85172_a(this, var10);
             }
          }
       }

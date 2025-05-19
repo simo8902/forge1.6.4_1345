@@ -12,6 +12,14 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.world.storage.SaveFormatComparator;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiWorldSlot extends GuiSlot {
 
    // $FF: synthetic field

@@ -81,6 +81,14 @@ import org.lwjgl.opengl.ARBOcclusionQuery;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderGlobal implements IWorldAccess {
 
    private static final ResourceLocation field_110927_h = new ResourceLocation("textures/environment/moon_phases.png");
@@ -848,12 +856,12 @@ public class RenderGlobal implements IWorldAccess {
          var12 = 20.0F;
          this.field_72770_i.func_110577_a(field_110927_h);
          int var28 = this.field_72769_h.func_72853_d();
-         int var29 = var28 % 4;
-         int var30 = var28 / 4 % 2;
-         float var16 = (float)(var29 + 0) / 4.0F;
-         float var17 = (float)(var30 + 0) / 2.0F;
-         float var18 = (float)(var29 + 1) / 4.0F;
-         float var19 = (float)(var30 + 1) / 2.0F;
+         int var30 = var28 % 4;
+         int var29 = var28 / 4 % 2;
+         float var16 = (float)(var30 + 0) / 4.0F;
+         float var17 = (float)(var29 + 0) / 2.0F;
+         float var18 = (float)(var30 + 1) / 4.0F;
+         float var19 = (float)(var29 + 1) / 2.0F;
          var23.func_78382_b();
          var23.func_78374_a((double)(-var12), -100.0D, (double)var12, (double)var18, (double)var19);
          var23.func_78374_a((double)var12, -100.0D, (double)var12, (double)var16, (double)var19);
@@ -1007,8 +1015,8 @@ public class RenderGlobal implements IWorldAccess {
       float var17 = (float)var15.field_72448_b;
       float var18 = (float)var15.field_72449_c;
       float var19;
-      float var20;
       float var21;
+      float var20;
       if(this.field_72777_q.field_71474_y.field_74337_g) {
          var19 = (var16 * 30.0F + var17 * 59.0F + var18 * 11.0F) / 100.0F;
          var20 = (var16 * 30.0F + var17 * 70.0F) / 100.0F;
@@ -1543,8 +1551,8 @@ public class RenderGlobal implements IWorldAccess {
                   ((EntityFX)var21).func_70538_b(1.0F, 1.0F, 1.0F);
                } else {
                   int var25;
-                  int var26;
                   String[] var27;
+                  int var26;
                   if(p_72726_1_.startsWith("iconcrack_")) {
                      var27 = p_72726_1_.split("_", 3);
                      var25 = Integer.parseInt(var27[1]);
@@ -1697,7 +1705,7 @@ public class RenderGlobal implements IWorldAccess {
          var12 = (double)p_72706_4_ + 0.5D;
          double var34 = (double)p_72706_5_ + (double)var9 * 0.6D + 0.5D;
 
-         for(int var36 = 0; var36 < 10; ++var36) {
+         for(int var35 = 0; var35 < 10; ++var35) {
             double var37 = var7.nextDouble() * 0.2D + 0.01D;
             double var38 = var10 + (double)var33 * 0.01D + (var7.nextDouble() - 0.5D) * (double)var9 * 0.5D;
             var39 = var12 + (var7.nextDouble() - 0.5D) * 0.5D;
@@ -1763,9 +1771,9 @@ public class RenderGlobal implements IWorldAccess {
             this.func_72708_a(var14, var8, var10, var12, var7.nextGaussian() * 0.15D, var7.nextDouble() * 0.2D, var7.nextGaussian() * 0.15D);
          }
 
-         for(double var35 = 0.0D; var35 < 6.283185307179586D; var35 += 0.15707963267948966D) {
-            this.func_72708_a("portal", var8 + Math.cos(var35) * 5.0D, var10 - 0.4D, var12 + Math.sin(var35) * 5.0D, Math.cos(var35) * -5.0D, 0.0D, Math.sin(var35) * -5.0D);
-            this.func_72708_a("portal", var8 + Math.cos(var35) * 5.0D, var10 - 0.4D, var12 + Math.sin(var35) * 5.0D, Math.cos(var35) * -7.0D, 0.0D, Math.sin(var35) * -7.0D);
+         for(double var36 = 0.0D; var36 < 6.283185307179586D; var36 += 0.15707963267948966D) {
+            this.func_72708_a("portal", var8 + Math.cos(var36) * 5.0D, var10 - 0.4D, var12 + Math.sin(var36) * 5.0D, Math.cos(var36) * -5.0D, 0.0D, Math.sin(var36) * -5.0D);
+            this.func_72708_a("portal", var8 + Math.cos(var36) * 5.0D, var10 - 0.4D, var12 + Math.sin(var36) * 5.0D, Math.cos(var36) * -7.0D, 0.0D, Math.sin(var36) * -7.0D);
          }
 
          return;

@@ -162,9 +162,9 @@ public abstract class EntityFireball extends Entity {
          this.field_70177_z = this.field_70126_B + (this.field_70177_z - this.field_70126_B) * 0.2F;
          float var17 = this.func_82341_c();
          if(this.func_70090_H()) {
-            for(int var18 = 0; var18 < 4; ++var18) {
-               float var19 = 0.25F;
-               this.field_70170_p.func_72869_a("bubble", this.field_70165_t - this.field_70159_w * (double)var19, this.field_70163_u - this.field_70181_x * (double)var19, this.field_70161_v - this.field_70179_y * (double)var19, this.field_70159_w, this.field_70181_x, this.field_70179_y);
+            for(int var19 = 0; var19 < 4; ++var19) {
+               float var18 = 0.25F;
+               this.field_70170_p.func_72869_a("bubble", this.field_70165_t - this.field_70159_w * (double)var18, this.field_70163_u - this.field_70181_x * (double)var18, this.field_70161_v - this.field_70179_y * (double)var18, this.field_70159_w, this.field_70181_x, this.field_70179_y);
             }
 
             var17 = 0.8F;

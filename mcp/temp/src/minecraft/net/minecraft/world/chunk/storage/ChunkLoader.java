@@ -78,17 +78,17 @@ public class ChunkLoader {
             byte[] var19 = new byte[4096];
             NibbleArray var20 = new NibbleArray(var19.length, 4);
             NibbleArray var21 = new NibbleArray(var19.length, 4);
-            NibbleArray var22 = new NibbleArray(var19.length, 4);
+            NibbleArray var23 = new NibbleArray(var19.length, 4);
 
-            for(int var23 = 0; var23 < 16; ++var23) {
+            for(int var22 = 0; var22 < 16; ++var22) {
                for(int var12 = 0; var12 < 16; ++var12) {
                   for(int var13 = 0; var13 < 16; ++var13) {
-                     int var14 = var23 << 11 | var13 << 7 | var12 + (var5 << 4);
+                     int var14 = var22 << 11 | var13 << 7 | var12 + (var5 << 4);
                      byte var15 = p_76690_0_.field_76693_g[var14];
-                     var19[var12 << 8 | var13 << 4 | var23] = (byte)(var15 & 255);
-                     var20.func_76581_a(var23, var12, var13, p_76690_0_.field_76692_f.func_76686_a(var23, var12 + (var5 << 4), var13));
-                     var21.func_76581_a(var23, var12, var13, p_76690_0_.field_76695_e.func_76686_a(var23, var12 + (var5 << 4), var13));
-                     var22.func_76581_a(var23, var12, var13, p_76690_0_.field_76694_d.func_76686_a(var23, var12 + (var5 << 4), var13));
+                     var19[var12 << 8 | var13 << 4 | var22] = (byte)(var15 & 255);
+                     var20.func_76581_a(var22, var12, var13, p_76690_0_.field_76692_f.func_76686_a(var22, var12 + (var5 << 4), var13));
+                     var21.func_76581_a(var22, var12, var13, p_76690_0_.field_76695_e.func_76686_a(var22, var12 + (var5 << 4), var13));
+                     var23.func_76581_a(var22, var12, var13, p_76690_0_.field_76694_d.func_76686_a(var22, var12 + (var5 << 4), var13));
                   }
                }
             }
@@ -98,7 +98,7 @@ public class ChunkLoader {
             var24.func_74773_a("Blocks", var19);
             var24.func_74773_a("Data", var20.field_76585_a);
             var24.func_74773_a("SkyLight", var21.field_76585_a);
-            var24.func_74773_a("BlockLight", var22.field_76585_a);
+            var24.func_74773_a("BlockLight", var23.field_76585_a);
             var16.func_74742_a(var24);
          }
       }

@@ -9,6 +9,14 @@ import net.minecraft.entity.passive.EntityBat;
 import net.minecraft.util.MathHelper;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ModelBat extends ModelBase {
 
    private ModelRenderer field_82895_a;

@@ -1511,8 +1511,8 @@ public class EntityRenderer
                         {
                             this.random.setSeed((long)(l1 * l1 * 3121 + l1 * 45238971 ^ k1 * k1 * 418711 + k1 * 13761));
                             float f9 = biomegenbase.getFloatTemperature();
-                            float f10;
                             double d3;
+                            float f10;
 
                             if (worldclient.getWorldChunkManager().getTemperatureAtHeight(f9, j2) >= 0.15F)
                             {

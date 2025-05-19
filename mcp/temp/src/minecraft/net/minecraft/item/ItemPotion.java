@@ -262,20 +262,20 @@ public class ItemPotion extends Item {
 
             while(var16.hasNext()) {
                Entry var17 = (Entry)var16.next();
-               AttributeModifier var19 = (AttributeModifier)var17.getValue();
-               double var18 = var19.func_111164_d();
+               AttributeModifier var18 = (AttributeModifier)var17.getValue();
+               double var19 = var18.func_111164_d();
                double var20;
-               if(var19.func_111169_c() != 1 && var19.func_111169_c() != 2) {
-                  var20 = var19.func_111164_d();
+               if(var18.func_111169_c() != 1 && var18.func_111169_c() != 2) {
+                  var20 = var18.func_111164_d();
                } else {
-                  var20 = var19.func_111164_d() * 100.0D;
+                  var20 = var18.func_111164_d() * 100.0D;
                }
 
-               if(var18 > 0.0D) {
-                  p_77624_3_.add(EnumChatFormatting.BLUE + StatCollector.func_74837_a("attribute.modifier.plus." + var19.func_111169_c(), new Object[]{ItemStack.field_111284_a.format(var20), StatCollector.func_74838_a("attribute.name." + (String)var17.getKey())}));
-               } else if(var18 < 0.0D) {
+               if(var19 > 0.0D) {
+                  p_77624_3_.add(EnumChatFormatting.BLUE + StatCollector.func_74837_a("attribute.modifier.plus." + var18.func_111169_c(), new Object[]{ItemStack.field_111284_a.format(var20), StatCollector.func_74838_a("attribute.name." + (String)var17.getKey())}));
+               } else if(var19 < 0.0D) {
                   var20 *= -1.0D;
-                  p_77624_3_.add(EnumChatFormatting.RED + StatCollector.func_74837_a("attribute.modifier.take." + var19.func_111169_c(), new Object[]{ItemStack.field_111284_a.format(var20), StatCollector.func_74838_a("attribute.name." + (String)var17.getKey())}));
+                  p_77624_3_.add(EnumChatFormatting.RED + StatCollector.func_74837_a("attribute.modifier.take." + var18.func_111169_c(), new Object[]{ItemStack.field_111284_a.format(var20), StatCollector.func_74838_a("attribute.name." + (String)var17.getKey())}));
                }
             }
          }

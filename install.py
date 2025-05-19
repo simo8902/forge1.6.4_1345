@@ -9,7 +9,6 @@ def fml_main(fml_dir, mcp_dir, gen_conf=True, disable_patches=False, disable_at=
     sys.path.append(fml_dir)
     from fml import download_mcp, setup_mcp, decompile_minecraft, apply_fml_patches, finish_setup_fml
     print '================ Forge ModLoader Setup Start ==================='
-    download_mcp(fml_dir, mcp_dir)
     setup_mcp(fml_dir, mcp_dir, gen_conf)
     if decompile:
         decompile_minecraft(fml_dir, mcp_dir, disable_at=disable_at, disable_merge=disable_merge, 

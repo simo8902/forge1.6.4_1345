@@ -14,6 +14,14 @@ import net.minecraft.util.StringUtils;
 import net.minecraft.world.World;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public abstract class AbstractClientPlayer extends EntityPlayer {
 
    public static final ResourceLocation field_110314_b = new ResourceLocation("textures/entity/steve.png");

@@ -11,6 +11,14 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.LanServerList;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ThreadLanServerFind extends Thread {
 
    private final LanServerList field_77500_a;

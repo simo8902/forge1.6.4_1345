@@ -6,6 +6,14 @@ import java.util.concurrent.Callable;
 import net.minecraft.client.Minecraft;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class CallableParticleScreenName implements Callable {
 
    // $FF: synthetic field

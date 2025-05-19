@@ -167,8 +167,8 @@ public abstract class Container {
          this.func_94533_d();
       } else {
          Slot var16;
-         int var19;
-         ItemStack var22;
+         int var21;
+         ItemStack var23;
          if((p_75144_3_ == 0 || p_75144_3_ == 1) && (p_75144_2_ == 0 || p_75144_2_ == 1)) {
             if(p_75144_1_ == -999) {
                if(var6.func_70445_o() != null && p_75144_1_ == -999) {
@@ -208,62 +208,62 @@ public abstract class Container {
                var16 = (Slot)this.field_75151_b.get(p_75144_1_);
                if(var16 != null) {
                   var17 = var16.func_75211_c();
-                  ItemStack var20 = var6.func_70445_o();
+                  ItemStack var19 = var6.func_70445_o();
                   if(var17 != null) {
                      var5 = var17.func_77946_l();
                   }
 
                   if(var17 == null) {
-                     if(var20 != null && var16.func_75214_a(var20)) {
-                        var19 = p_75144_2_ == 0?var20.field_77994_a:1;
-                        if(var19 > var16.func_75219_a()) {
-                           var19 = var16.func_75219_a();
+                     if(var19 != null && var16.func_75214_a(var19)) {
+                        var21 = p_75144_2_ == 0?var19.field_77994_a:1;
+                        if(var21 > var16.func_75219_a()) {
+                           var21 = var16.func_75219_a();
                         }
 
-                        if(var20.field_77994_a >= var19) {
-                           var16.func_75215_d(var20.func_77979_a(var19));
+                        if(var19.field_77994_a >= var21) {
+                           var16.func_75215_d(var19.func_77979_a(var21));
                         }
 
-                        if(var20.field_77994_a == 0) {
+                        if(var19.field_77994_a == 0) {
                            var6.func_70437_b((ItemStack)null);
                         }
                      }
                   } else if(var16.func_82869_a(p_75144_4_)) {
-                     if(var20 == null) {
-                        var19 = p_75144_2_ == 0?var17.field_77994_a:(var17.field_77994_a + 1) / 2;
-                        var22 = var16.func_75209_a(var19);
-                        var6.func_70437_b(var22);
+                     if(var19 == null) {
+                        var21 = p_75144_2_ == 0?var17.field_77994_a:(var17.field_77994_a + 1) / 2;
+                        var23 = var16.func_75209_a(var21);
+                        var6.func_70437_b(var23);
                         if(var17.field_77994_a == 0) {
                            var16.func_75215_d((ItemStack)null);
                         }
 
                         var16.func_82870_a(p_75144_4_, var6.func_70445_o());
-                     } else if(var16.func_75214_a(var20)) {
-                        if(var17.field_77993_c == var20.field_77993_c && var17.func_77960_j() == var20.func_77960_j() && ItemStack.func_77970_a(var17, var20)) {
-                           var19 = p_75144_2_ == 0?var20.field_77994_a:1;
-                           if(var19 > var16.func_75219_a() - var17.field_77994_a) {
-                              var19 = var16.func_75219_a() - var17.field_77994_a;
+                     } else if(var16.func_75214_a(var19)) {
+                        if(var17.field_77993_c == var19.field_77993_c && var17.func_77960_j() == var19.func_77960_j() && ItemStack.func_77970_a(var17, var19)) {
+                           var21 = p_75144_2_ == 0?var19.field_77994_a:1;
+                           if(var21 > var16.func_75219_a() - var17.field_77994_a) {
+                              var21 = var16.func_75219_a() - var17.field_77994_a;
                            }
 
-                           if(var19 > var20.func_77976_d() - var17.field_77994_a) {
-                              var19 = var20.func_77976_d() - var17.field_77994_a;
+                           if(var21 > var19.func_77976_d() - var17.field_77994_a) {
+                              var21 = var19.func_77976_d() - var17.field_77994_a;
                            }
 
-                           var20.func_77979_a(var19);
-                           if(var20.field_77994_a == 0) {
+                           var19.func_77979_a(var21);
+                           if(var19.field_77994_a == 0) {
                               var6.func_70437_b((ItemStack)null);
                            }
 
-                           var17.field_77994_a += var19;
-                        } else if(var20.field_77994_a <= var16.func_75219_a()) {
-                           var16.func_75215_d(var20);
+                           var17.field_77994_a += var21;
+                        } else if(var19.field_77994_a <= var16.func_75219_a()) {
+                           var16.func_75215_d(var19);
                            var6.func_70437_b(var17);
                         }
-                     } else if(var17.field_77993_c == var20.field_77993_c && var20.func_77976_d() > 1 && (!var17.func_77981_g() || var17.func_77960_j() == var20.func_77960_j()) && ItemStack.func_77970_a(var17, var20)) {
-                        var19 = var17.field_77994_a;
-                        if(var19 > 0 && var19 + var20.field_77994_a <= var20.func_77976_d()) {
-                           var20.field_77994_a += var19;
-                           var17 = var16.func_75209_a(var19);
+                     } else if(var17.field_77993_c == var19.field_77993_c && var19.func_77976_d() > 1 && (!var17.func_77981_g() || var17.func_77960_j() == var19.func_77960_j()) && ItemStack.func_77970_a(var17, var19)) {
+                        var21 = var17.field_77994_a;
+                        if(var21 > 0 && var21 + var19.field_77994_a <= var19.func_77976_d()) {
+                           var19.field_77994_a += var21;
+                           var17 = var16.func_75209_a(var21);
                            if(var17.field_77994_a == 0) {
                               var16.func_75215_d((ItemStack)null);
                            }
@@ -281,26 +281,26 @@ public abstract class Container {
             if(var16.func_82869_a(p_75144_4_)) {
                var17 = var6.func_70301_a(p_75144_2_);
                boolean var18 = var17 == null || var16.field_75224_c == var6 && var16.func_75214_a(var17);
-               var19 = -1;
+               var21 = -1;
                if(!var18) {
-                  var19 = var6.func_70447_i();
-                  var18 |= var19 > -1;
+                  var21 = var6.func_70447_i();
+                  var18 |= var21 > -1;
                }
 
                if(var16.func_75216_d() && var18) {
-                  var22 = var16.func_75211_c();
-                  var6.func_70299_a(p_75144_2_, var22.func_77946_l());
+                  var23 = var16.func_75211_c();
+                  var6.func_70299_a(p_75144_2_, var23.func_77946_l());
                   if((var16.field_75224_c != var6 || !var16.func_75214_a(var17)) && var17 != null) {
-                     if(var19 > -1) {
+                     if(var21 > -1) {
                         var6.func_70441_a(var17);
-                        var16.func_75209_a(var22.field_77994_a);
+                        var16.func_75209_a(var23.field_77994_a);
                         var16.func_75215_d((ItemStack)null);
-                        var16.func_82870_a(p_75144_4_, var22);
+                        var16.func_82870_a(p_75144_4_, var23);
                      }
                   } else {
-                     var16.func_75209_a(var22.field_77994_a);
+                     var16.func_75209_a(var23.field_77994_a);
                      var16.func_75215_d(var17);
-                     var16.func_82870_a(p_75144_4_, var22);
+                     var16.func_82870_a(p_75144_4_, var23);
                   }
                } else if(!var16.func_75216_d() && var17 != null && var16.func_75214_a(var17)) {
                   var6.func_70299_a(p_75144_2_, (ItemStack)null);
@@ -326,12 +326,12 @@ public abstract class Container {
             var17 = var6.func_70445_o();
             if(var17 != null && (var16 == null || !var16.func_75216_d() || !var16.func_82869_a(p_75144_4_))) {
                var9 = p_75144_2_ == 0?0:this.field_75151_b.size() - 1;
-               var19 = p_75144_2_ == 0?1:-1;
+               var21 = p_75144_2_ == 0?1:-1;
 
-               for(int var21 = 0; var21 < 2; ++var21) {
-                  for(int var23 = var9; var23 >= 0 && var23 < this.field_75151_b.size() && var17.field_77994_a < var17.func_77976_d(); var23 += var19) {
-                     Slot var24 = (Slot)this.field_75151_b.get(var23);
-                     if(var24.func_75216_d() && func_94527_a(var24, var17, true) && var24.func_82869_a(p_75144_4_) && this.func_94530_a(var17, var24) && (var21 != 0 || var24.func_75211_c().field_77994_a != var24.func_75211_c().func_77976_d())) {
+               for(int var20 = 0; var20 < 2; ++var20) {
+                  for(int var22 = var9; var22 >= 0 && var22 < this.field_75151_b.size() && var17.field_77994_a < var17.func_77976_d(); var22 += var21) {
+                     Slot var24 = (Slot)this.field_75151_b.get(var22);
+                     if(var24.func_75216_d() && func_94527_a(var24, var17, true) && var24.func_82869_a(p_75144_4_) && this.func_94530_a(var17, var24) && (var20 != 0 || var24.func_75211_c().field_77994_a != var24.func_75211_c().func_77976_d())) {
                         int var14 = Math.min(var17.func_77976_d() - var17.field_77994_a, var24.func_75211_c().field_77994_a);
                         ItemStack var15 = var24.func_75209_a(var14);
                         var17.field_77994_a += var14;

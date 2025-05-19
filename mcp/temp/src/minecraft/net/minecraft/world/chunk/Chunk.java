@@ -914,11 +914,11 @@ public class Chunk {
       }
 
       this.func_76590_a();
-      Iterator var11 = this.field_76648_i.values().iterator();
+      Iterator var10 = this.field_76648_i.values().iterator();
 
-      while(var11.hasNext()) {
-         TileEntity var10 = (TileEntity)var11.next();
-         var10.func_70321_h();
+      while(var10.hasNext()) {
+         TileEntity var11 = (TileEntity)var10.next();
+         var11.func_70321_h();
       }
 
    }

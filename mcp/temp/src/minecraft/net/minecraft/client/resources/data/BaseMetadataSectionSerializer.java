@@ -7,6 +7,14 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.resources.data.MetadataSectionSerializer;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public abstract class BaseMetadataSectionSerializer implements MetadataSectionSerializer {
 
    protected float func_110487_a(JsonElement p_110487_1_, String p_110487_2_, Float p_110487_3_, float p_110487_4_, float p_110487_5_) {

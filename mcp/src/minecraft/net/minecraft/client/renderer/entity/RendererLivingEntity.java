@@ -154,8 +154,8 @@ public abstract class RendererLivingEntity extends Render
             GL11.glEnable(GL11.GL_ALPHA_TEST);
             this.mainModel.setLivingAnimations(par1EntityLivingBase, f8, f7, par9);
             this.renderModel(par1EntityLivingBase, f8, f7, f4, f3 - f2, f5, f6);
-            int i;
             float f9;
+            int i;
             float f10;
             float f11;
 

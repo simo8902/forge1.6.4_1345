@@ -242,14 +242,14 @@ public class GuiIngame extends Gui
                 boolean flag1 = false;
                 i2 = flag1 ? 16777215 : 8453920;
                 String s = "" + this.mc.thePlayer.experienceLevel;
-                k2 = (k - fontrenderer.getStringWidth(s)) / 2;
-                l2 = l - 31 - 4;
+                l2 = (k - fontrenderer.getStringWidth(s)) / 2;
+                k2 = l - 31 - 4;
                 boolean flag2 = false;
-                fontrenderer.drawString(s, k2 + 1, l2, 0);
-                fontrenderer.drawString(s, k2 - 1, l2, 0);
-                fontrenderer.drawString(s, k2, l2 + 1, 0);
-                fontrenderer.drawString(s, k2, l2 - 1, 0);
-                fontrenderer.drawString(s, k2, l2, i2);
+                fontrenderer.drawString(s, l2 + 1, k2, 0);
+                fontrenderer.drawString(s, l2 - 1, k2, 0);
+                fontrenderer.drawString(s, l2, k2 + 1, 0);
+                fontrenderer.drawString(s, l2, k2 - 1, 0);
+                fontrenderer.drawString(s, l2, k2, i2);
                 this.mc.mcProfiler.endSection();
             }
         }
@@ -343,22 +343,22 @@ public class GuiIngame extends Gui
             this.drawString(fontrenderer, s2, k - fontrenderer.getStringWidth(s2) - 2, 2, 14737632);
             s2 = "Allocated memory: " + i4 * 100L / l3 + "% (" + i4 / 1024L / 1024L + "MB)";
             this.drawString(fontrenderer, s2, k - fontrenderer.getStringWidth(s2) - 2, 12, 14737632);
-            j3 = MathHelper.floor_double(this.mc.thePlayer.posX);
-            k3 = MathHelper.floor_double(this.mc.thePlayer.posY);
+            k3 = MathHelper.floor_double(this.mc.thePlayer.posX);
+            j3 = MathHelper.floor_double(this.mc.thePlayer.posY);
             int l4 = MathHelper.floor_double(this.mc.thePlayer.posZ);
-            this.drawString(fontrenderer, String.format("x: %.5f (%d) // c: %d (%d)", new Object[] {Double.valueOf(this.mc.thePlayer.posX), Integer.valueOf(j3), Integer.valueOf(j3 >> 4), Integer.valueOf(j3 & 15)}), 2, 64, 14737632);
+            this.drawString(fontrenderer, String.format("x: %.5f (%d) // c: %d (%d)", new Object[] {Double.valueOf(this.mc.thePlayer.posX), Integer.valueOf(k3), Integer.valueOf(k3 >> 4), Integer.valueOf(k3 & 15)}), 2, 64, 14737632);
             this.drawString(fontrenderer, String.format("y: %.3f (feet pos, %.3f eyes pos)", new Object[] {Double.valueOf(this.mc.thePlayer.boundingBox.minY), Double.valueOf(this.mc.thePlayer.posY)}), 2, 72, 14737632);
             this.drawString(fontrenderer, String.format("z: %.5f (%d) // c: %d (%d)", new Object[] {Double.valueOf(this.mc.thePlayer.posZ), Integer.valueOf(l4), Integer.valueOf(l4 >> 4), Integer.valueOf(l4 & 15)}), 2, 80, 14737632);
             int i5 = MathHelper.floor_double((double)(this.mc.thePlayer.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
             this.drawString(fontrenderer, "f: " + i5 + " (" + Direction.directions[i5] + ") / " + MathHelper.wrapAngleTo180_float(this.mc.thePlayer.rotationYaw), 2, 88, 14737632);
 
-            if (this.mc.theWorld != null && this.mc.theWorld.blockExists(j3, k3, l4))
+            if (this.mc.theWorld != null && this.mc.theWorld.blockExists(k3, j3, l4))
             {
-                Chunk chunk = this.mc.theWorld.getChunkFromBlockCoords(j3, l4);
-                this.drawString(fontrenderer, "lc: " + (chunk.getTopFilledSegment() + 15) + " b: " + chunk.getBiomeGenForWorldCoords(j3 & 15, l4 & 15, this.mc.theWorld.getWorldChunkManager()).biomeName + " bl: " + chunk.getSavedLightValue(EnumSkyBlock.Block, j3 & 15, k3, l4 & 15) + " sl: " + chunk.getSavedLightValue(EnumSkyBlock.Sky, j3 & 15, k3, l4 & 15) + " rl: " + chunk.getBlockLightValue(j3 & 15, k3, l4 & 15, 0), 2, 96, 14737632);
+                Chunk chunk = this.mc.theWorld.getChunkFromBlockCoords(k3, l4);
+                this.drawString(fontrenderer, "lc: " + (chunk.getTopFilledSegment() + 15) + " b: " + chunk.getBiomeGenForWorldCoords(k3 & 15, l4 & 15, this.mc.theWorld.getWorldChunkManager()).biomeName + " bl: " + chunk.getSavedLightValue(EnumSkyBlock.Block, k3 & 15, j3, l4 & 15) + " sl: " + chunk.getSavedLightValue(EnumSkyBlock.Sky, k3 & 15, j3, l4 & 15) + " rl: " + chunk.getBlockLightValue(k3 & 15, j3, l4 & 15, 0), 2, 96, 14737632);
             }
 
-            this.drawString(fontrenderer, String.format("ws: %.3f, fs: %.3f, g: %b, fl: %d", new Object[] {Float.valueOf(this.mc.thePlayer.capabilities.getWalkSpeed()), Float.valueOf(this.mc.thePlayer.capabilities.getFlySpeed()), Boolean.valueOf(this.mc.thePlayer.onGround), Integer.valueOf(this.mc.theWorld.getHeightValue(j3, l4))}), 2, 104, 14737632);
+            this.drawString(fontrenderer, String.format("ws: %.3f, fs: %.3f, g: %b, fl: %d", new Object[] {Float.valueOf(this.mc.thePlayer.capabilities.getWalkSpeed()), Float.valueOf(this.mc.thePlayer.capabilities.getFlySpeed()), Boolean.valueOf(this.mc.thePlayer.onGround), Integer.valueOf(this.mc.theWorld.getHeightValue(k3, l4))}), 2, 104, 14737632);
             GL11.glPopMatrix();
             this.mc.mcProfiler.endSection();
         }
@@ -419,29 +419,29 @@ public class GuiIngame extends Gui
             NetClientHandler netclienthandler = this.mc.thePlayer.sendQueue;
             List list = netclienthandler.playerInfoList;
             j2 = netclienthandler.currentServerMaxPlayers;
-            k2 = j2;
+            l2 = j2;
 
-            for (l2 = 1; k2 > 20; k2 = (j2 + l2 - 1) / l2)
+            for (k2 = 1; l2 > 20; l2 = (j2 + k2 - 1) / k2)
             {
-                ++l2;
+                ++k2;
             }
 
-            int j5 = 300 / l2;
+            int j5 = 300 / k2;
 
             if (j5 > 150)
             {
                 j5 = 150;
             }
 
-            int k5 = (k - l2 * j5) / 2;
+            int k5 = (k - k2 * j5) / 2;
             byte b0 = 10;
-            drawRect(k5 - 1, b0 - 1, k5 + j5 * l2, b0 + 9 * k2, Integer.MIN_VALUE);
+            drawRect(k5 - 1, b0 - 1, k5 + j5 * k2, b0 + 9 * l2, Integer.MIN_VALUE);
 
             for (i3 = 0; i3 < j2; ++i3)
             {
-                j3 = k5 + i3 % l2 * j5;
-                k3 = b0 + i3 / l2 * 9;
-                drawRect(j3, k3, j3 + j5 - 1, k3 + 8, 553648127);
+                k3 = k5 + i3 % k2 * j5;
+                j3 = b0 + i3 / k2 * 9;
+                drawRect(k3, j3, k3 + j5 - 1, j3 + 8, 553648127);
                 GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
                 GL11.glEnable(GL11.GL_ALPHA_TEST);
 
@@ -450,18 +450,18 @@ public class GuiIngame extends Gui
                     GuiPlayerInfo guiplayerinfo = (GuiPlayerInfo)list.get(i3);
                     ScorePlayerTeam scoreplayerteam = this.mc.theWorld.getScoreboard().getPlayersTeam(guiplayerinfo.name);
                     String s3 = ScorePlayerTeam.formatPlayerName(scoreplayerteam, guiplayerinfo.name);
-                    fontrenderer.drawStringWithShadow(s3, j3, k3, 16777215);
+                    fontrenderer.drawStringWithShadow(s3, k3, j3, 16777215);
 
                     if (scoreobjective != null)
                     {
-                        int l5 = j3 + fontrenderer.getStringWidth(s3) + 5;
-                        int i6 = j3 + j5 - 12 - 5;
+                        int l5 = k3 + fontrenderer.getStringWidth(s3) + 5;
+                        int i6 = k3 + j5 - 12 - 5;
 
                         if (i6 - l5 > 5)
                         {
                             Score score = scoreobjective.getScoreboard().func_96529_a(guiplayerinfo.name, scoreobjective);
                             String s4 = EnumChatFormatting.YELLOW + "" + score.getScorePoints();
-                            fontrenderer.drawStringWithShadow(s4, i6 - fontrenderer.getStringWidth(s4), k3, 16777215);
+                            fontrenderer.drawStringWithShadow(s4, i6 - fontrenderer.getStringWidth(s4), j3, 16777215);
                         }
                     }
 
@@ -497,7 +497,7 @@ public class GuiIngame extends Gui
                     }
 
                     this.zLevel += 100.0F;
-                    this.drawTexturedModalRect(j3 + j5 - 12, k3, 0 + b1 * 10, 176 + b2 * 8, 10, 8);
+                    this.drawTexturedModalRect(k3 + j5 - 12, j3, 0 + b1 * 10, 176 + b2 * 8, 10, 8);
                     this.zLevel -= 100.0F;
                 }
             }
@@ -594,25 +594,25 @@ public class GuiIngame extends Gui
         int k3;
         int l3;
 
-        for (k3 = 0; k3 < 10; ++k3)
+        for (l3 = 0; l3 < 10; ++l3)
         {
             if (i3 > 0)
             {
-                l3 = k1 + k3 * 8;
+                k3 = k1 + l3 * 8;
 
-                if (k3 * 2 + 1 < i3)
+                if (l3 * 2 + 1 < i3)
                 {
-                    this.drawTexturedModalRect(l3, l2, 34, 9, 9, 9);
+                    this.drawTexturedModalRect(k3, l2, 34, 9, 9, 9);
                 }
 
-                if (k3 * 2 + 1 == i3)
+                if (l3 * 2 + 1 == i3)
                 {
-                    this.drawTexturedModalRect(l3, l2, 25, 9, 9, 9);
+                    this.drawTexturedModalRect(k3, l2, 25, 9, 9, 9);
                 }
 
-                if (k3 * 2 + 1 > i3)
+                if (l3 * 2 + 1 > i3)
                 {
-                    this.drawTexturedModalRect(l3, l2, 16, 9, 9, 9);
+                    this.drawTexturedModalRect(k3, l2, 16, 9, 9, 9);
                 }
             }
         }
@@ -622,17 +622,17 @@ public class GuiIngame extends Gui
         int j4;
         int k4;
 
-        for (k3 = MathHelper.ceiling_float_int((f + f1) / 2.0F) - 1; k3 >= 0; --k3)
+        for (l3 = MathHelper.ceiling_float_int((f + f1) / 2.0F) - 1; l3 >= 0; --l3)
         {
-            l3 = 16;
+            k3 = 16;
 
             if (this.mc.thePlayer.isPotionActive(Potion.poison))
             {
-                l3 += 36;
+                k3 += 36;
             }
             else if (this.mc.thePlayer.isPotionActive(Potion.wither))
             {
-                l3 += 72;
+                k3 += 72;
             }
 
             byte b0 = 0;
@@ -642,18 +642,18 @@ public class GuiIngame extends Gui
                 b0 = 1;
             }
 
-            i4 = MathHelper.ceiling_float_int((float)(k3 + 1) / 10.0F) - 1;
-            j4 = k1 + k3 % 10 * 8;
-            k4 = i2 - i4 * k2;
+            i4 = MathHelper.ceiling_float_int((float)(l3 + 1) / 10.0F) - 1;
+            k4 = k1 + l3 % 10 * 8;
+            j4 = i2 - i4 * k2;
 
             if (k <= 4)
             {
-                k4 += this.rand.nextInt(2);
+                j4 += this.rand.nextInt(2);
             }
 
-            if (k3 == j3)
+            if (l3 == j3)
             {
-                k4 -= 2;
+                j4 -= 2;
             }
 
             byte b1 = 0;
@@ -663,18 +663,18 @@ public class GuiIngame extends Gui
                 b1 = 5;
             }
 
-            this.drawTexturedModalRect(j4, k4, 16 + b0 * 9, 9 * b1, 9, 9);
+            this.drawTexturedModalRect(k4, j4, 16 + b0 * 9, 9 * b1, 9, 9);
 
             if (flag)
             {
-                if (k3 * 2 + 1 < l)
+                if (l3 * 2 + 1 < l)
                 {
-                    this.drawTexturedModalRect(j4, k4, l3 + 54, 9 * b1, 9, 9);
+                    this.drawTexturedModalRect(k4, j4, k3 + 54, 9 * b1, 9, 9);
                 }
 
-                if (k3 * 2 + 1 == l)
+                if (l3 * 2 + 1 == l)
                 {
-                    this.drawTexturedModalRect(j4, k4, l3 + 63, 9 * b1, 9, 9);
+                    this.drawTexturedModalRect(k4, j4, k3 + 63, 9 * b1, 9, 9);
                 }
             }
 
@@ -682,25 +682,25 @@ public class GuiIngame extends Gui
             {
                 if (f2 == f1 && f1 % 2.0F == 1.0F)
                 {
-                    this.drawTexturedModalRect(j4, k4, l3 + 153, 9 * b1, 9, 9);
+                    this.drawTexturedModalRect(k4, j4, k3 + 153, 9 * b1, 9, 9);
                 }
                 else
                 {
-                    this.drawTexturedModalRect(j4, k4, l3 + 144, 9 * b1, 9, 9);
+                    this.drawTexturedModalRect(k4, j4, k3 + 144, 9 * b1, 9, 9);
                 }
 
                 f2 -= 2.0F;
             }
             else
             {
-                if (k3 * 2 + 1 < k)
+                if (l3 * 2 + 1 < k)
                 {
-                    this.drawTexturedModalRect(j4, k4, l3 + 36, 9 * b1, 9, 9);
+                    this.drawTexturedModalRect(k4, j4, k3 + 36, 9 * b1, 9, 9);
                 }
 
-                if (k3 * 2 + 1 == k)
+                if (l3 * 2 + 1 == k)
                 {
-                    this.drawTexturedModalRect(j4, k4, l3 + 45, 9 * b1, 9, 9);
+                    this.drawTexturedModalRect(k4, j4, k3 + 45, 9 * b1, 9, 9);
                 }
             }
         }
@@ -712,7 +712,7 @@ public class GuiIngame extends Gui
         {
             this.mc.mcProfiler.endStartSection("food");
 
-            for (l3 = 0; l3 < 10; ++l3)
+            for (k3 = 0; k3 < 10; ++k3)
             {
                 l4 = i2;
                 i4 = 16;
@@ -734,30 +734,30 @@ public class GuiIngame extends Gui
                     b2 = 1;
                 }
 
-                k4 = l1 - l3 * 8 - 9;
-                this.drawTexturedModalRect(k4, l4, 16 + b2 * 9, 27, 9, 9);
+                j4 = l1 - k3 * 8 - 9;
+                this.drawTexturedModalRect(j4, l4, 16 + b2 * 9, 27, 9, 9);
 
                 if (flag1)
                 {
-                    if (l3 * 2 + 1 < j1)
+                    if (k3 * 2 + 1 < j1)
                     {
-                        this.drawTexturedModalRect(k4, l4, i4 + 54, 27, 9, 9);
+                        this.drawTexturedModalRect(j4, l4, i4 + 54, 27, 9, 9);
                     }
 
-                    if (l3 * 2 + 1 == j1)
+                    if (k3 * 2 + 1 == j1)
                     {
-                        this.drawTexturedModalRect(k4, l4, i4 + 63, 27, 9, 9);
+                        this.drawTexturedModalRect(j4, l4, i4 + 63, 27, 9, 9);
                     }
                 }
 
-                if (l3 * 2 + 1 < i1)
+                if (k3 * 2 + 1 < i1)
                 {
-                    this.drawTexturedModalRect(k4, l4, i4 + 36, 27, 9, 9);
+                    this.drawTexturedModalRect(j4, l4, i4 + 36, 27, 9, 9);
                 }
 
-                if (l3 * 2 + 1 == i1)
+                if (k3 * 2 + 1 == i1)
                 {
-                    this.drawTexturedModalRect(k4, l4, i4 + 45, 27, 9, 9);
+                    this.drawTexturedModalRect(j4, l4, i4 + 45, 27, 9, 9);
                 }
             }
         }
@@ -767,19 +767,19 @@ public class GuiIngame extends Gui
             EntityLivingBase entitylivingbase = (EntityLivingBase)entity;
             l4 = (int)Math.ceil((double)entitylivingbase.getHealth());
             float f3 = entitylivingbase.getMaxHealth();
-            j4 = (int)(f3 + 0.5F) / 2;
+            k4 = (int)(f3 + 0.5F) / 2;
 
-            if (j4 > 30)
+            if (k4 > 30)
             {
-                j4 = 30;
+                k4 = 30;
             }
 
-            k4 = i2;
+            j4 = i2;
 
-            for (int i5 = 0; j4 > 0; i5 += 20)
+            for (int i5 = 0; k4 > 0; i5 += 20)
             {
-                int j5 = Math.min(j4, 10);
-                j4 -= j5;
+                int j5 = Math.min(k4, 10);
+                k4 -= j5;
 
                 for (int k5 = 0; k5 < j5; ++k5)
                 {
@@ -792,20 +792,20 @@ public class GuiIngame extends Gui
                     }
 
                     int l5 = l1 - k5 * 8 - 9;
-                    this.drawTexturedModalRect(l5, k4, b3 + b4 * 9, 9, 9, 9);
+                    this.drawTexturedModalRect(l5, j4, b3 + b4 * 9, 9, 9, 9);
 
                     if (k5 * 2 + 1 + i5 < l4)
                     {
-                        this.drawTexturedModalRect(l5, k4, b3 + 36, 9, 9, 9);
+                        this.drawTexturedModalRect(l5, j4, b3 + 36, 9, 9, 9);
                     }
 
                     if (k5 * 2 + 1 + i5 == l4)
                     {
-                        this.drawTexturedModalRect(l5, k4, b3 + 45, 9, 9, 9);
+                        this.drawTexturedModalRect(l5, j4, b3 + 45, 9, 9, 9);
                     }
                 }
 
-                k4 -= 10;
+                j4 -= 10;
             }
         }
 
@@ -813,19 +813,19 @@ public class GuiIngame extends Gui
 
         if (this.mc.thePlayer.isInsideOfMaterial(Material.water))
         {
-            l3 = this.mc.thePlayer.getAir();
-            l4 = MathHelper.ceiling_double_int((double)(l3 - 2) * 10.0D / 300.0D);
-            i4 = MathHelper.ceiling_double_int((double)l3 * 10.0D / 300.0D) - l4;
+            k3 = this.mc.thePlayer.getAir();
+            l4 = MathHelper.ceiling_double_int((double)(k3 - 2) * 10.0D / 300.0D);
+            i4 = MathHelper.ceiling_double_int((double)k3 * 10.0D / 300.0D) - l4;
 
-            for (j4 = 0; j4 < l4 + i4; ++j4)
+            for (k4 = 0; k4 < l4 + i4; ++k4)
             {
-                if (j4 < l4)
+                if (k4 < l4)
                 {
-                    this.drawTexturedModalRect(l1 - j4 * 8 - 9, l2, 16, 18, 9, 9);
+                    this.drawTexturedModalRect(l1 - k4 * 8 - 9, l2, 16, 18, 9, 9);
                 }
                 else
                 {
-                    this.drawTexturedModalRect(l1 - j4 * 8 - 9, l2, 25, 18, 9, 9);
+                    this.drawTexturedModalRect(l1 - k4 * 8 - 9, l2, 25, 18, 9, 9);
                 }
             }
         }

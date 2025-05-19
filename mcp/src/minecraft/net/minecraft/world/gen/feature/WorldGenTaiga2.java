@@ -85,19 +85,22 @@ public class WorldGenTaiga2 extends WorldGenerator
 
                     for (j2 = 0; j2 <= j1; ++j2)
                     {
-                        i3 = par4 + l - j2;
+                        j3 = par4 + l - j2;
 
-                        for (j3 = par3 - k2; j3 <= par3 + k2; ++j3)
+                        for (i3 = par3 - k2; i3 <= par3 + k2; ++i3)
                         {
-                            int k3 = j3 - par3;
+                            int k3 = i3 - par3;
 
                             for (int l3 = par5 - k2; l3 <= par5 + k2; ++l3)
                             {
                                 int i4 = l3 - par5;
 
-                                if ((Math.abs(k3) != k2 || Math.abs(i4) != k2 || k2 <= 0) && !Block.opaqueCubeLookup[par1World.getBlockId(j3, i3, l3)])
+                                Block block = Block.blocksList[par1World.getBlockId(i3, j3, l3)];
+
+                                if ((Math.abs(k3) != k2 || Math.abs(i4) != k2 || k2 <= 0) &&
+                                    (block == null || block.canBeReplacedByLeaves(par1World, i3, j3, l3)))
                                 {
-                                    this.setBlockAndMetadata(par1World, j3, i3, l3, Block.leaves.blockID, 1);
+                                    this.setBlockAndMetadata(par1World, i3, j3, l3, Block.leaves.blockID, 1);
                                 }
                             }
                         }
@@ -121,13 +124,15 @@ public class WorldGenTaiga2 extends WorldGenerator
 
                     j2 = par2Random.nextInt(3);
 
-                    for (i3 = 0; i3 < l - j2; ++i3)
+                    for (j3 = 0; j3 < l - j2; ++j3)
                     {
-                        j3 = par1World.getBlockId(par3, par4 + i3, par5);
+                        i3 = par1World.getBlockId(par3, par4 + j3, par5);
 
-                        if (j3 == 0 || j3 == Block.leaves.blockID)
+                        Block block = Block.blocksList[i3];
+
+                        if (i3 == 0 || block == null || block.isLeaves(par1World, par3, par4 + j3, par5))
                         {
-                            this.setBlockAndMetadata(par1World, par3, par4 + i3, par5, Block.wood.blockID, 1);
+                            this.setBlockAndMetadata(par1World, par3, par4 + j3, par5, Block.wood.blockID, 1);
                         }
                     }
 

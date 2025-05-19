@@ -14,6 +14,14 @@ import net.minecraft.stats.StatCrafting;
 import org.lwjgl.input.Mouse;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 abstract class GuiSlotStats extends GuiSlot {
 
    protected int field_77262_g;

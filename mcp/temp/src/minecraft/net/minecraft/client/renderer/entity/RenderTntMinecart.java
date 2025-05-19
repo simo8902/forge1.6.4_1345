@@ -9,6 +9,14 @@ import net.minecraft.entity.item.EntityMinecartTNT;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderTntMinecart extends RenderMinecart {
 
    protected void func_94146_a(EntityMinecartTNT p_94146_1_, float p_94146_2_, Block p_94146_3_, int p_94146_4_) {

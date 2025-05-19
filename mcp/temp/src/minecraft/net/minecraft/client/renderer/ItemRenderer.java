@@ -28,6 +28,14 @@ import net.minecraft.world.storage.MapData;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ItemRenderer {
 
    private static final ResourceLocation field_110930_b = new ResourceLocation("textures/misc/enchanted_item_glint.png");
@@ -212,14 +220,14 @@ public class ItemRenderer {
       OpenGlHelper.func_77475_a(OpenGlHelper.field_77476_b, (float)var11 / 1.0F, (float)var12 / 1.0F);
       GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
       float var13;
-      float var21;
-      float var23;
+      float var20;
+      float var22;
       if(var8 != null) {
          var10 = Item.field_77698_e[var8.field_77993_c].func_82790_a(var8, 0);
-         var21 = (float)(var10 >> 16 & 255) / 255.0F;
-         var23 = (float)(var10 >> 8 & 255) / 255.0F;
+         var20 = (float)(var10 >> 16 & 255) / 255.0F;
+         var22 = (float)(var10 >> 8 & 255) / 255.0F;
          var13 = (float)(var10 & 255) / 255.0F;
-         GL11.glColor4f(var9 * var21, var9 * var23, var9 * var13, 1.0F);
+         GL11.glColor4f(var9 * var20, var9 * var22, var9 * var13, 1.0F);
       } else {
          GL11.glColor4f(var9, var9, var9, 1.0F);
       }
@@ -227,29 +235,29 @@ public class ItemRenderer {
       float var14;
       float var15;
       float var16;
-      float var20;
-      Render var26;
-      RenderPlayer var28;
+      float var21;
+      Render var27;
+      RenderPlayer var26;
       if(var8 != null && var8.field_77993_c == Item.field_77744_bd.field_77779_bT) {
          GL11.glPushMatrix();
-         var20 = 0.8F;
-         var21 = var3.func_70678_g(p_78440_1_);
-         var23 = MathHelper.func_76126_a(var21 * 3.1415927F);
-         var13 = MathHelper.func_76126_a(MathHelper.func_76129_c(var21) * 3.1415927F);
-         GL11.glTranslatef(-var13 * 0.4F, MathHelper.func_76126_a(MathHelper.func_76129_c(var21) * 3.1415927F * 2.0F) * 0.2F, -var23 * 0.2F);
-         var21 = 1.0F - var4 / 45.0F + 0.1F;
-         if(var21 < 0.0F) {
-            var21 = 0.0F;
+         var21 = 0.8F;
+         var20 = var3.func_70678_g(p_78440_1_);
+         var22 = MathHelper.func_76126_a(var20 * 3.1415927F);
+         var13 = MathHelper.func_76126_a(MathHelper.func_76129_c(var20) * 3.1415927F);
+         GL11.glTranslatef(-var13 * 0.4F, MathHelper.func_76126_a(MathHelper.func_76129_c(var20) * 3.1415927F * 2.0F) * 0.2F, -var22 * 0.2F);
+         var20 = 1.0F - var4 / 45.0F + 0.1F;
+         if(var20 < 0.0F) {
+            var20 = 0.0F;
          }
 
-         if(var21 > 1.0F) {
-            var21 = 1.0F;
+         if(var20 > 1.0F) {
+            var20 = 1.0F;
          }
 
-         var21 = -MathHelper.func_76134_b(var21 * 3.1415927F) * 0.5F + 0.5F;
-         GL11.glTranslatef(0.0F, 0.0F * var20 - (1.0F - var2) * 1.2F - var21 * 0.5F + 0.04F, -0.9F * var20);
+         var20 = -MathHelper.func_76134_b(var20 * 3.1415927F) * 0.5F + 0.5F;
+         GL11.glTranslatef(0.0F, 0.0F * var21 - (1.0F - var2) * 1.2F - var20 * 0.5F + 0.04F, -0.9F * var21);
          GL11.glRotatef(90.0F, 0.0F, 1.0F, 0.0F);
-         GL11.glRotatef(var21 * -85.0F, 0.0F, 0.0F, 1.0F);
+         GL11.glRotatef(var20 * -85.0F, 0.0F, 0.0F, 1.0F);
          GL11.glEnable('\u803a');
          this.field_78455_a.func_110434_K().func_110577_a(var3.func_110306_p());
 
@@ -261,17 +269,17 @@ public class ItemRenderer {
             GL11.glRotatef(-90.0F, 0.0F, 0.0F, 1.0F);
             GL11.glRotatef(59.0F, 0.0F, 0.0F, 1.0F);
             GL11.glRotatef((float)(-65 * var24), 0.0F, 1.0F, 0.0F);
-            var26 = RenderManager.field_78727_a.func_78713_a(this.field_78455_a.field_71439_g);
-            var28 = (RenderPlayer)var26;
+            var27 = RenderManager.field_78727_a.func_78713_a(this.field_78455_a.field_71439_g);
+            var26 = (RenderPlayer)var27;
             var16 = 1.0F;
             GL11.glScalef(var16, var16, var16);
-            var28.func_82441_a(this.field_78455_a.field_71439_g);
+            var26.func_82441_a(this.field_78455_a.field_71439_g);
             GL11.glPopMatrix();
          }
 
-         var23 = var3.func_70678_g(p_78440_1_);
-         var13 = MathHelper.func_76126_a(var23 * var23 * 3.1415927F);
-         var14 = MathHelper.func_76126_a(MathHelper.func_76129_c(var23) * 3.1415927F);
+         var22 = var3.func_70678_g(p_78440_1_);
+         var13 = MathHelper.func_76126_a(var22 * var22 * 3.1415927F);
+         var14 = MathHelper.func_76126_a(MathHelper.func_76129_c(var22) * 3.1415927F);
          GL11.glRotatef(-var13 * 20.0F, 0.0F, 1.0F, 0.0F);
          GL11.glRotatef(-var14 * 20.0F, 0.0F, 0.0F, 1.0F);
          GL11.glRotatef(-var14 * 80.0F, 1.0F, 0.0F, 0.0F);
@@ -283,15 +291,15 @@ public class ItemRenderer {
          var16 = 0.015625F;
          GL11.glScalef(var16, var16, var16);
          this.field_78455_a.func_110434_K().func_110577_a(field_110931_c);
-         Tessellator var29 = Tessellator.field_78398_a;
+         Tessellator var30 = Tessellator.field_78398_a;
          GL11.glNormal3f(0.0F, 0.0F, -1.0F);
-         var29.func_78382_b();
-         byte var30 = 7;
-         var29.func_78374_a((double)(0 - var30), (double)(128 + var30), 0.0D, 0.0D, 1.0D);
-         var29.func_78374_a((double)(128 + var30), (double)(128 + var30), 0.0D, 1.0D, 1.0D);
-         var29.func_78374_a((double)(128 + var30), (double)(0 - var30), 0.0D, 1.0D, 0.0D);
-         var29.func_78374_a((double)(0 - var30), (double)(0 - var30), 0.0D, 0.0D, 0.0D);
-         var29.func_78381_a();
+         var30.func_78382_b();
+         byte var29 = 7;
+         var30.func_78374_a((double)(0 - var29), (double)(128 + var29), 0.0D, 0.0D, 1.0D);
+         var30.func_78374_a((double)(128 + var29), (double)(128 + var29), 0.0D, 1.0D, 1.0D);
+         var30.func_78374_a((double)(128 + var29), (double)(0 - var29), 0.0D, 1.0D, 0.0D);
+         var30.func_78374_a((double)(0 - var29), (double)(0 - var29), 0.0D, 0.0D, 0.0D);
+         var30.func_78381_a();
          MapData var19 = Item.field_77744_bd.func_77873_a(var8, this.field_78455_a.field_71441_e);
          if(var19 != null) {
             this.field_78449_f.func_78319_a(this.field_78455_a.field_71439_g, this.field_78455_a.func_110434_K(), var19);
@@ -300,37 +308,37 @@ public class ItemRenderer {
          GL11.glPopMatrix();
       } else if(var8 != null) {
          GL11.glPushMatrix();
-         var20 = 0.8F;
+         var21 = 0.8F;
          if(var3.func_71052_bv() > 0) {
-            EnumAction var22 = var8.func_77975_n();
-            if(var22 == EnumAction.eat || var22 == EnumAction.drink) {
-               var23 = (float)var3.func_71052_bv() - p_78440_1_ + 1.0F;
-               var13 = 1.0F - var23 / (float)var8.func_77988_m();
+            EnumAction var23 = var8.func_77975_n();
+            if(var23 == EnumAction.eat || var23 == EnumAction.drink) {
+               var22 = (float)var3.func_71052_bv() - p_78440_1_ + 1.0F;
+               var13 = 1.0F - var22 / (float)var8.func_77988_m();
                var14 = 1.0F - var13;
                var14 = var14 * var14 * var14;
                var14 = var14 * var14 * var14;
                var14 = var14 * var14 * var14;
                var15 = 1.0F - var14;
-               GL11.glTranslatef(0.0F, MathHelper.func_76135_e(MathHelper.func_76134_b(var23 / 4.0F * 3.1415927F) * 0.1F) * (float)((double)var13 > 0.2D?1:0), 0.0F);
+               GL11.glTranslatef(0.0F, MathHelper.func_76135_e(MathHelper.func_76134_b(var22 / 4.0F * 3.1415927F) * 0.1F) * (float)((double)var13 > 0.2D?1:0), 0.0F);
                GL11.glTranslatef(var15 * 0.6F, -var15 * 0.5F, 0.0F);
                GL11.glRotatef(var15 * 90.0F, 0.0F, 1.0F, 0.0F);
                GL11.glRotatef(var15 * 10.0F, 1.0F, 0.0F, 0.0F);
                GL11.glRotatef(var15 * 30.0F, 0.0F, 0.0F, 1.0F);
             }
          } else {
-            var21 = var3.func_70678_g(p_78440_1_);
-            var23 = MathHelper.func_76126_a(var21 * 3.1415927F);
-            var13 = MathHelper.func_76126_a(MathHelper.func_76129_c(var21) * 3.1415927F);
-            GL11.glTranslatef(-var13 * 0.4F, MathHelper.func_76126_a(MathHelper.func_76129_c(var21) * 3.1415927F * 2.0F) * 0.2F, -var23 * 0.2F);
+            var20 = var3.func_70678_g(p_78440_1_);
+            var22 = MathHelper.func_76126_a(var20 * 3.1415927F);
+            var13 = MathHelper.func_76126_a(MathHelper.func_76129_c(var20) * 3.1415927F);
+            GL11.glTranslatef(-var13 * 0.4F, MathHelper.func_76126_a(MathHelper.func_76129_c(var20) * 3.1415927F * 2.0F) * 0.2F, -var22 * 0.2F);
          }
 
-         GL11.glTranslatef(0.7F * var20, -0.65F * var20 - (1.0F - var2) * 0.6F, -0.9F * var20);
+         GL11.glTranslatef(0.7F * var21, -0.65F * var21 - (1.0F - var2) * 0.6F, -0.9F * var21);
          GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
          GL11.glEnable('\u803a');
-         var21 = var3.func_70678_g(p_78440_1_);
-         var23 = MathHelper.func_76126_a(var21 * var21 * 3.1415927F);
-         var13 = MathHelper.func_76126_a(MathHelper.func_76129_c(var21) * 3.1415927F);
-         GL11.glRotatef(-var23 * 20.0F, 0.0F, 1.0F, 0.0F);
+         var20 = var3.func_70678_g(p_78440_1_);
+         var22 = MathHelper.func_76126_a(var20 * var20 * 3.1415927F);
+         var13 = MathHelper.func_76126_a(MathHelper.func_76129_c(var20) * 3.1415927F);
+         GL11.glRotatef(-var22 * 20.0F, 0.0F, 1.0F, 0.0F);
          GL11.glRotatef(-var13 * 20.0F, 0.0F, 0.0F, 1.0F);
          GL11.glRotatef(-var13 * 80.0F, 1.0F, 0.0F, 0.0F);
          var14 = 0.4F;
@@ -378,10 +386,10 @@ public class ItemRenderer {
 
          if(var8.func_77973_b().func_77623_v()) {
             this.func_78443_a(var3, var8, 0);
-            int var27 = Item.field_77698_e[var8.field_77993_c].func_82790_a(var8, 1);
-            var16 = (float)(var27 >> 16 & 255) / 255.0F;
-            var17 = (float)(var27 >> 8 & 255) / 255.0F;
-            var18 = (float)(var27 & 255) / 255.0F;
+            int var28 = Item.field_77698_e[var8.field_77993_c].func_82790_a(var8, 1);
+            var16 = (float)(var28 >> 16 & 255) / 255.0F;
+            var17 = (float)(var28 >> 8 & 255) / 255.0F;
+            var18 = (float)(var28 & 255) / 255.0F;
             GL11.glColor4f(var9 * var16, var9 * var17, var9 * var18, 1.0F);
             this.func_78443_a(var3, var8, 1);
          } else {
@@ -391,19 +399,19 @@ public class ItemRenderer {
          GL11.glPopMatrix();
       } else if(!var3.func_82150_aj()) {
          GL11.glPushMatrix();
-         var20 = 0.8F;
-         var21 = var3.func_70678_g(p_78440_1_);
-         var23 = MathHelper.func_76126_a(var21 * 3.1415927F);
-         var13 = MathHelper.func_76126_a(MathHelper.func_76129_c(var21) * 3.1415927F);
-         GL11.glTranslatef(-var13 * 0.3F, MathHelper.func_76126_a(MathHelper.func_76129_c(var21) * 3.1415927F * 2.0F) * 0.4F, -var23 * 0.4F);
-         GL11.glTranslatef(0.8F * var20, -0.75F * var20 - (1.0F - var2) * 0.6F, -0.9F * var20);
+         var21 = 0.8F;
+         var20 = var3.func_70678_g(p_78440_1_);
+         var22 = MathHelper.func_76126_a(var20 * 3.1415927F);
+         var13 = MathHelper.func_76126_a(MathHelper.func_76129_c(var20) * 3.1415927F);
+         GL11.glTranslatef(-var13 * 0.3F, MathHelper.func_76126_a(MathHelper.func_76129_c(var20) * 3.1415927F * 2.0F) * 0.4F, -var22 * 0.4F);
+         GL11.glTranslatef(0.8F * var21, -0.75F * var21 - (1.0F - var2) * 0.6F, -0.9F * var21);
          GL11.glRotatef(45.0F, 0.0F, 1.0F, 0.0F);
          GL11.glEnable('\u803a');
-         var21 = var3.func_70678_g(p_78440_1_);
-         var23 = MathHelper.func_76126_a(var21 * var21 * 3.1415927F);
-         var13 = MathHelper.func_76126_a(MathHelper.func_76129_c(var21) * 3.1415927F);
+         var20 = var3.func_70678_g(p_78440_1_);
+         var22 = MathHelper.func_76126_a(var20 * var20 * 3.1415927F);
+         var13 = MathHelper.func_76126_a(MathHelper.func_76129_c(var20) * 3.1415927F);
          GL11.glRotatef(var13 * 70.0F, 0.0F, 1.0F, 0.0F);
-         GL11.glRotatef(-var23 * 20.0F, 0.0F, 0.0F, 1.0F);
+         GL11.glRotatef(-var22 * 20.0F, 0.0F, 0.0F, 1.0F);
          this.field_78455_a.func_110434_K().func_110577_a(var3.func_110306_p());
          GL11.glTranslatef(-1.0F, 3.6F, 3.5F);
          GL11.glRotatef(120.0F, 0.0F, 0.0F, 1.0F);
@@ -411,11 +419,11 @@ public class ItemRenderer {
          GL11.glRotatef(-135.0F, 0.0F, 1.0F, 0.0F);
          GL11.glScalef(1.0F, 1.0F, 1.0F);
          GL11.glTranslatef(5.6F, 0.0F, 0.0F);
-         var26 = RenderManager.field_78727_a.func_78713_a(this.field_78455_a.field_71439_g);
-         var28 = (RenderPlayer)var26;
+         var27 = RenderManager.field_78727_a.func_78713_a(this.field_78455_a.field_71439_g);
+         var26 = (RenderPlayer)var27;
          var16 = 1.0F;
          GL11.glScalef(var16, var16, var16);
-         var28.func_82441_a(this.field_78455_a.field_71439_g);
+         var26.func_82441_a(this.field_78455_a.field_71439_g);
          GL11.glPopMatrix();
       }
 

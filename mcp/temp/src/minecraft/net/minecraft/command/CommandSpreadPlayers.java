@@ -45,24 +45,24 @@ public class CommandSpreadPlayers extends CommandBase {
          throw new WrongUsageException("commands.spreadplayers.usage", new Object[0]);
       } else {
          byte var3 = 0;
-         int var16 = var3 + 1;
+         int var17 = var3 + 1;
          double var4 = func_110666_a(p_71515_1_, Double.NaN, p_71515_2_[var3]);
-         double var6 = func_110666_a(p_71515_1_, Double.NaN, p_71515_2_[var16++]);
-         double var8 = func_110664_a(p_71515_1_, p_71515_2_[var16++], 0.0D);
-         double var10 = func_110664_a(p_71515_1_, p_71515_2_[var16++], var8 + 1.0D);
-         boolean var12 = func_110662_c(p_71515_1_, p_71515_2_[var16++]);
+         double var6 = func_110666_a(p_71515_1_, Double.NaN, p_71515_2_[var17++]);
+         double var8 = func_110664_a(p_71515_1_, p_71515_2_[var17++], 0.0D);
+         double var10 = func_110664_a(p_71515_1_, p_71515_2_[var17++], var8 + 1.0D);
+         boolean var12 = func_110662_c(p_71515_1_, p_71515_2_[var17++]);
          ArrayList var13 = Lists.newArrayList();
 
          while(true) {
-            while(var16 < p_71515_2_.length) {
-               String var14 = p_71515_2_[var16++];
+            while(var17 < p_71515_2_.length) {
+               String var14 = p_71515_2_[var17++];
                if(PlayerSelector.func_82378_b(var14)) {
-                  EntityPlayerMP[] var17 = PlayerSelector.func_82380_c(p_71515_1_, var14);
-                  if(var17 == null || var17.length == 0) {
+                  EntityPlayerMP[] var18 = PlayerSelector.func_82380_c(p_71515_1_, var14);
+                  if(var18 == null || var18.length == 0) {
                      throw new PlayerNotFoundException();
                   }
 
-                  Collections.addAll(var13, var17);
+                  Collections.addAll(var13, var18);
                } else {
                   EntityPlayerMP var15 = MinecraftServer.func_71276_C().func_71203_ab().func_72361_f(var14);
                   if(var15 == null) {
@@ -125,8 +125,8 @@ public class CommandSpreadPlayers extends CommandBase {
          var16 = false;
          var18 = 3.4028234663852886E38D;
 
-         int var22;
          CommandSpreadPlayersPosition var23;
+         int var22;
          for(int var20 = 0; var20 < p_110668_14_.length; ++var20) {
             CommandSpreadPlayersPosition var21 = p_110668_14_[var20];
             var22 = 0;

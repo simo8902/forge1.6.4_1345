@@ -258,23 +258,23 @@ public class EntityWither extends EntityMob implements IBossDisplayData, IRanged
                var1 = MathHelper.func_76128_c(this.field_70163_u);
                var12 = MathHelper.func_76128_c(this.field_70165_t);
                int var15 = MathHelper.func_76128_c(this.field_70161_v);
-               boolean var17 = false;
+               boolean var18 = false;
 
-               for(int var18 = -1; var18 <= 1; ++var18) {
+               for(int var17 = -1; var17 <= 1; ++var17) {
                   for(int var19 = -1; var19 <= 1; ++var19) {
                      for(int var7 = 0; var7 <= 3; ++var7) {
-                        int var20 = var12 + var18;
+                        int var20 = var12 + var17;
                         int var9 = var1 + var7;
                         int var10 = var15 + var19;
                         int var11 = this.field_70170_p.func_72798_a(var20, var9, var10);
                         if(var11 > 0 && var11 != Block.field_71986_z.field_71990_ca && var11 != Block.field_72102_bH.field_71990_ca && var11 != Block.field_72104_bI.field_71990_ca) {
-                           var17 = this.field_70170_p.func_94578_a(var20, var9, var10, true) || var17;
+                           var18 = this.field_70170_p.func_94578_a(var20, var9, var10, true) || var18;
                         }
                      }
                   }
                }
 
-               if(var17) {
+               if(var18) {
                   this.field_70170_p.func_72889_a((EntityPlayer)null, 1012, (int)this.field_70165_t, (int)this.field_70163_u, (int)this.field_70161_v, 0);
                }
             }

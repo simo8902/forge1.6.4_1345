@@ -8,6 +8,14 @@ import net.minecraft.client.gui.GuiYesNo;
 import net.minecraft.client.resources.I18n;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiConfirmOpenLink extends GuiYesNo {
 
    private String field_73947_a;

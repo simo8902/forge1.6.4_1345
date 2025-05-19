@@ -154,8 +154,8 @@ public class ChunkProviderFlat implements IChunkProvider {
          }
       }
 
-      int var16;
       int var17;
+      int var16;
       int var18;
       if(this.field_82703_i != null && !var7 && this.field_73161_b.nextInt(4) == 0) {
          var16 = var4 + this.field_73161_b.nextInt(16) + 8;

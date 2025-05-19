@@ -832,34 +832,34 @@ public class NetServerHandler extends NetHandler {
             var11.printStackTrace();
          }
       } else {
-         int var13;
+         int var14;
          if("MC|TrSel".equals(p_72501_1_.field_73630_a)) {
             try {
                var2 = new DataInputStream(new ByteArrayInputStream(p_72501_1_.field_73629_c));
-               var13 = var2.readInt();
-               Container var15 = this.field_72574_e.field_71070_bA;
-               if(var15 instanceof ContainerMerchant) {
-                  ((ContainerMerchant)var15).func_75175_c(var13);
+               var14 = var2.readInt();
+               Container var16 = this.field_72574_e.field_71070_bA;
+               if(var16 instanceof ContainerMerchant) {
+                  ((ContainerMerchant)var16).func_75175_c(var14);
                }
             } catch (Exception var10) {
                var10.printStackTrace();
             }
          } else {
-            int var17;
+            int var18;
             if("MC|AdvCdm".equals(p_72501_1_.field_73630_a)) {
                if(!this.field_72573_d.func_82356_Z()) {
                   this.field_72574_e.func_70006_a(ChatMessageComponent.func_111077_e("advMode.notEnabled"));
                } else if(this.field_72574_e.func_70003_b(2, "") && this.field_72574_e.field_71075_bZ.field_75098_d) {
                   try {
                      var2 = new DataInputStream(new ByteArrayInputStream(p_72501_1_.field_73629_c));
-                     var13 = var2.readInt();
-                     var17 = var2.readInt();
+                     var14 = var2.readInt();
+                     var18 = var2.readInt();
                      int var5 = var2.readInt();
                      String var6 = Packet.func_73282_a(var2, 256);
-                     TileEntity var7 = this.field_72574_e.field_70170_p.func_72796_p(var13, var17, var5);
+                     TileEntity var7 = this.field_72574_e.field_70170_p.func_72796_p(var14, var18, var5);
                      if(var7 != null && var7 instanceof TileEntityCommandBlock) {
                         ((TileEntityCommandBlock)var7).func_82352_b(var6);
-                        this.field_72574_e.field_70170_p.func_72845_h(var13, var17, var5);
+                        this.field_72574_e.field_70170_p.func_72845_h(var14, var18, var5);
                         this.field_72574_e.func_70006_a(ChatMessageComponent.func_111082_b("advMode.setCommand.success", new Object[]{var6}));
                      }
                   } catch (Exception var9) {
@@ -872,15 +872,15 @@ public class NetServerHandler extends NetHandler {
                if(this.field_72574_e.field_71070_bA instanceof ContainerBeacon) {
                   try {
                      var2 = new DataInputStream(new ByteArrayInputStream(p_72501_1_.field_73629_c));
-                     var13 = var2.readInt();
-                     var17 = var2.readInt();
-                     ContainerBeacon var18 = (ContainerBeacon)this.field_72574_e.field_71070_bA;
-                     Slot var19 = var18.func_75139_a(0);
+                     var14 = var2.readInt();
+                     var18 = var2.readInt();
+                     ContainerBeacon var17 = (ContainerBeacon)this.field_72574_e.field_71070_bA;
+                     Slot var19 = var17.func_75139_a(0);
                      if(var19.func_75216_d()) {
                         var19.func_75209_a(1);
-                        TileEntityBeacon var20 = var18.func_82863_d();
-                        var20.func_82128_d(var13);
-                        var20.func_82127_e(var17);
+                        TileEntityBeacon var20 = var17.func_82863_d();
+                        var20.func_82128_d(var14);
+                        var20.func_82127_e(var18);
                         var20.func_70296_d();
                      }
                   } catch (Exception var8) {
@@ -888,14 +888,14 @@ public class NetServerHandler extends NetHandler {
                   }
                }
             } else if("MC|ItemName".equals(p_72501_1_.field_73630_a) && this.field_72574_e.field_71070_bA instanceof ContainerRepair) {
-               ContainerRepair var14 = (ContainerRepair)this.field_72574_e.field_71070_bA;
+               ContainerRepair var13 = (ContainerRepair)this.field_72574_e.field_71070_bA;
                if(p_72501_1_.field_73629_c != null && p_72501_1_.field_73629_c.length >= 1) {
-                  String var16 = ChatAllowedCharacters.func_71565_a(new String(p_72501_1_.field_73629_c));
-                  if(var16.length() <= 30) {
-                     var14.func_82850_a(var16);
+                  String var15 = ChatAllowedCharacters.func_71565_a(new String(p_72501_1_.field_73629_c));
+                  if(var15.length() <= 30) {
+                     var13.func_82850_a(var15);
                   }
                } else {
-                  var14.func_82850_a("");
+                  var13.func_82850_a("");
                }
             }
          }

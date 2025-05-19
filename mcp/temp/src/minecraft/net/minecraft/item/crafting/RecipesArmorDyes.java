@@ -80,12 +80,12 @@ public class RecipesArmorDyes implements IRecipe {
                }
 
                float[] var14 = EntitySheep.field_70898_d[BlockColored.func_72238_e_(var8.func_77960_j())];
-               int var15 = (int)(var14[0] * 255.0F);
-               int var16 = (int)(var14[1] * 255.0F);
+               int var16 = (int)(var14[0] * 255.0F);
+               int var15 = (int)(var14[1] * 255.0F);
                var17 = (int)(var14[2] * 255.0F);
-               var4 += Math.max(var15, Math.max(var16, var17));
-               var3[0] += var15;
-               var3[1] += var16;
+               var4 += Math.max(var16, Math.max(var15, var17));
+               var3[0] += var16;
+               var3[1] += var15;
                var3[2] += var17;
                ++var5;
             }

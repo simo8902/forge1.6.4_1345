@@ -5,6 +5,14 @@ import cpw.mods.fml.relauncher.SideOnly;
 import java.net.URL;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class SoundPoolEntry {
 
    private final String field_77385_a;

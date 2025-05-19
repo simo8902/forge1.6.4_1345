@@ -18,6 +18,14 @@ import net.minecraft.util.StringUtils;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiNewChat extends Gui {
 
    private final Minecraft field_73772_a;
@@ -98,13 +106,13 @@ public class GuiNewChat extends Gui {
                GL11.glTranslatef(-3.0F, 0.0F, 0.0F);
                int var18 = var5 * var9 + var5;
                var11 = var4 * var9 + var4;
-               int var19 = this.field_73768_d * var11 / var5;
+               int var20 = this.field_73768_d * var11 / var5;
                int var13 = var11 * var11 / var18;
                if(var18 != var11) {
-                  var14 = var19 > 0?170:96;
-                  int var20 = this.field_73769_e?13382451:3355562;
-                  func_73734_a(0, -var19, 2, -var19 - var13, var20 + (var14 << 24));
-                  func_73734_a(2, -var19, 1, -var19 - var13, 13421772 + (var14 << 24));
+                  var14 = var20 > 0?170:96;
+                  int var19 = this.field_73769_e?13382451:3355562;
+                  func_73734_a(0, -var20, 2, -var20 - var13, var19 + (var14 << 24));
+                  func_73734_a(2, -var20, 1, -var20 - var13, 13421772 + (var14 << 24));
                }
             }
 

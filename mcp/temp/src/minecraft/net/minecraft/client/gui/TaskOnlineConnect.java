@@ -17,6 +17,14 @@ import net.minecraft.client.multiplayer.ServerAddress;
 import net.minecraft.client.resources.I18n;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TaskOnlineConnect extends TaskLongRunning {
 
    private NetClientHandler field_96586_a;

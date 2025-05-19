@@ -6,6 +6,14 @@ import java.util.concurrent.Callable;
 import net.minecraft.server.integrated.IntegratedServer;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class CallableType3 implements Callable {
 
    // $FF: synthetic field

@@ -11,6 +11,14 @@ import net.minecraft.client.resources.data.BaseMetadataSectionSerializer;
 import net.minecraft.client.resources.data.FontMetadataSection;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class FontMetadataSectionSerializer extends BaseMetadataSectionSerializer {
 
    public FontMetadataSection func_110490_a(JsonElement p_110490_1_, Type p_110490_2_, JsonDeserializationContext p_110490_3_) {

@@ -12,6 +12,14 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderXPOrb extends Render {
 
    private static final ResourceLocation field_110785_a = new ResourceLocation("textures/entity/experience_orb.png");
@@ -39,11 +47,11 @@ public class RenderXPOrb extends Render {
       int var20 = var18 / 65536;
       OpenGlHelper.func_77475_a(OpenGlHelper.field_77476_b, (float)var19 / 1.0F, (float)var20 / 1.0F);
       GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-      float var26 = 255.0F;
-      float var27 = ((float)p_77005_1_.field_70533_a + p_77005_9_) / 2.0F;
-      var20 = (int)((MathHelper.func_76126_a(var27 + 0.0F) + 1.0F) * 0.5F * var26);
-      int var21 = (int)var26;
-      int var22 = (int)((MathHelper.func_76126_a(var27 + 4.1887903F) + 1.0F) * 0.1F * var26);
+      float var27 = 255.0F;
+      float var26 = ((float)p_77005_1_.field_70533_a + p_77005_9_) / 2.0F;
+      var20 = (int)((MathHelper.func_76126_a(var26 + 0.0F) + 1.0F) * 0.5F * var27);
+      int var21 = (int)var27;
+      int var22 = (int)((MathHelper.func_76126_a(var26 + 4.1887903F) + 1.0F) * 0.1F * var27);
       int var23 = var20 << 16 | var21 << 8 | var22;
       GL11.glRotatef(180.0F - this.field_76990_c.field_78735_i, 0.0F, 1.0F, 0.0F);
       GL11.glRotatef(-this.field_76990_c.field_78732_j, 1.0F, 0.0F, 0.0F);

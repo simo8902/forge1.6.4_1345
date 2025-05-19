@@ -10,6 +10,14 @@ import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public abstract class GuiSlot {
 
    private final Minecraft field_77233_a;
@@ -152,7 +160,7 @@ public abstract class GuiSlot {
       int var10;
       int var11;
       int var13;
-      int var20;
+      int var19;
       if(Mouse.isButtonDown(0)) {
          if(this.field_77237_m == -1.0F) {
             boolean var7 = true;
@@ -173,9 +181,9 @@ public abstract class GuiSlot {
 
                if(p_77211_1_ >= var5 && p_77211_1_ <= var6) {
                   this.field_77234_n = -1.0F;
-                  var20 = this.func_77209_d();
-                  if(var20 < 1) {
-                     var20 = 1;
+                  var19 = this.func_77209_d();
+                  if(var19 < 1) {
+                     var19 = 1;
                   }
 
                   var13 = (int)((float)((this.field_77232_c - this.field_77231_b) * (this.field_77232_c - this.field_77231_b)) / (float)this.func_77212_b());
@@ -187,7 +195,7 @@ public abstract class GuiSlot {
                      var13 = this.field_77232_c - this.field_77231_b - 8;
                   }
 
-                  this.field_77234_n /= (float)(this.field_77232_c - this.field_77231_b - var13) / (float)var20;
+                  this.field_77234_n /= (float)(this.field_77232_c - this.field_77231_b - var13) / (float)var19;
                } else {
                   this.field_77234_n = 1.0F;
                }
@@ -243,9 +251,9 @@ public abstract class GuiSlot {
 
       int var14;
       for(var11 = 0; var11 < var4; ++var11) {
-         var20 = var10 + var11 * this.field_77229_d + this.field_77242_t;
+         var19 = var10 + var11 * this.field_77229_d + this.field_77242_t;
          var13 = this.field_77229_d - 4;
-         if(var20 <= this.field_77232_c && var20 + var13 >= this.field_77231_b) {
+         if(var19 <= this.field_77232_c && var19 + var13 >= this.field_77231_b) {
             if(this.field_77244_r && this.func_77218_a(var11)) {
                var14 = this.field_77228_g / 2 - 110;
                int var15 = this.field_77228_g / 2 + 110;
@@ -253,25 +261,25 @@ public abstract class GuiSlot {
                GL11.glDisable(3553);
                var18.func_78382_b();
                var18.func_78378_d(8421504);
-               var18.func_78374_a((double)var14, (double)(var20 + var13 + 2), 0.0D, 0.0D, 1.0D);
-               var18.func_78374_a((double)var15, (double)(var20 + var13 + 2), 0.0D, 1.0D, 1.0D);
-               var18.func_78374_a((double)var15, (double)(var20 - 2), 0.0D, 1.0D, 0.0D);
-               var18.func_78374_a((double)var14, (double)(var20 - 2), 0.0D, 0.0D, 0.0D);
+               var18.func_78374_a((double)var14, (double)(var19 + var13 + 2), 0.0D, 0.0D, 1.0D);
+               var18.func_78374_a((double)var15, (double)(var19 + var13 + 2), 0.0D, 1.0D, 1.0D);
+               var18.func_78374_a((double)var15, (double)(var19 - 2), 0.0D, 1.0D, 0.0D);
+               var18.func_78374_a((double)var14, (double)(var19 - 2), 0.0D, 0.0D, 0.0D);
                var18.func_78378_d(0);
-               var18.func_78374_a((double)(var14 + 1), (double)(var20 + var13 + 1), 0.0D, 0.0D, 1.0D);
-               var18.func_78374_a((double)(var15 - 1), (double)(var20 + var13 + 1), 0.0D, 1.0D, 1.0D);
-               var18.func_78374_a((double)(var15 - 1), (double)(var20 - 1), 0.0D, 1.0D, 0.0D);
-               var18.func_78374_a((double)(var14 + 1), (double)(var20 - 1), 0.0D, 0.0D, 0.0D);
+               var18.func_78374_a((double)(var14 + 1), (double)(var19 + var13 + 1), 0.0D, 0.0D, 1.0D);
+               var18.func_78374_a((double)(var15 - 1), (double)(var19 + var13 + 1), 0.0D, 1.0D, 1.0D);
+               var18.func_78374_a((double)(var15 - 1), (double)(var19 - 1), 0.0D, 1.0D, 0.0D);
+               var18.func_78374_a((double)(var14 + 1), (double)(var19 - 1), 0.0D, 0.0D, 0.0D);
                var18.func_78381_a();
                GL11.glEnable(3553);
             }
 
-            this.func_77214_a(var11, var9, var20, var13, var18);
+            this.func_77214_a(var11, var9, var19, var13, var18);
          }
       }
 
       GL11.glDisable(2929);
-      byte var19 = 4;
+      byte var20 = 4;
       this.func_77206_b(0, this.field_77231_b, 255, 255);
       this.func_77206_b(this.field_77232_c, this.field_77240_h, 255, 255);
       GL11.glEnable(3042);
@@ -281,8 +289,8 @@ public abstract class GuiSlot {
       GL11.glDisable(3553);
       var18.func_78382_b();
       var18.func_78384_a(0, 0);
-      var18.func_78374_a((double)this.field_77238_j, (double)(this.field_77231_b + var19), 0.0D, 0.0D, 1.0D);
-      var18.func_78374_a((double)this.field_77241_i, (double)(this.field_77231_b + var19), 0.0D, 1.0D, 1.0D);
+      var18.func_78374_a((double)this.field_77238_j, (double)(this.field_77231_b + var20), 0.0D, 0.0D, 1.0D);
+      var18.func_78374_a((double)this.field_77241_i, (double)(this.field_77231_b + var20), 0.0D, 1.0D, 1.0D);
       var18.func_78384_a(0, 255);
       var18.func_78374_a((double)this.field_77241_i, (double)this.field_77231_b, 0.0D, 1.0D, 0.0D);
       var18.func_78374_a((double)this.field_77238_j, (double)this.field_77231_b, 0.0D, 0.0D, 0.0D);
@@ -292,11 +300,11 @@ public abstract class GuiSlot {
       var18.func_78374_a((double)this.field_77238_j, (double)this.field_77232_c, 0.0D, 0.0D, 1.0D);
       var18.func_78374_a((double)this.field_77241_i, (double)this.field_77232_c, 0.0D, 1.0D, 1.0D);
       var18.func_78384_a(0, 0);
-      var18.func_78374_a((double)this.field_77241_i, (double)(this.field_77232_c - var19), 0.0D, 1.0D, 0.0D);
-      var18.func_78374_a((double)this.field_77238_j, (double)(this.field_77232_c - var19), 0.0D, 0.0D, 0.0D);
+      var18.func_78374_a((double)this.field_77241_i, (double)(this.field_77232_c - var20), 0.0D, 1.0D, 0.0D);
+      var18.func_78374_a((double)this.field_77238_j, (double)(this.field_77232_c - var20), 0.0D, 0.0D, 0.0D);
       var18.func_78381_a();
-      var20 = this.func_77209_d();
-      if(var20 > 0) {
+      var19 = this.func_77209_d();
+      if(var19 > 0) {
          var13 = (this.field_77232_c - this.field_77231_b) * (this.field_77232_c - this.field_77231_b) / this.func_77212_b();
          if(var13 < 32) {
             var13 = 32;
@@ -306,7 +314,7 @@ public abstract class GuiSlot {
             var13 = this.field_77232_c - this.field_77231_b - 8;
          }
 
-         var14 = (int)this.field_77235_o * (this.field_77232_c - this.field_77231_b - var13) / var20 + this.field_77231_b;
+         var14 = (int)this.field_77235_o * (this.field_77232_c - this.field_77231_b - var13) / var19 + this.field_77231_b;
          if(var14 < this.field_77231_b) {
             var14 = this.field_77231_b;
          }

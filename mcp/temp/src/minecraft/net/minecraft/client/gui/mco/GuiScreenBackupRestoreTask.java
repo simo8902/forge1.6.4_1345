@@ -11,6 +11,14 @@ import net.minecraft.client.mco.McoClient;
 import net.minecraft.client.resources.I18n;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiScreenBackupRestoreTask extends TaskLongRunning {
 
    private final Backup field_111254_c;

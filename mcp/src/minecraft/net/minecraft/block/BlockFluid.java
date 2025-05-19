@@ -518,10 +518,10 @@ public abstract class BlockFluid extends Block
             if (par5Random.nextInt(100) == 0)
             {
                 d5 = (double)((float)par2 + par5Random.nextFloat());
-                d6 = (double)par3 + this.maxY;
-                d7 = (double)((float)par4 + par5Random.nextFloat());
-                par1World.spawnParticle("lava", d5, d6, d7, 0.0D, 0.0D, 0.0D);
-                par1World.playSound(d5, d6, d7, "liquid.lavapop", 0.2F + par5Random.nextFloat() * 0.2F, 0.9F + par5Random.nextFloat() * 0.15F, false);
+                d7 = (double)par3 + this.maxY;
+                d6 = (double)((float)par4 + par5Random.nextFloat());
+                par1World.spawnParticle("lava", d5, d7, d6, 0.0D, 0.0D, 0.0D);
+                par1World.playSound(d5, d7, d6, "liquid.lavapop", 0.2F + par5Random.nextFloat() * 0.2F, 0.9F + par5Random.nextFloat() * 0.15F, false);
             }
 
             if (par5Random.nextInt(200) == 0)
@@ -533,16 +533,16 @@ public abstract class BlockFluid extends Block
         if (par5Random.nextInt(10) == 0 && par1World.doesBlockHaveSolidTopSurface(par2, par3 - 1, par4) && !par1World.getBlockMaterial(par2, par3 - 2, par4).blocksMovement())
         {
             d5 = (double)((float)par2 + par5Random.nextFloat());
-            d6 = (double)par3 - 1.05D;
-            d7 = (double)((float)par4 + par5Random.nextFloat());
+            d7 = (double)par3 - 1.05D;
+            d6 = (double)((float)par4 + par5Random.nextFloat());
 
             if (this.blockMaterial == Material.water)
             {
-                par1World.spawnParticle("dripWater", d5, d6, d7, 0.0D, 0.0D, 0.0D);
+                par1World.spawnParticle("dripWater", d5, d7, d6, 0.0D, 0.0D, 0.0D);
             }
             else
             {
-                par1World.spawnParticle("dripLava", d5, d6, d7, 0.0D, 0.0D, 0.0D);
+                par1World.spawnParticle("dripLava", d5, d7, d6, 0.0D, 0.0D, 0.0D);
             }
         }
     }

@@ -13,6 +13,14 @@ import net.minecraft.client.mco.WorldTemplate;
 import net.minecraft.util.ValueObject;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class WorldTemplateList extends ValueObject {
 
    public List field_110736_a;

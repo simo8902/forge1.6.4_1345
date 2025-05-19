@@ -16,6 +16,14 @@ import net.minecraft.util.EnumChatFormatting;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiSlotServer extends GuiSlot {
 
    // $FF: synthetic field
@@ -136,26 +144,26 @@ class GuiSlotServer extends GuiSlot {
 
       GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
       this.field_77250_a.field_73882_e.func_110434_K().func_110577_a(Gui.field_110324_m);
-      byte var15 = 0;
+      byte var16 = 0;
       boolean var11 = false;
       String var12 = "";
-      int var16;
+      int var15;
       if(var9) {
          var12 = var7?"Client out of date!":"Server out of date!";
-         var16 = 5;
+         var15 = 5;
       } else if(var6.field_78841_f && var6.field_78844_e != -2L) {
          if(var6.field_78844_e < 0L) {
-            var16 = 5;
+            var15 = 5;
          } else if(var6.field_78844_e < 150L) {
-            var16 = 0;
+            var15 = 0;
          } else if(var6.field_78844_e < 300L) {
-            var16 = 1;
+            var15 = 1;
          } else if(var6.field_78844_e < 600L) {
-            var16 = 2;
+            var15 = 2;
          } else if(var6.field_78844_e < 1000L) {
-            var16 = 3;
+            var15 = 3;
          } else {
-            var16 = 4;
+            var15 = 4;
          }
 
          if(var6.field_78844_e < 0L) {
@@ -164,16 +172,16 @@ class GuiSlotServer extends GuiSlot {
             var12 = var6.field_78844_e + "ms";
          }
       } else {
-         var15 = 1;
-         var16 = (int)(Minecraft.func_71386_F() / 100L + (long)(p_77247_1_ * 2) & 7L);
-         if(var16 > 4) {
-            var16 = 8 - var16;
+         var16 = 1;
+         var15 = (int)(Minecraft.func_71386_F() / 100L + (long)(p_77247_1_ * 2) & 7L);
+         if(var15 > 4) {
+            var15 = 8 - var15;
          }
 
          var12 = "Polling..";
       }
 
-      this.field_77250_a.func_73729_b(p_77247_2_ + 205, p_77247_3_, 0 + var15 * 10, 176 + var16 * 8, 10, 8);
+      this.field_77250_a.func_73729_b(p_77247_2_ + 205, p_77247_3_, 0 + var16 * 10, 176 + var15 * 8, 10, 8);
       byte var13 = 4;
       if(this.field_77230_e >= p_77247_2_ + 205 - var13 && this.field_77227_f >= p_77247_3_ - var13 && this.field_77230_e <= p_77247_2_ + 205 + 10 + var13 && this.field_77227_f <= p_77247_3_ + 8 + var13) {
          GuiMultiplayer.func_74009_a(this.field_77250_a, var12);

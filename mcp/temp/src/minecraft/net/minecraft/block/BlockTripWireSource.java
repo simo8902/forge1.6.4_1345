@@ -113,10 +113,10 @@ public class BlockTripWireSource extends Block {
       int var18 = 0;
       int[] var19 = new int[42];
 
-      int var20;
       int var21;
-      int var22;
+      int var20;
       int var23;
+      int var22;
       int var24;
       for(var20 = 1; var20 < 42; ++var20) {
          var21 = p_72143_2_ + var16 * var20;

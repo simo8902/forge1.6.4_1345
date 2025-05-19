@@ -11,6 +11,14 @@ import net.minecraft.entity.monster.EntitySilverfish;
 import net.minecraft.util.ResourceLocation;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderSilverfish extends RenderLiving {
 
    private static final ResourceLocation field_110882_a = new ResourceLocation("textures/entity/silverfish.png");

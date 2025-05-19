@@ -6,6 +6,14 @@ import net.minecraft.client.settings.GameSettings;
 import net.minecraft.util.MovementInput;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class MovementInputFromOptions extends MovementInput {
 
    private GameSettings field_78903_e;

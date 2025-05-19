@@ -11,6 +11,14 @@ import net.minecraft.world.storage.WorldInfo;
 import org.lwjgl.input.Keyboard;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiRenameWorld extends GuiScreen {
 
    private GuiScreen field_74057_a;

@@ -6,6 +6,14 @@ import java.util.concurrent.Callable;
 import net.minecraft.client.renderer.EntityRenderer;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class CallableScreenName implements Callable {
 
    // $FF: synthetic field

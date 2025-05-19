@@ -11,7 +11,6 @@ from pprint import pprint
 from contextlib import closing
 CHECK_HASH = False
 
-
 #==========================================================================
 #                      Utility Functions
 #==========================================================================
@@ -873,6 +872,19 @@ def create_renamed_conf(mcp_dir, fml_dir):
 #==========================================================================
 #                      MCP Decompile Process
 #==========================================================================
+def strip_sideonly_dupes(root):
+    import re, fnmatch, os, shutil
+    dup_re = re.compile(r'(@SideOnly\(Side\.CLIENT\)\s*){2,}', re.MULTILINE)
+    for path, _, files in os.walk(root):
+        for fn in fnmatch.filter(files, '*.java'):
+            fp = os.path.join(path, fn)
+            txt = open(fp, 'r').read()
+            new = dup_re.sub(r'@SideOnly(Side.CLIENT)\n', txt)
+            if txt != new:
+                tmp = fp + '.tmp'
+                open(tmp, 'w').write(new)
+                shutil.move(tmp, fp)
+
 def reset_logger():
     # Resets the logging handlers, if we don't do this, we get multi-prints from MCP
     log = logging.getLogger()
@@ -1049,6 +1061,7 @@ def decompile_minecraft(fml_dir, mcp_dir, disable_at=False, disable_merge=False,
         
     #cleanup_source
     cleanup_source(src_dir)
+    strip_sideonly_dupes(src_dir)
     
     os.chdir(mcp_dir)
     commands = Commands(verify=True,workdir=os.path.join(mcp_dir,'jars'))
@@ -1075,7 +1088,8 @@ def updatemd5_side(mcp_dir, commands, side):
 
 def pre_decompile(mcp_dir, fml_dir, disable_assets=False):
     download_minecraft(mcp_dir, fml_dir)
-  
+   
+
 def post_decompile(mcp_dir, fml_dir):
     if False:
         print('hi')
@@ -1144,17 +1158,19 @@ def download_minecraft(mcp_dir, fml_dir, version=None):
     
     # Remove any invalid files
     for type in ['client', 'server']:
-        print("Backing up %s"%type)
-        file_backup(mc_info['%s_file' % type], mc_info['%s_md5' % type])
-        failed = not download_file(mc_info['%s_url' % type], mc_info['%s_file' % type], mc_info['%s_md5' % type]) or failed
-        file_backup(mc_info['%s_file' % type], mc_info['%s_md5' % type])
+        file_path = mc_info['%s_file' % type]
+        if not os.path.isfile(file_path):
+            print("Missing %s jar, downloading..." % type)
+            failed = not download_file(mc_info['%s_url' % type], file_path, mc_info['%s_md5' % type]) or failed
+        else:
+            print("Skipping re-download of %s: custom or preexisting file detected" % file_path)
     
     if failed:
         print 'Something failed verifying minecraft files, see log for details.'
         sys.exit(1)
 
 def download_libraries(mcp_dir, libraries, natives_dir):
-    print('Skipping library downloads - handled manually')
+    print("skipping libs, manual override")
     return False
     
 def download_list(list, natives_dir):

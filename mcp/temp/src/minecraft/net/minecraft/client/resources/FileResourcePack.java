@@ -20,6 +20,14 @@ import net.minecraft.client.resources.AbstractResourcePack;
 import net.minecraft.client.resources.ResourcePackFileNotFoundException;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class FileResourcePack extends AbstractResourcePack implements Closeable {
 
    public static final Splitter field_110601_c = Splitter.on('/').omitEmptyStrings().limit(3);

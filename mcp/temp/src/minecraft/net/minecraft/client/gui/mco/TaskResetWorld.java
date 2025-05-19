@@ -10,6 +10,14 @@ import net.minecraft.client.mco.WorldTemplate;
 import net.minecraft.client.resources.I18n;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class TaskResetWorld extends TaskLongRunning {
 
    private final long field_96591_c;

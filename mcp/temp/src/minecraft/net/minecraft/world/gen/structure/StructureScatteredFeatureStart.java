@@ -17,11 +17,11 @@ public class StructureScatteredFeatureStart extends StructureStart {
       BiomeGenBase var5 = p_i2060_1_.func_72807_a(p_i2060_3_ * 16 + 8, p_i2060_4_ * 16 + 8);
       if(var5 != BiomeGenBase.field_76782_w && var5 != BiomeGenBase.field_76792_x) {
          if(var5 == BiomeGenBase.field_76780_h) {
-            ComponentScatteredFeatureSwampHut var7 = new ComponentScatteredFeatureSwampHut(p_i2060_2_, p_i2060_3_ * 16, p_i2060_4_ * 16);
-            this.field_75075_a.add(var7);
-         } else {
-            ComponentScatteredFeatureDesertPyramid var8 = new ComponentScatteredFeatureDesertPyramid(p_i2060_2_, p_i2060_3_ * 16, p_i2060_4_ * 16);
+            ComponentScatteredFeatureSwampHut var8 = new ComponentScatteredFeatureSwampHut(p_i2060_2_, p_i2060_3_ * 16, p_i2060_4_ * 16);
             this.field_75075_a.add(var8);
+         } else {
+            ComponentScatteredFeatureDesertPyramid var7 = new ComponentScatteredFeatureDesertPyramid(p_i2060_2_, p_i2060_3_ * 16, p_i2060_4_ * 16);
+            this.field_75075_a.add(var7);
          }
       } else {
          ComponentScatteredFeatureJunglePyramid var6 = new ComponentScatteredFeatureJunglePyramid(p_i2060_2_, p_i2060_3_ * 16, p_i2060_4_ * 16);

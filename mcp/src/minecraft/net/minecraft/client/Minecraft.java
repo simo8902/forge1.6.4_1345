@@ -1181,9 +1181,9 @@ public class Minecraft implements IPlayerUsage
                 for (j1 = l; j1 >= 0; --j1)
                 {
                     f = (float)((d0 + profilerresult1.field_76332_a * (double)j1 / (double)l) * Math.PI * 2.0D / 100.0D);
-                    f1 = MathHelper.sin(f) * (float)short1;
-                    f2 = MathHelper.cos(f) * (float)short1 * 0.5F;
-                    tessellator.addVertex((double)((float)j + f1), (double)((float)k - f2), 0.0D);
+                    f2 = MathHelper.sin(f) * (float)short1;
+                    f1 = MathHelper.cos(f) * (float)short1 * 0.5F;
+                    tessellator.addVertex((double)((float)j + f2), (double)((float)k - f1), 0.0D);
                 }
 
                 tessellator.draw();
@@ -1193,10 +1193,10 @@ public class Minecraft implements IPlayerUsage
                 for (j1 = l; j1 >= 0; --j1)
                 {
                     f = (float)((d0 + profilerresult1.field_76332_a * (double)j1 / (double)l) * Math.PI * 2.0D / 100.0D);
-                    f1 = MathHelper.sin(f) * (float)short1;
-                    f2 = MathHelper.cos(f) * (float)short1 * 0.5F;
-                    tessellator.addVertex((double)((float)j + f1), (double)((float)k - f2), 0.0D);
-                    tessellator.addVertex((double)((float)j + f1), (double)((float)k - f2 + 10.0F), 0.0D);
+                    f2 = MathHelper.sin(f) * (float)short1;
+                    f1 = MathHelper.cos(f) * (float)short1 * 0.5F;
+                    tessellator.addVertex((double)((float)j + f2), (double)((float)k - f1), 0.0D);
+                    tessellator.addVertex((double)((float)j + f2), (double)((float)k - f1 + 10.0F), 0.0D);
                 }
 
                 tessellator.draw();

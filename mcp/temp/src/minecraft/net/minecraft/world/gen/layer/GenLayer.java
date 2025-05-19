@@ -36,18 +36,18 @@ public abstract class GenLayer {
       var10 = new GenLayerAddIsland(3L, var11);
       var11 = new GenLayerZoom(2003L, var10);
       var10 = new GenLayerAddIsland(4L, var11);
-      GenLayerAddMushroomIsland var15 = new GenLayerAddMushroomIsland(5L, var10);
+      GenLayerAddMushroomIsland var16 = new GenLayerAddMushroomIsland(5L, var10);
       byte var4 = 4;
       if(p_75901_2_ == WorldType.field_77135_d) {
          var4 = 6;
       }
 
-      GenLayer var5 = GenLayerZoom.func_75915_a(1000L, var15, 0);
+      GenLayer var5 = GenLayerZoom.func_75915_a(1000L, var16, 0);
       GenLayerRiverInit var13 = new GenLayerRiverInit(100L, var5);
       var5 = GenLayerZoom.func_75915_a(1000L, var13, var4 + 2);
       GenLayerRiver var14 = new GenLayerRiver(1L, var5);
-      GenLayerSmooth var16 = new GenLayerSmooth(1000L, var14);
-      GenLayer var6 = GenLayerZoom.func_75915_a(1000L, var15, 0);
+      GenLayerSmooth var15 = new GenLayerSmooth(1000L, var14);
+      GenLayer var6 = GenLayerZoom.func_75915_a(1000L, var16, 0);
       GenLayerBiome var17 = new GenLayerBiome(200L, var6, p_75901_2_);
       var6 = GenLayerZoom.func_75915_a(1000L, var17, 2);
       Object var18 = new GenLayerHills(1000L, var6);
@@ -68,7 +68,7 @@ public abstract class GenLayer {
       }
 
       GenLayerSmooth var19 = new GenLayerSmooth(1000L, (GenLayer)var18);
-      GenLayerRiverMix var20 = new GenLayerRiverMix(100L, var19, var16);
+      GenLayerRiverMix var20 = new GenLayerRiverMix(100L, var19, var15);
       GenLayerVoronoiZoom var8 = new GenLayerVoronoiZoom(10L, var20);
       var20.func_75905_a(p_75901_0_);
       var8.func_75905_a(p_75901_0_);

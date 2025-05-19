@@ -5,6 +5,14 @@ import cpw.mods.fml.relauncher.SideOnly;
 import org.apache.commons.lang3.Validate;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class ResourceLocation {
 
    private final String field_110626_a;

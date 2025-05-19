@@ -69,13 +69,13 @@ public final class SpawnerAnimals {
          for(int var36 = 0; var36 < var8; ++var36) {
             EnumCreatureType var37 = var35[var36];
             if((!var37.func_75599_d() || p_77192_3_) && (var37.func_75599_d() || p_77192_2_) && (!var37.func_82705_e() || p_77192_4_) && p_77192_1_.func_72907_a(var37.func_75598_a()) <= var37.func_75601_b() * this.field_77193_b.size() / 256) {
-               Iterator var38 = this.field_77193_b.keySet().iterator();
+               Iterator var39 = this.field_77193_b.keySet().iterator();
 
                label110:
-               while(var38.hasNext()) {
-                  ChunkCoordIntPair var39 = (ChunkCoordIntPair)var38.next();
-                  if(!((Boolean)this.field_77193_b.get(var39)).booleanValue()) {
-                     ChunkPosition var40 = func_77189_a(p_77192_1_, var39.field_77276_a, var39.field_77275_b);
+               while(var39.hasNext()) {
+                  ChunkCoordIntPair var38 = (ChunkCoordIntPair)var39.next();
+                  if(!((Boolean)this.field_77193_b.get(var38)).booleanValue()) {
+                     ChunkPosition var40 = func_77189_a(p_77192_1_, var38.field_77276_a, var38.field_77275_b);
                      int var14 = var40.field_76930_a;
                      int var15 = var40.field_76928_b;
                      int var16 = var40.field_76929_c;

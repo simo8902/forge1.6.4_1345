@@ -9,6 +9,14 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.potion.Potion;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiBeaconButtonPower extends GuiBeaconButton {
 
    private final int field_82261_l;

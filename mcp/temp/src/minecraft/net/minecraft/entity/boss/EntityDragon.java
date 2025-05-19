@@ -131,7 +131,7 @@ public class EntityDragon extends EntityLiving implements IBossDisplayData, IEnt
          double var6;
          double var8;
          double var26;
-         float var31;
+         float var33;
          if(this.field_70170_p.field_72995_K) {
             if(this.field_70716_bi > 0) {
                var26 = this.field_70165_t + (this.field_70709_bj - this.field_70165_t) / (double)this.field_70716_bi;
@@ -171,13 +171,13 @@ public class EntityDragon extends EntityLiving implements IBossDisplayData, IEnt
             }
 
             var4 /= (double)MathHelper.func_76133_a(var26 * var26 + var6 * var6);
-            var31 = 0.6F;
-            if(var4 < (double)(-var31)) {
-               var4 = (double)(-var31);
+            var33 = 0.6F;
+            if(var4 < (double)(-var33)) {
+               var4 = (double)(-var33);
             }
 
-            if(var4 > (double)var31) {
-               var4 = (double)var31;
+            if(var4 > (double)var33) {
+               var4 = (double)var33;
             }
 
             this.field_70181_x += var4 * 0.10000000149011612D;
@@ -193,8 +193,8 @@ public class EntityDragon extends EntityLiving implements IBossDisplayData, IEnt
             }
 
             Vec3 var15 = this.field_70170_p.func_82732_R().func_72345_a(this.field_70980_b - this.field_70165_t, this.field_70981_c - this.field_70163_u, this.field_70978_d - this.field_70161_v).func_72432_b();
-            Vec3 var39 = this.field_70170_p.func_82732_R().func_72345_a((double)MathHelper.func_76126_a(this.field_70177_z * 3.1415927F / 180.0F), this.field_70181_x, (double)(-MathHelper.func_76134_b(this.field_70177_z * 3.1415927F / 180.0F))).func_72432_b();
-            float var17 = (float)(var39.func_72430_b(var15) + 0.5D) / 1.5F;
+            Vec3 var40 = this.field_70170_p.func_82732_R().func_72345_a((double)MathHelper.func_76126_a(this.field_70177_z * 3.1415927F / 180.0F), this.field_70181_x, (double)(-MathHelper.func_76134_b(this.field_70177_z * 3.1415927F / 180.0F))).func_72432_b();
+            float var17 = (float)(var40.func_72430_b(var15) + 0.5D) / 1.5F;
             if(var17 < 0.0F) {
                var17 = 0.0F;
             }
@@ -218,7 +218,7 @@ public class EntityDragon extends EntityLiving implements IBossDisplayData, IEnt
             }
 
             Vec3 var23 = this.field_70170_p.func_82732_R().func_72345_a(this.field_70159_w, this.field_70181_x, this.field_70179_y).func_72432_b();
-            float var24 = (float)(var23.func_72430_b(var39) + 1.0D) / 2.0F;
+            float var24 = (float)(var23.func_72430_b(var40) + 1.0D) / 2.0F;
             var24 = 0.8F + 0.15F * var24;
             this.field_70159_w *= (double)var24;
             this.field_70179_y *= (double)var24;
@@ -238,16 +238,16 @@ public class EntityDragon extends EntityLiving implements IBossDisplayData, IEnt
          this.field_70990_bB.field_70130_N = 4.0F;
          var2 = (float)(this.func_70974_a(5, 1.0F)[1] - this.func_70974_a(10, 1.0F)[1]) * 10.0F / 180.0F * 3.1415927F;
          var3 = MathHelper.func_76134_b(var2);
-         float var27 = -MathHelper.func_76126_a(var2);
+         float var28 = -MathHelper.func_76126_a(var2);
          float var5 = this.field_70177_z * 3.1415927F / 180.0F;
-         float var28 = MathHelper.func_76126_a(var5);
+         float var27 = MathHelper.func_76126_a(var5);
          float var7 = MathHelper.func_76134_b(var5);
          this.field_70987_i.func_70071_h_();
-         this.field_70987_i.func_70012_b(this.field_70165_t + (double)(var28 * 0.5F), this.field_70163_u, this.field_70161_v - (double)(var7 * 0.5F), 0.0F, 0.0F);
+         this.field_70987_i.func_70012_b(this.field_70165_t + (double)(var27 * 0.5F), this.field_70163_u, this.field_70161_v - (double)(var7 * 0.5F), 0.0F, 0.0F);
          this.field_70983_bA.func_70071_h_();
-         this.field_70983_bA.func_70012_b(this.field_70165_t + (double)(var7 * 4.5F), this.field_70163_u + 2.0D, this.field_70161_v + (double)(var28 * 4.5F), 0.0F, 0.0F);
+         this.field_70983_bA.func_70012_b(this.field_70165_t + (double)(var7 * 4.5F), this.field_70163_u + 2.0D, this.field_70161_v + (double)(var27 * 4.5F), 0.0F, 0.0F);
          this.field_70990_bB.func_70071_h_();
-         this.field_70990_bB.func_70012_b(this.field_70165_t - (double)(var7 * 4.5F), this.field_70163_u + 2.0D, this.field_70161_v - (double)(var28 * 4.5F), 0.0F, 0.0F);
+         this.field_70990_bB.func_70012_b(this.field_70165_t - (double)(var7 * 4.5F), this.field_70163_u + 2.0D, this.field_70161_v - (double)(var27 * 4.5F), 0.0F, 0.0F);
          if(!this.field_70170_p.field_72995_K && this.field_70737_aN == 0) {
             this.func_70970_a(this.field_70170_p.func_72839_b(this, this.field_70983_bA.field_70121_D.func_72314_b(4.0D, 2.0D, 4.0D).func_72317_d(0.0D, -2.0D, 0.0D)));
             this.func_70970_a(this.field_70170_p.func_72839_b(this, this.field_70990_bB.field_70121_D.func_72314_b(4.0D, 2.0D, 4.0D).func_72317_d(0.0D, -2.0D, 0.0D)));
@@ -256,33 +256,33 @@ public class EntityDragon extends EntityLiving implements IBossDisplayData, IEnt
 
          double[] var29 = this.func_70974_a(5, 1.0F);
          double[] var9 = this.func_70974_a(0, 1.0F);
-         var31 = MathHelper.func_76126_a(this.field_70177_z * 3.1415927F / 180.0F - this.field_70704_bt * 0.01F);
-         float var33 = MathHelper.func_76134_b(this.field_70177_z * 3.1415927F / 180.0F - this.field_70704_bt * 0.01F);
+         var33 = MathHelper.func_76126_a(this.field_70177_z * 3.1415927F / 180.0F - this.field_70704_bt * 0.01F);
+         float var32 = MathHelper.func_76134_b(this.field_70177_z * 3.1415927F / 180.0F - this.field_70704_bt * 0.01F);
          this.field_70986_h.func_70071_h_();
-         this.field_70986_h.func_70012_b(this.field_70165_t + (double)(var31 * 5.5F * var3), this.field_70163_u + (var9[1] - var29[1]) * 1.0D + (double)(var27 * 5.5F), this.field_70161_v - (double)(var33 * 5.5F * var3), 0.0F, 0.0F);
+         this.field_70986_h.func_70012_b(this.field_70165_t + (double)(var33 * 5.5F * var3), this.field_70163_u + (var9[1] - var29[1]) * 1.0D + (double)(var28 * 5.5F), this.field_70161_v - (double)(var32 * 5.5F * var3), 0.0F, 0.0F);
 
          for(int var30 = 0; var30 < 3; ++var30) {
-            EntityDragonPart var32 = null;
+            EntityDragonPart var31 = null;
             if(var30 == 0) {
-               var32 = this.field_70985_j;
+               var31 = this.field_70985_j;
             }
 
             if(var30 == 1) {
-               var32 = this.field_70984_by;
+               var31 = this.field_70984_by;
             }
 
             if(var30 == 2) {
-               var32 = this.field_70982_bz;
+               var31 = this.field_70982_bz;
             }
 
-            double[] var34 = this.func_70974_a(12 + var30 * 2, 1.0F);
-            float var35 = this.field_70177_z * 3.1415927F / 180.0F + this.func_70973_b(var34[0] - var29[0]) * 3.1415927F / 180.0F * 1.0F;
-            float var37 = MathHelper.func_76126_a(var35);
-            float var36 = MathHelper.func_76134_b(var35);
-            float var38 = 1.5F;
-            float var40 = (float)(var30 + 1) * 2.0F;
-            var32.func_70071_h_();
-            var32.func_70012_b(this.field_70165_t - (double)((var28 * var38 + var37 * var40) * var3), this.field_70163_u + (var34[1] - var29[1]) * 1.0D - (double)((var40 + var38) * var27) + 1.5D, this.field_70161_v + (double)((var7 * var38 + var36 * var40) * var3), 0.0F, 0.0F);
+            double[] var35 = this.func_70974_a(12 + var30 * 2, 1.0F);
+            float var34 = this.field_70177_z * 3.1415927F / 180.0F + this.func_70973_b(var35[0] - var29[0]) * 3.1415927F / 180.0F * 1.0F;
+            float var38 = MathHelper.func_76126_a(var34);
+            float var37 = MathHelper.func_76134_b(var34);
+            float var36 = 1.5F;
+            float var39 = (float)(var30 + 1) * 2.0F;
+            var31.func_70071_h_();
+            var31.func_70012_b(this.field_70165_t - (double)((var27 * var36 + var38 * var39) * var3), this.field_70163_u + (var35[1] - var29[1]) * 1.0D - (double)((var39 + var36) * var28) + 1.5D, this.field_70161_v + (double)((var7 * var36 + var37 * var39) * var3), 0.0F, 0.0F);
          }
 
          if(!this.field_70170_p.field_72995_K) {

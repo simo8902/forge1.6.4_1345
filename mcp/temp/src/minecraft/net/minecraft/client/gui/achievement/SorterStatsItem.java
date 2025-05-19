@@ -10,6 +10,14 @@ import net.minecraft.stats.StatCrafting;
 import net.minecraft.stats.StatList;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class SorterStatsItem implements Comparator {
 
    // $FF: synthetic field

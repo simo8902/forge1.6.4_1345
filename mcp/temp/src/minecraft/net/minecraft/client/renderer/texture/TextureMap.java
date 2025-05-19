@@ -31,6 +31,14 @@ import net.minecraft.util.ReportedException;
 import net.minecraft.util.ResourceLocation;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TextureMap extends AbstractTexture implements TickableTextureObject, IconRegister {
 
    public static final ResourceLocation field_110575_b = new ResourceLocation("textures/atlas/blocks.png");

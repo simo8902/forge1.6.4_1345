@@ -22,6 +22,14 @@ import org.lwjgl.input.Mouse;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiAchievements extends GuiScreen {
 
    private static final int field_74122_s = AchievementList.field_76010_a * 24 - 112;
@@ -187,8 +195,8 @@ public class GuiAchievements extends GuiScreen {
       Random var19 = new Random();
 
       int var20;
-      int var22;
       int var23;
+      int var22;
       for(var20 = 0; var20 * 16 - var13 < 155; ++var20) {
          float var21 = 0.6F - (float)(var11 + var20) / 25.0F * 0.3F;
          GL11.glColor4f(var21, var21, var21, 1.0F);
@@ -229,13 +237,13 @@ public class GuiAchievements extends GuiScreen {
 
       int var25;
       int var28;
-      int var37;
+      int var41;
       for(var20 = 0; var20 < AchievementList.field_76007_e.size(); ++var20) {
          Achievement var31 = (Achievement)AchievementList.field_76007_e.get(var20);
          if(var31.field_75992_c != null) {
             var22 = var31.field_75993_a * 24 - var4 + 11 + var8;
             var23 = var31.field_75991_b * 24 - var5 + 11 + var9;
-            var37 = var31.field_75992_c.field_75993_a * 24 - var4 + 11 + var8;
+            var41 = var31.field_75992_c.field_75993_a * 24 - var4 + 11 + var8;
             var25 = var31.field_75992_c.field_75991_b * 24 - var5 + 11 + var9;
             boolean var26 = this.field_74126_x.func_77443_a(var31);
             boolean var27 = this.field_74126_x.func_77442_b(var31);
@@ -247,8 +255,8 @@ public class GuiAchievements extends GuiScreen {
                var29 = '\uff00' + (var28 << 24);
             }
 
-            this.func_73730_a(var22, var37, var23, var29);
-            this.func_73728_b(var37, var23, var25, var29);
+            this.func_73730_a(var22, var41, var23, var29);
+            this.func_73728_b(var41, var23, var25, var29);
          }
       }
 
@@ -259,51 +267,51 @@ public class GuiAchievements extends GuiScreen {
       GL11.glEnable('\u803a');
       GL11.glEnable(2903);
 
-      int var38;
       int var39;
+      int var40;
       for(var22 = 0; var22 < AchievementList.field_76007_e.size(); ++var22) {
-         Achievement var33 = (Achievement)AchievementList.field_76007_e.get(var22);
-         var37 = var33.field_75993_a * 24 - var4;
-         var25 = var33.field_75991_b * 24 - var5;
-         if(var37 >= -24 && var25 >= -24 && var37 <= 224 && var25 <= 155) {
-            float var36;
-            if(this.field_74126_x.func_77443_a(var33)) {
-               var36 = 1.0F;
-               GL11.glColor4f(var36, var36, var36, 1.0F);
-            } else if(this.field_74126_x.func_77442_b(var33)) {
-               var36 = Math.sin((double)(Minecraft.func_71386_F() % 600L) / 600.0D * 3.141592653589793D * 2.0D) < 0.6D?0.6F:0.8F;
-               GL11.glColor4f(var36, var36, var36, 1.0F);
+         Achievement var34 = (Achievement)AchievementList.field_76007_e.get(var22);
+         var41 = var34.field_75993_a * 24 - var4;
+         var25 = var34.field_75991_b * 24 - var5;
+         if(var41 >= -24 && var25 >= -24 && var41 <= 224 && var25 <= 155) {
+            float var38;
+            if(this.field_74126_x.func_77443_a(var34)) {
+               var38 = 1.0F;
+               GL11.glColor4f(var38, var38, var38, 1.0F);
+            } else if(this.field_74126_x.func_77442_b(var34)) {
+               var38 = Math.sin((double)(Minecraft.func_71386_F() % 600L) / 600.0D * 3.141592653589793D * 2.0D) < 0.6D?0.6F:0.8F;
+               GL11.glColor4f(var38, var38, var38, 1.0F);
             } else {
-               var36 = 0.3F;
-               GL11.glColor4f(var36, var36, var36, 1.0F);
+               var38 = 0.3F;
+               GL11.glColor4f(var38, var38, var38, 1.0F);
             }
 
             this.field_73882_e.func_110434_K().func_110577_a(field_110406_y);
-            var38 = var8 + var37;
+            var40 = var8 + var41;
             var39 = var9 + var25;
-            if(var33.func_75984_f()) {
-               this.func_73729_b(var38 - 2, var39 - 2, 26, 202, 26, 26);
+            if(var34.func_75984_f()) {
+               this.func_73729_b(var40 - 2, var39 - 2, 26, 202, 26, 26);
             } else {
-               this.func_73729_b(var38 - 2, var39 - 2, 0, 202, 26, 26);
+               this.func_73729_b(var40 - 2, var39 - 2, 0, 202, 26, 26);
             }
 
-            if(!this.field_74126_x.func_77442_b(var33)) {
-               float var40 = 0.1F;
-               GL11.glColor4f(var40, var40, var40, 1.0F);
+            if(!this.field_74126_x.func_77442_b(var34)) {
+               float var37 = 0.1F;
+               GL11.glColor4f(var37, var37, var37, 1.0F);
                var32.field_77024_a = false;
             }
 
             GL11.glEnable(2896);
             GL11.glEnable(2884);
-            var32.func_82406_b(this.field_73882_e.field_71466_p, this.field_73882_e.func_110434_K(), var33.field_75990_d, var38 + 3, var39 + 3);
+            var32.func_82406_b(this.field_73882_e.field_71466_p, this.field_73882_e.func_110434_K(), var34.field_75990_d, var40 + 3, var39 + 3);
             GL11.glDisable(2896);
-            if(!this.field_74126_x.func_77442_b(var33)) {
+            if(!this.field_74126_x.func_77442_b(var34)) {
                var32.field_77024_a = true;
             }
 
             GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
-            if(p_74110_1_ >= var8 && p_74110_2_ >= var9 && p_74110_1_ < var8 + 224 && p_74110_2_ < var9 + 155 && p_74110_1_ >= var38 && p_74110_1_ <= var38 + 22 && p_74110_2_ >= var39 && p_74110_2_ <= var39 + 22) {
-               var30 = var33;
+            if(p_74110_1_ >= var8 && p_74110_2_ >= var9 && p_74110_1_ < var8 + 224 && p_74110_2_ < var9 + 155 && p_74110_1_ >= var40 && p_74110_1_ <= var40 + 22 && p_74110_2_ >= var39 && p_74110_2_ <= var39 + 22) {
+               var30 = var34;
             }
          }
       }
@@ -320,31 +328,31 @@ public class GuiAchievements extends GuiScreen {
       GL11.glEnable(3553);
       super.func_73863_a(p_74110_1_, p_74110_2_, p_74110_3_);
       if(var30 != null) {
-         String var34 = I18n.func_135053_a(var30.func_75970_i());
+         String var33 = I18n.func_135053_a(var30.func_75970_i());
          String var35 = var30.func_75989_e();
-         var37 = p_74110_1_ + 12;
+         var41 = p_74110_1_ + 12;
          var25 = p_74110_2_ - 4;
          if(this.field_74126_x.func_77442_b(var30)) {
-            var38 = Math.max(this.field_73886_k.func_78256_a(var34), 120);
-            var39 = this.field_73886_k.func_78267_b(var35, var38);
+            var40 = Math.max(this.field_73886_k.func_78256_a(var33), 120);
+            var39 = this.field_73886_k.func_78267_b(var35, var40);
             if(this.field_74126_x.func_77443_a(var30)) {
                var39 += 12;
             }
 
-            this.func_73733_a(var37 - 3, var25 - 3, var37 + var38 + 3, var25 + var39 + 3 + 12, -1073741824, -1073741824);
-            this.field_73886_k.func_78279_b(var35, var37, var25 + 12, var38, -6250336);
+            this.func_73733_a(var41 - 3, var25 - 3, var41 + var40 + 3, var25 + var39 + 3 + 12, -1073741824, -1073741824);
+            this.field_73886_k.func_78279_b(var35, var41, var25 + 12, var40, -6250336);
             if(this.field_74126_x.func_77443_a(var30)) {
-               this.field_73886_k.func_78261_a(I18n.func_135053_a("achievement.taken"), var37, var25 + var39 + 4, -7302913);
+               this.field_73886_k.func_78261_a(I18n.func_135053_a("achievement.taken"), var41, var25 + var39 + 4, -7302913);
             }
          } else {
-            var38 = Math.max(this.field_73886_k.func_78256_a(var34), 120);
-            String var41 = I18n.func_135052_a("achievement.requires", new Object[]{I18n.func_135053_a(var30.field_75992_c.func_75970_i())});
-            var28 = this.field_73886_k.func_78267_b(var41, var38);
-            this.func_73733_a(var37 - 3, var25 - 3, var37 + var38 + 3, var25 + var28 + 12 + 3, -1073741824, -1073741824);
-            this.field_73886_k.func_78279_b(var41, var37, var25 + 12, var38, -9416624);
+            var40 = Math.max(this.field_73886_k.func_78256_a(var33), 120);
+            String var36 = I18n.func_135052_a("achievement.requires", new Object[]{I18n.func_135053_a(var30.field_75992_c.func_75970_i())});
+            var28 = this.field_73886_k.func_78267_b(var36, var40);
+            this.func_73733_a(var41 - 3, var25 - 3, var41 + var40 + 3, var25 + var28 + 12 + 3, -1073741824, -1073741824);
+            this.field_73886_k.func_78279_b(var36, var41, var25 + 12, var40, -9416624);
          }
 
-         this.field_73886_k.func_78261_a(var34, var37, var25, this.field_74126_x.func_77442_b(var30)?(var30.func_75984_f()?-128:-1):(var30.func_75984_f()?-8355776:-8355712));
+         this.field_73886_k.func_78261_a(var33, var41, var25, this.field_74126_x.func_77442_b(var30)?(var30.func_75984_f()?-128:-1):(var30.func_75984_f()?-8355776:-8355712));
       }
 
       GL11.glEnable(2929);

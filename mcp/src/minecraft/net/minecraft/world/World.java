@@ -3502,10 +3502,10 @@ public abstract class World implements IBlockAccess
                         if (l2 > 0)
                         {
                             j3 = MathHelper.abs_int(i2 - par2);
-                            k3 = MathHelper.abs_int(j2 - par3);
-                            l3 = MathHelper.abs_int(k2 - par4);
+                            l3 = MathHelper.abs_int(j2 - par3);
+                            k3 = MathHelper.abs_int(k2 - par4);
 
-                            if (j3 + k3 + l3 < 17)
+                            if (j3 + l3 + k3 < 17)
                             {
                                 for (int i4 = 0; i4 < 6; ++i4)
                                 {
@@ -3549,11 +3549,11 @@ public abstract class World implements IBlockAccess
                     if (i3 > l2)
                     {
                         j3 = Math.abs(i2 - par2);
-                        k3 = Math.abs(j2 - par3);
-                        l3 = Math.abs(k2 - par4);
+                        l3 = Math.abs(j2 - par3);
+                        k3 = Math.abs(k2 - par4);
                         boolean flag = i1 < this.lightUpdateBlockList.length - 6;
 
-                        if (j3 + k3 + l3 < 17 && flag)
+                        if (j3 + l3 + k3 < 17 && flag)
                         {
                             if (this.getSavedLightValue(par1EnumSkyBlock, i2 - 1, j2, k2) < i3)
                             {

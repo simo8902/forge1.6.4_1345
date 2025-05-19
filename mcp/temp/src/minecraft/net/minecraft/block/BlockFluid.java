@@ -334,8 +334,8 @@ public abstract class BlockFluid extends Block {
       }
 
       double var21;
-      double var22;
       double var23;
+      double var22;
       if(this.field_72018_cp == Material.field_76256_h && p_71862_1_.func_72803_f(p_71862_2_, p_71862_3_ + 1, p_71862_4_) == Material.field_76249_a && !p_71862_1_.func_72804_r(p_71862_2_, p_71862_3_ + 1, p_71862_4_)) {
          if(p_71862_5_.nextInt(100) == 0) {
             var21 = (double)((float)p_71862_2_ + p_71862_5_.nextFloat());

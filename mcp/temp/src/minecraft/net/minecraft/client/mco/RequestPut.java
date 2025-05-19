@@ -7,6 +7,14 @@ import net.minecraft.client.mco.ExceptionMcoHttp;
 import net.minecraft.client.mco.Request;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RequestPut extends Request {
 
    private byte[] field_96369_c;

@@ -5,6 +5,14 @@ import cpw.mods.fml.relauncher.SideOnly;
 import java.util.Random;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class EnchantmentNameParts {
 
    public static final EnchantmentNameParts field_78061_a = new EnchantmentNameParts();

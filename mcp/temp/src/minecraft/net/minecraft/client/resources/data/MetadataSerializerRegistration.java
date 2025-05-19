@@ -7,6 +7,14 @@ import net.minecraft.client.resources.data.MetadataSerializer;
 import net.minecraft.client.resources.data.MetadataSerializerEmptyAnon;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class MetadataSerializerRegistration {
 
    final MetadataSectionSerializer field_110502_a;

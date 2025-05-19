@@ -10,6 +10,14 @@ import net.minecraft.client.multiplayer.NetClientHandler;
 import net.minecraft.network.packet.Packet2ClientProtocol;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class ThreadConnectToServer extends Thread {
 
    // $FF: synthetic field

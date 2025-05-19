@@ -11,6 +11,14 @@ import net.minecraft.client.multiplayer.LanServer;
 import net.minecraft.client.multiplayer.ThreadLanServerPing;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class LanServerList {
 
    private ArrayList field_77555_b = new ArrayList();

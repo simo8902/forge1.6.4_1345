@@ -21,6 +21,14 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.util.glu.Project;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiEnchantment extends GuiContainer {
 
    private static final ResourceLocation field_110425_B = new ResourceLocation("textures/gui/container/enchanting_table.png");

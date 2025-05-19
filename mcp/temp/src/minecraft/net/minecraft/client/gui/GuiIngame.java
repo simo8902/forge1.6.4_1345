@@ -45,6 +45,14 @@ import net.minecraft.world.chunk.Chunk;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class GuiIngame extends Gui {
 
    protected static final ResourceLocation field_110329_b = new ResourceLocation("textures/misc/vignette.png");
@@ -137,12 +145,12 @@ public class GuiIngame extends Gui {
          GL11.glDisable(2929);
          GL11.glDisable(3008);
          var32 = this.field_73839_d.field_71439_g.func_71060_bI();
-         float var33 = (float)var32 / 100.0F;
-         if(var33 > 1.0F) {
-            var33 = 1.0F - (float)(var32 - 100) / 10.0F;
+         float var34 = (float)var32 / 100.0F;
+         if(var34 > 1.0F) {
+            var34 = 1.0F - (float)(var32 - 100) / 10.0F;
          }
 
-         var12 = (int)(220.0F * var33) << 24 | 1052704;
+         var12 = (int)(220.0F * var34) << 24 | 1052704;
          func_73734_a(0, 0, var6, var7, var12);
          GL11.glEnable(3008);
          GL11.glEnable(2929);
@@ -154,18 +162,18 @@ public class GuiIngame extends Gui {
       var11 = var6 / 2 - 91;
       int var14;
       int var15;
-      int var16;
       int var17;
-      float var34;
-      short var35;
+      int var16;
+      float var33;
+      short var37;
       if(this.field_73839_d.field_71439_g.func_110317_t()) {
          this.field_73839_d.field_71424_I.func_76320_a("jumpBar");
          this.field_73839_d.func_110434_K().func_110577_a(Gui.field_110324_m);
-         var34 = this.field_73839_d.field_71439_g.func_110319_bJ();
-         var35 = 182;
-         var14 = (int)(var34 * (float)(var35 + 1));
+         var33 = this.field_73839_d.field_71439_g.func_110319_bJ();
+         var37 = 182;
+         var14 = (int)(var33 * (float)(var37 + 1));
          var15 = var7 - 32 + 3;
-         this.func_73729_b(var11, var15, 0, 84, var35, 5);
+         this.func_73729_b(var11, var15, 0, 84, var37, 5);
          if(var14 > 0) {
             this.func_73729_b(var11, var15, 0, 89, var14, 5);
          }
@@ -176,10 +184,10 @@ public class GuiIngame extends Gui {
          this.field_73839_d.func_110434_K().func_110577_a(Gui.field_110324_m);
          var12 = this.field_73839_d.field_71439_g.func_71050_bK();
          if(var12 > 0) {
-            var35 = 182;
-            var14 = (int)(this.field_73839_d.field_71439_g.field_71106_cc * (float)(var35 + 1));
+            var37 = 182;
+            var14 = (int)(this.field_73839_d.field_71439_g.field_71106_cc * (float)(var37 + 1));
             var15 = var7 - 32 + 3;
-            this.func_73729_b(var11, var15, 0, 64, var35, 5);
+            this.func_73729_b(var11, var15, 0, 64, var37, 5);
             if(var14 > 0) {
                this.func_73729_b(var11, var15, 0, 69, var14, 5);
             }
@@ -188,17 +196,17 @@ public class GuiIngame extends Gui {
          this.field_73839_d.field_71424_I.func_76319_b();
          if(this.field_73839_d.field_71439_g.field_71068_ca > 0) {
             this.field_73839_d.field_71424_I.func_76320_a("expLevel");
-            boolean var37 = false;
-            var14 = var37?16777215:8453920;
-            String var39 = "" + this.field_73839_d.field_71439_g.field_71068_ca;
-            var16 = (var6 - var8.func_78256_a(var39)) / 2;
+            boolean var35 = false;
+            var14 = var35?16777215:8453920;
+            String var42 = "" + this.field_73839_d.field_71439_g.field_71068_ca;
+            var16 = (var6 - var8.func_78256_a(var42)) / 2;
             var17 = var7 - 31 - 4;
             boolean var18 = false;
-            var8.func_78276_b(var39, var16 + 1, var17, 0);
-            var8.func_78276_b(var39, var16 - 1, var17, 0);
-            var8.func_78276_b(var39, var16, var17 + 1, 0);
-            var8.func_78276_b(var39, var16, var17 - 1, 0);
-            var8.func_78276_b(var39, var16, var17, var14);
+            var8.func_78276_b(var42, var16 + 1, var17, 0);
+            var8.func_78276_b(var42, var16 - 1, var17, 0);
+            var8.func_78276_b(var42, var16, var17 + 1, 0);
+            var8.func_78276_b(var42, var16, var17 - 1, 0);
+            var8.func_78276_b(var42, var16, var17, var14);
             this.field_73839_d.field_71424_I.func_76319_b();
          }
       }
@@ -247,8 +255,8 @@ public class GuiIngame extends Gui {
       }
 
       int var21;
-      int var22;
       int var23;
+      int var22;
       if(this.field_73839_d.field_71474_y.field_74330_P) {
          this.field_73839_d.field_71424_I.func_76320_a("debug");
          GL11.glPushMatrix();
@@ -258,13 +266,13 @@ public class GuiIngame extends Gui {
          var8.func_78261_a(this.field_73839_d.func_71374_p(), 2, 32, 16777215);
          var8.func_78261_a(this.field_73839_d.func_71388_o(), 2, 42, 16777215);
          long var38 = Runtime.getRuntime().maxMemory();
-         long var41 = Runtime.getRuntime().totalMemory();
-         long var43 = Runtime.getRuntime().freeMemory();
-         long var45 = var41 - var43;
-         String var20 = "Used memory: " + var45 * 100L / var38 + "% (" + var45 / 1024L / 1024L + "MB) of " + var38 / 1024L / 1024L + "MB";
+         long var40 = Runtime.getRuntime().totalMemory();
+         long var39 = Runtime.getRuntime().freeMemory();
+         long var46 = var40 - var39;
+         String var20 = "Used memory: " + var46 * 100L / var38 + "% (" + var46 / 1024L / 1024L + "MB) of " + var38 / 1024L / 1024L + "MB";
          var21 = 14737632;
          this.func_73731_b(var8, var20, var6 - var8.func_78256_a(var20) - 2, 2, 14737632);
-         var20 = "Allocated memory: " + var41 * 100L / var38 + "% (" + var41 / 1024L / 1024L + "MB)";
+         var20 = "Allocated memory: " + var40 * 100L / var38 + "% (" + var40 / 1024L / 1024L + "MB)";
          this.func_73731_b(var8, var20, var6 - var8.func_78256_a(var20) - 2, 12, 14737632);
          var22 = MathHelper.func_76128_c(this.field_73839_d.field_71439_g.field_70165_t);
          var23 = MathHelper.func_76128_c(this.field_73839_d.field_71439_g.field_70163_u);
@@ -286,8 +294,8 @@ public class GuiIngame extends Gui {
 
       if(this.field_73845_h > 0) {
          this.field_73839_d.field_71424_I.func_76320_a("overlayMessage");
-         var34 = (float)this.field_73845_h - p_73830_1_;
-         var13 = (int)(var34 * 255.0F / 20.0F);
+         var33 = (float)this.field_73845_h - p_73830_1_;
+         var13 = (int)(var33 * 255.0F / 20.0F);
          if(var13 > 255) {
             var13 = 255;
          }
@@ -299,7 +307,7 @@ public class GuiIngame extends Gui {
             GL11.glBlendFunc(770, 771);
             var14 = 16777215;
             if(this.field_73844_j) {
-               var14 = Color.HSBtoRGB(var34 / 50.0F, 0.7F, 0.6F) & 16777215;
+               var14 = Color.HSBtoRGB(var33 / 50.0F, 0.7F, 0.6F) & 16777215;
             }
 
             var8.func_78276_b(this.field_73838_g, -var8.func_78256_a(this.field_73838_g) / 2, -4, var14 + (var13 << 24 & -16777216));
@@ -310,9 +318,9 @@ public class GuiIngame extends Gui {
          this.field_73839_d.field_71424_I.func_76319_b();
       }
 
-      ScoreObjective var40 = this.field_73839_d.field_71441_e.func_96441_U().func_96539_a(1);
-      if(var40 != null) {
-         this.func_96136_a(var40, var7, var6, var8);
+      ScoreObjective var43 = this.field_73839_d.field_71441_e.func_96441_U().func_96539_a(1);
+      if(var43 != null) {
+         this.func_96136_a(var43, var7, var6, var8);
       }
 
       GL11.glEnable(3042);
@@ -324,43 +332,43 @@ public class GuiIngame extends Gui {
       this.field_73840_e.func_73762_a(this.field_73837_f);
       this.field_73839_d.field_71424_I.func_76319_b();
       GL11.glPopMatrix();
-      var40 = this.field_73839_d.field_71441_e.func_96441_U().func_96539_a(0);
-      if(this.field_73839_d.field_71474_y.field_74321_H.field_74513_e && (!this.field_73839_d.func_71387_A() || this.field_73839_d.field_71439_g.field_71174_a.field_72559_c.size() > 1 || var40 != null)) {
+      var43 = this.field_73839_d.field_71441_e.func_96441_U().func_96539_a(0);
+      if(this.field_73839_d.field_71474_y.field_74321_H.field_74513_e && (!this.field_73839_d.func_71387_A() || this.field_73839_d.field_71439_g.field_71174_a.field_72559_c.size() > 1 || var43 != null)) {
          this.field_73839_d.field_71424_I.func_76320_a("playerList");
-         NetClientHandler var42 = this.field_73839_d.field_71439_g.field_71174_a;
-         List var44 = var42.field_72559_c;
-         var15 = var42.field_72556_d;
+         NetClientHandler var41 = this.field_73839_d.field_71439_g.field_71174_a;
+         List var44 = var41.field_72559_c;
+         var15 = var41.field_72556_d;
          var16 = var15;
 
          for(var17 = 1; var16 > 20; var16 = (var15 + var17 - 1) / var17) {
             ++var17;
          }
 
-         int var46 = 300 / var17;
-         if(var46 > 150) {
-            var46 = 150;
+         int var45 = 300 / var17;
+         if(var45 > 150) {
+            var45 = 150;
          }
 
-         int var19 = (var6 - var17 * var46) / 2;
+         int var19 = (var6 - var17 * var45) / 2;
          byte var47 = 10;
-         func_73734_a(var19 - 1, var47 - 1, var19 + var46 * var17, var47 + 9 * var16, Integer.MIN_VALUE);
+         func_73734_a(var19 - 1, var47 - 1, var19 + var45 * var17, var47 + 9 * var16, Integer.MIN_VALUE);
 
          for(var21 = 0; var21 < var15; ++var21) {
-            var22 = var19 + var21 % var17 * var46;
+            var22 = var19 + var21 % var17 * var45;
             var23 = var47 + var21 / var17 * 9;
-            func_73734_a(var22, var23, var22 + var46 - 1, var23 + 8, 553648127);
+            func_73734_a(var22, var23, var22 + var45 - 1, var23 + 8, 553648127);
             GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
             GL11.glEnable(3008);
             if(var21 < var44.size()) {
-               GuiPlayerInfo var48 = (GuiPlayerInfo)var44.get(var21);
-               ScorePlayerTeam var49 = this.field_73839_d.field_71441_e.func_96441_U().func_96509_i(var48.field_78831_a);
-               String var50 = ScorePlayerTeam.func_96667_a(var49, var48.field_78831_a);
-               var8.func_78261_a(var50, var22, var23, 16777215);
-               if(var40 != null) {
-                  int var27 = var22 + var8.func_78256_a(var50) + 5;
-                  int var28 = var22 + var46 - 12 - 5;
+               GuiPlayerInfo var49 = (GuiPlayerInfo)var44.get(var21);
+               ScorePlayerTeam var48 = this.field_73839_d.field_71441_e.func_96441_U().func_96509_i(var49.field_78831_a);
+               String var52 = ScorePlayerTeam.func_96667_a(var48, var49.field_78831_a);
+               var8.func_78261_a(var52, var22, var23, 16777215);
+               if(var43 != null) {
+                  int var27 = var22 + var8.func_78256_a(var52) + 5;
+                  int var28 = var22 + var45 - 12 - 5;
                   if(var28 - var27 > 5) {
-                     Score var29 = var40.func_96682_a().func_96529_a(var48.field_78831_a, var40);
+                     Score var29 = var43.func_96682_a().func_96529_a(var49.field_78831_a, var43);
                      String var30 = EnumChatFormatting.YELLOW + "" + var29.func_96652_c();
                      var8.func_78261_a(var30, var28 - var8.func_78256_a(var30), var23, 16777215);
                   }
@@ -368,25 +376,25 @@ public class GuiIngame extends Gui {
 
                GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
                this.field_73839_d.func_110434_K().func_110577_a(field_110324_m);
-               byte var51 = 0;
-               boolean var52 = false;
-               byte var53;
-               if(var48.field_78829_b < 0) {
-                  var53 = 5;
-               } else if(var48.field_78829_b < 150) {
-                  var53 = 0;
-               } else if(var48.field_78829_b < 300) {
-                  var53 = 1;
-               } else if(var48.field_78829_b < 600) {
-                  var53 = 2;
-               } else if(var48.field_78829_b < 1000) {
-                  var53 = 3;
+               byte var53 = 0;
+               boolean var51 = false;
+               byte var50;
+               if(var49.field_78829_b < 0) {
+                  var50 = 5;
+               } else if(var49.field_78829_b < 150) {
+                  var50 = 0;
+               } else if(var49.field_78829_b < 300) {
+                  var50 = 1;
+               } else if(var49.field_78829_b < 600) {
+                  var50 = 2;
+               } else if(var49.field_78829_b < 1000) {
+                  var50 = 3;
                } else {
-                  var53 = 4;
+                  var50 = 4;
                }
 
                this.field_73735_i += 100.0F;
-               this.func_73729_b(var22 + var46 - 12, var23, 0 + var51 * 10, 176 + var53 * 8, 10, 8);
+               this.func_73729_b(var22 + var45 - 12, var23, 0 + var53 * 10, 176 + var50 * 8, 10, 8);
                this.field_73735_i -= 100.0F;
             }
          }
@@ -412,8 +420,8 @@ public class GuiIngame extends Gui {
 
          int var22 = var6.size() * p_96136_4_.field_78288_b;
          int var23 = p_96136_2_ / 2 + var22 / 3;
-         byte var24 = 3;
-         int var25 = p_96136_3_ - var7 - var24;
+         byte var25 = 3;
+         int var24 = p_96136_3_ - var7 - var25;
          int var12 = 0;
          Iterator var13 = var6.iterator();
 
@@ -424,15 +432,15 @@ public class GuiIngame extends Gui {
             String var16 = ScorePlayerTeam.func_96667_a(var15, var14.func_96653_e());
             String var17 = EnumChatFormatting.RED + "" + var14.func_96652_c();
             int var19 = var23 - var12 * p_96136_4_.field_78288_b;
-            int var20 = p_96136_3_ - var24 + 2;
-            func_73734_a(var25 - 2, var19, var20, var19 + p_96136_4_.field_78288_b, 1342177280);
-            p_96136_4_.func_78276_b(var16, var25, var19, 553648127);
+            int var20 = p_96136_3_ - var25 + 2;
+            func_73734_a(var24 - 2, var19, var20, var19 + p_96136_4_.field_78288_b, 1342177280);
+            p_96136_4_.func_78276_b(var16, var24, var19, 553648127);
             p_96136_4_.func_78276_b(var17, var20 - p_96136_4_.func_78256_a(var17), var19, 553648127);
             if(var12 == var6.size()) {
                String var21 = p_96136_1_.func_96678_d();
-               func_73734_a(var25 - 2, var19 - p_96136_4_.field_78288_b - 1, var20, var19 - 1, 1610612736);
-               func_73734_a(var25 - 2, var19 - 1, var20, var19, 1342177280);
-               p_96136_4_.func_78276_b(var21, var25 + var7 / 2 - p_96136_4_.func_78256_a(var21) / 2, var19 - p_96136_4_.field_78288_b, 553648127);
+               func_73734_a(var24 - 2, var19 - p_96136_4_.field_78288_b - 1, var20, var19 - 1, 1610612736);
+               func_73734_a(var24 - 2, var19 - 1, var20, var19, 1342177280);
+               p_96136_4_.func_78276_b(var21, var24 + var7 / 2 - p_96136_4_.func_78256_a(var21) / 2, var19 - p_96136_4_.field_78288_b, 553648127);
             }
          }
 
@@ -470,8 +478,8 @@ public class GuiIngame extends Gui {
 
       this.field_73839_d.field_71424_I.func_76320_a("armor");
 
-      int var22;
       int var23;
+      int var22;
       for(var22 = 0; var22 < 10; ++var22) {
          if(var20 > 0) {
             var23 = var11 + var22 * 8;
@@ -492,8 +500,8 @@ public class GuiIngame extends Gui {
       this.field_73839_d.field_71424_I.func_76318_c("health");
 
       int var25;
-      int var26;
       int var27;
+      int var26;
       for(var22 = MathHelper.func_76123_f((var14 + var15) / 2.0F) - 1; var22 >= 0; --var22) {
          var23 = 16;
          if(this.field_73839_d.field_71439_g.func_70644_a(Potion.field_76436_u)) {
@@ -597,10 +605,10 @@ public class GuiIngame extends Gui {
          }
       } else if(var34 instanceof EntityLivingBase) {
          this.field_73839_d.field_71424_I.func_76318_c("mountHealth");
-         EntityLivingBase var37 = (EntityLivingBase)var34;
-         var35 = (int)Math.ceil((double)var37.func_110143_aJ());
-         float var38 = var37.func_110138_aP();
-         var26 = (int)(var38 + 0.5F) / 2;
+         EntityLivingBase var38 = (EntityLivingBase)var34;
+         var35 = (int)Math.ceil((double)var38.func_110143_aJ());
+         float var37 = var38.func_110138_aP();
+         var26 = (int)(var37 + 0.5F) / 2;
          if(var26 > 30) {
             var26 = 30;
          }

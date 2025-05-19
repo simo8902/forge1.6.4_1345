@@ -14,6 +14,14 @@ import net.minecraft.client.mco.RequestPost;
 import net.minecraft.client.mco.RequestPut;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public abstract class Request {
 
    protected HttpURLConnection field_96367_a;

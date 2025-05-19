@@ -1052,27 +1052,27 @@ public abstract class EntityLivingBase extends Entity {
    }
 
    public void func_70612_e(float p_70612_1_, float p_70612_2_) {
-      double var9;
+      double var10;
       if(this.func_70090_H() && (!(this instanceof EntityPlayer) || !((EntityPlayer)this).field_71075_bZ.field_75100_b)) {
-         var9 = this.field_70163_u;
+         var10 = this.field_70163_u;
          this.func_70060_a(p_70612_1_, p_70612_2_, this.func_70650_aV()?0.04F:0.02F);
          this.func_70091_d(this.field_70159_w, this.field_70181_x, this.field_70179_y);
          this.field_70159_w *= 0.800000011920929D;
          this.field_70181_x *= 0.800000011920929D;
          this.field_70179_y *= 0.800000011920929D;
          this.field_70181_x -= 0.02D;
-         if(this.field_70123_F && this.func_70038_c(this.field_70159_w, this.field_70181_x + 0.6000000238418579D - this.field_70163_u + var9, this.field_70179_y)) {
+         if(this.field_70123_F && this.func_70038_c(this.field_70159_w, this.field_70181_x + 0.6000000238418579D - this.field_70163_u + var10, this.field_70179_y)) {
             this.field_70181_x = 0.30000001192092896D;
          }
       } else if(this.func_70058_J() && (!(this instanceof EntityPlayer) || !((EntityPlayer)this).field_71075_bZ.field_75100_b)) {
-         var9 = this.field_70163_u;
+         var10 = this.field_70163_u;
          this.func_70060_a(p_70612_1_, p_70612_2_, 0.02F);
          this.func_70091_d(this.field_70159_w, this.field_70181_x, this.field_70179_y);
          this.field_70159_w *= 0.5D;
          this.field_70181_x *= 0.5D;
          this.field_70179_y *= 0.5D;
          this.field_70181_x -= 0.02D;
-         if(this.field_70123_F && this.func_70038_c(this.field_70159_w, this.field_70181_x + 0.6000000238418579D - this.field_70163_u + var9, this.field_70179_y)) {
+         if(this.field_70123_F && this.func_70038_c(this.field_70159_w, this.field_70181_x + 0.6000000238418579D - this.field_70163_u + var10, this.field_70179_y)) {
             this.field_70181_x = 0.30000001192092896D;
          }
       } else {
@@ -1153,9 +1153,9 @@ public abstract class EntityLivingBase extends Entity {
       }
 
       this.field_70722_aY = this.field_70721_aZ;
-      var9 = this.field_70165_t - this.field_70169_q;
-      double var10 = this.field_70161_v - this.field_70166_s;
-      float var12 = MathHelper.func_76133_a(var9 * var9 + var10 * var10) * 4.0F;
+      var10 = this.field_70165_t - this.field_70169_q;
+      double var9 = this.field_70161_v - this.field_70166_s;
+      float var12 = MathHelper.func_76133_a(var10 * var10 + var9 * var9) * 4.0F;
       if(var12 > 1.0F) {
          var12 = 1.0F;
       }

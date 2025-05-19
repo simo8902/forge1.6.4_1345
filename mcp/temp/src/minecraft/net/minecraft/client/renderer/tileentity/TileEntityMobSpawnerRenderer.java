@@ -11,6 +11,14 @@ import net.minecraft.tileentity.TileEntityMobSpawner;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class TileEntityMobSpawnerRenderer extends TileEntitySpecialRenderer {
 
    public void func_76905_a(TileEntityMobSpawner p_76905_1_, double p_76905_2_, double p_76905_4_, double p_76905_6_, float p_76905_8_) {

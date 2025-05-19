@@ -12,6 +12,14 @@ import net.minecraft.stats.StatCrafting;
 import net.minecraft.stats.StatList;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 class GuiSlotStatsItem extends GuiSlotStats {
 
    // $FF: synthetic field

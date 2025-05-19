@@ -16,6 +16,14 @@ import net.minecraft.util.Vec3;
 import org.lwjgl.opengl.GL11;
 
 @SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 public class RenderMinecart extends Render {
 
    private static final ResourceLocation field_110804_g = new ResourceLocation("textures/entity/minecart.png");
@@ -69,16 +77,16 @@ public class RenderMinecart extends Render {
       GL11.glRotatef(180.0F - p_77012_8_, 0.0F, 1.0F, 0.0F);
       GL11.glRotatef(-var24, 0.0F, 0.0F, 1.0F);
       float var31 = (float)p_77012_1_.func_70496_j() - p_77012_9_;
-      float var32 = p_77012_1_.func_70491_i() - p_77012_9_;
-      if(var32 < 0.0F) {
-         var32 = 0.0F;
+      float var33 = p_77012_1_.func_70491_i() - p_77012_9_;
+      if(var33 < 0.0F) {
+         var33 = 0.0F;
       }
 
       if(var31 > 0.0F) {
-         GL11.glRotatef(MathHelper.func_76126_a(var31) * var31 * var32 / 10.0F * (float)p_77012_1_.func_70493_k(), 1.0F, 0.0F, 0.0F);
+         GL11.glRotatef(MathHelper.func_76126_a(var31) * var31 * var33 / 10.0F * (float)p_77012_1_.func_70493_k(), 1.0F, 0.0F, 0.0F);
       }
 
-      int var33 = p_77012_1_.func_94099_q();
+      int var32 = p_77012_1_.func_94099_q();
       Block var28 = p_77012_1_.func_94089_m();
       int var29 = p_77012_1_.func_94098_o();
       if(var28 != null) {
@@ -86,7 +94,7 @@ public class RenderMinecart extends Render {
          this.func_110776_a(TextureMap.field_110575_b);
          float var30 = 0.75F;
          GL11.glScalef(var30, var30, var30);
-         GL11.glTranslatef(0.0F, (float)var33 / 16.0F, 0.0F);
+         GL11.glTranslatef(0.0F, (float)var32 / 16.0F, 0.0F);
          this.func_94144_a(p_77012_1_, p_77012_9_, var28, var29);
          GL11.glPopMatrix();
          GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
