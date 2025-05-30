@@ -1,0 +1,36 @@
+package com.simo.ilores;
+
+import java.io.File;
+
+import com.simo.ilores.items.IloItems;
+import com.simo.ilores.blocks.IloBlocks;
+import com.simo.ilores.proxy.CommonProxy;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.common.Configuration;
+
+@Mod(modid = Global.MOD_ID, name = Global.MOD_NAME, version = Global.VERSION)
+public class ilores {
+
+    @SidedProxy(clientSide = Global.NG_CLIENT_PROXY, serverSide = Global.NG_COMMON_PROXY)
+    public static CommonProxy proxy;
+
+    @Mod.EventHandler
+    public void preInit(FMLPreInitializationEvent event) {
+    	//File configFile = event.getSuggestedConfigurationFile();
+        //Configuration config = new Configuration(configFile);
+
+        IloItems.initItems();
+       // IloBlocks.initBlocks();
+       // config.save();
+    }
+
+    @Mod.EventHandler
+    public void init(FMLInitializationEvent event) {
+        proxy.init(event);
+        proxy.registerWorldGenerators();
+    }
+}

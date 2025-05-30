@@ -1,0 +1,14 @@
+[
+  {
+    "modid": "ilores",
+    "name": "Simeon Ores",
+    "description": "Adds uranium tools and ore",
+    "version": "V1.0",
+    "mcversion": "1.6.4",
+    "authorList": ["Simo"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

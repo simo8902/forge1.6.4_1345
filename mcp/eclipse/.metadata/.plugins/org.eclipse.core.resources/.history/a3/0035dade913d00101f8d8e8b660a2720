@@ -1,0 +1,36 @@
+package com.simo.ilores.items;
+
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.Item;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.common.Configuration;
+import net.minecraftforge.common.EnumHelper;
+
+public class IloItems {
+	public static Configuration config;
+
+	public static EnumToolMaterial URANIUMAXE = EnumHelper.addToolMaterial("URANIUMAXE", 3, 2100, 20.0F, 8, 35);
+	public static EnumToolMaterial URANIUMPICKAXE = EnumHelper.addToolMaterial("URANIUMPICKAXE", 3, 2100, 17.0F, 2, 35);
+	public static EnumToolMaterial URANIUMSHOVEL = EnumHelper.addToolMaterial("URANIUMSHOVEL", 3, 1500, 15.0F, 1, 20);
+	public static EnumToolMaterial URANIUMSWORD = EnumHelper.addToolMaterial("URANIUMSWORD", 3, 500, 5.0F, 15, 20);
+
+    public static Item uraniumaxe;
+    public static Item uraniumpickaxe;
+    public static Item uraniumshovel;
+    public static Item uraniumsword;
+    public static Item uraniumingot;
+
+	public static void initItems() {
+		uraniumaxe     = new UraniumAxe(5000, URANIUMAXE);
+        uraniumpickaxe = new UraniumPickaxe(5001, URANIUMPICKAXE);
+        uraniumsword   = new UraniumSword(5002, URANIUMSWORD);
+        uraniumshovel  = new UraniumShovel(5003, URANIUMSHOVEL);
+        uraniumingot   = new IloItem(5004, "uraniumingot");
+
+        GameRegistry.registerItem(uraniumaxe,     "uraniumaxe");
+        GameRegistry.registerItem(uraniumpickaxe, "uraniumpickaxe");
+        GameRegistry.registerItem(uraniumsword,   "uraniumsword");
+        GameRegistry.registerItem(uraniumshovel,  "uraniumshovel");
+        GameRegistry.registerItem(uraniumingot,   "uraniumingot");
+	}
+}

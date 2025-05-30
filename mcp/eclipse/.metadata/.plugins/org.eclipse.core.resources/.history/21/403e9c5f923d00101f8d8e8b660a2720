@@ -1,0 +1,11 @@
+package com.simo.ilores.items;
+
+import net.minecraft.item.ItemAxe;
+import net.minecraft.item.EnumToolMaterial;
+
+public class UraniumShovel extends ItemAxe {
+	public UraniumShovel(int id, EnumToolMaterial material) {
+		super(id, material);
+		this.setUnlocalizedName("uraniumshovel");
+	}
+}

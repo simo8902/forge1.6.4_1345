@@ -1,0 +1,24 @@
+package com.simo.ilores.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.ItemBlock;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.common.Configuration;
+
+public class IloBlocks {
+	public static Block uraniumOre;
+
+    public static void initBlocks() {
+        int id = findFreeBlockID(2500);
+        uraniumOre = new IloBlock(id, "blockuraniumore", Material.iron, 5f, 10f);
+        GameRegistry.registerBlock(uraniumOre, "blockuraniumore");
+   }
+
+    private static int findFreeBlockID(int startFrom) {
+        for (int i = startFrom; i < Block.blocksList.length; i++) {
+            if (Block.blocksList[i] == null) return i;
+        }
+        throw new RuntimeException("No free Block IDs");
+    }
+}

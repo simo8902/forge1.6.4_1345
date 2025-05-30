@@ -1,0 +1,11 @@
+package com.simo.ilores.items;
+
+import net.minecraft.item.ItemSword;
+import net.minecraft.item.EnumToolMaterial;
+
+public class UraniumSword extends ItemSword {
+	public UraniumSword(int id, EnumToolMaterial material) {
+		super(id, material);
+		this.setUnlocalizedName("uraniumsword");
+	}
+}
